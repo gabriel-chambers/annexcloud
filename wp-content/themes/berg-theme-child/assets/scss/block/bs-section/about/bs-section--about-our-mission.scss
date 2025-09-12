@@ -1,0 +1,94 @@
+.bs-section--about-our-mission {
+	padding: 60px 15px;
+	:is(h1, h2, h3, h4, h5, h6) {
+		margin-bottom: 20px;
+		font-size: 25px;
+		font-weight: $font-weight-bold;
+		line-height: 32px;
+	}
+	p {
+		font-weight: $font-weight-normal;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.bs-div--main-wrapper {
+		overflow: hidden;
+		padding: 30px;
+		border-radius: 5px;
+		margin-right: 0;
+		margin-left: 0;
+		background: $about-our-mission-gradient;
+	}
+	.media-elements {
+		margin-bottom: 20px;
+		.bs-common-mask__wrap {
+			z-index: 0;
+		}
+		.bs-common-mask__layer {
+			z-index: -1;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--about-our-mission {
+		.media-elements {
+			display: flex;
+			width: 50%;
+			flex-direction: column;
+			justify-content: center;
+			margin-bottom: 0;
+		}
+		.bs-div--content-wrapper {
+			position: relative;
+			display: flex;
+			width: 50%;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 30px;
+			&::before {
+				@include after-before;
+				z-index: 0;
+				top: -30px;
+				right: -30px;
+				width: 336px;
+				height: 395px;
+				background: url($about-our-mission-right-bg) center no-repeat;
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--about-our-mission {
+		padding: 60px 15px 121px;
+		:is(h1, h2, h3, h4, h5, h6) {
+			@include title-two;
+			font-weight: $font-weight-bold;
+			letter-spacing: 0;
+		}
+		p {
+			font-size: 26px;
+			line-height: 31px;
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--about-our-mission {
+		.bs-div--main-wrapper {
+			padding: 40px;
+		}
+		.media-elements {
+			width: 529px;
+		}
+		.bs-div--content-wrapper {
+			width: 481px;
+			padding-left: 0;
+			margin-left: 80px;
+			&::before {
+				top: -40px;
+				right: -40px;
+			}
+		}
+	}
+}

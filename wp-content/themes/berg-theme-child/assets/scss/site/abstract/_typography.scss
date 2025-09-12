@@ -1,0 +1,26 @@
+h1 {
+	@include title-one;
+}
+h2 {
+	@include title-two;
+}
+h3 {
+	@include title-three;
+}
+h4 {
+	@include title-four;
+}
+h5 {
+	@include title-five;
+}
+h6 {
+	@include title-six;
+}
+p,
+body {
+	@include body-normal;
+	&.larger {
+		@include body-big;
+	}
+}
+

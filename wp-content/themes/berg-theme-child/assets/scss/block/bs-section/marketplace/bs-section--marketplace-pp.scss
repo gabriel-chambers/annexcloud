@@ -1,0 +1,8 @@
+@include media-breakpoint-up(lg) {
+	.bs-section--marketplace-pp {
+		&.bs-section--marketplace-post-list {
+			padding-top: 108px;
+		}
+	}
+}
+

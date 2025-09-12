@@ -1,0 +1,136 @@
+.bs-section--common-ready-to-get-started {
+	overflow: hidden;
+	padding: 60px 15px;
+	&::before {
+		@include after-before;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $ready-to-get-gradient-mobile;
+	}
+	> .container {
+		position: relative;
+		&::before,
+		&::after {
+			@include after-before;
+		}
+		&::before {
+			top: -60px;
+			left: -166px;
+			width: 279px;
+			height: 184px;
+			background: url($ready-to-get-pattern-mobile) center center/contain no-repeat;
+		}
+		&::after {
+			right: -213px;
+			bottom: -188px;
+			width: 320px;
+			height: 300px;
+			background: url($ready-to-get-logo-mobile) center center/contain no-repeat;
+			pointer-events: none;
+		}
+	}
+	h2 {
+		margin-bottom: 60px;
+		font-size: 40px;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+		line-height: 52px;
+	}
+	.bs-pro-button {
+		> a {
+			&:link,
+			&:not(:link) {
+				margin-bottom: 0;
+				&::after {
+					width: 18px;
+					height: 11px;
+					margin-left: 34px;
+					background-position: -134px -14px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.bs-section--common-ready-to-get-started {
+		padding: 60px 15px 132px;
+		margin-bottom: -72px;
+		&::before {
+			height: calc(100% - 72px);
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--common-ready-to-get-started {
+		padding: 80px 0 332px;
+		margin-bottom: -252px;
+		&::before {
+			height: calc(100% - 252px);
+			background: $ready-to-get-gradient;
+		}
+		> .container {
+			&::before {
+				top: -80px;
+				left: -390px;
+				width: 524px;
+				height: 348px;
+				background: url($ready-to-get-pattern) center/contain no-repeat;
+			}
+			&::after {
+				z-index: 1;
+				top: -208px;
+				right: -376px;
+				width: 630px;
+				height: 759px;
+				background: url($ready-to-get-logo) center/contain no-repeat;
+			}
+		}
+		h2 {
+			font-size: 65px;
+			line-height: 78px;
+		}
+		.bs-pro-button {
+			> a {
+				&:link,
+				&:not(:link) {
+					padding-bottom: 13px;
+					font-size: 16px;
+					line-height: 20px;
+					&::after {
+						margin-left: 18px;
+					}
+					&:hover {
+						&::after {
+							background-position: -157px -14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// below styles new as per the mobile design 22/06/2023
+@include media-breakpoint-down(sm) {
+	.bs-section--common-ready-to-get-started {
+		overflow-x: clip;
+		overflow-y: visible;
+		.bs-pro-button {
+			&.bs-pro-button--tertiary-with-arrow {
+				max-width: 207px;
+				> a {
+					width: 100%;
+					padding: 14px 25px;
+					&:link,
+					&:not(:link) {
+						&::after {
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

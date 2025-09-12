@@ -1,0 +1,5 @@
+.bs-pro-button {
+	&.bs-pro-button--tertiary {
+		@include tertiary-button;
+	}
+}

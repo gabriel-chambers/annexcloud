@@ -1,0 +1,36 @@
+node_modules
+!/dist
+composer.lock
+.sass-cache
+realm
+
+# ignore all files that start with ~
+# .*
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.tgz
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip

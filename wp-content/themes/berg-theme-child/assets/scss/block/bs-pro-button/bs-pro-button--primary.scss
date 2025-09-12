@@ -1,0 +1,5 @@
+.bs-pro-button {
+	&.bs-pro-button--primary {
+		@include primary-button;
+	}
+}

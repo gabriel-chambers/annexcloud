@@ -1,0 +1,163 @@
+$bs-card-r-crdstk-l3-anxcld1-regular-img-position-bottom: false !default;
+$bs-card-r-crdstk-l3-anxcld1-side-by-side-img-position-bottom: false !default;
+$bs-card-r-crdstk-l3-anxcld1-img-fit-card: true !default;
+$bs-card-r-crdstk-l3-anxcld1-has-border: false !default;
+$bs-card-r-crdstk-l3-anxcld1: () !default;
+$bs-card-r-crdstk-l3-anxcld1: map-merge((
+	wrapper-padding: 20px,
+	wrapper-padding-lg: 30px,
+	title-margin: 0 0 15px,
+	title-margin-lg: 0 0 20px,
+	sub-title-margin: 0 0 15px,
+	sub-title-margin-lg: 0 0 15px,
+	description-margin: 0,
+	description-margin-lg: 0,
+	figure-margin: 0 0 30px,
+	figure-margin-lg: 0 0 30px,
+	card-background-color: #f5f6f7,
+	card-border-radius: 5px,
+	card-box-shadow: none,
+	card-border-color: #f2f4f2,
+	card-border-width: 2px,
+), $bs-card-r-crdstk-l3-anxcld1);
+$bs-card-r-crdstk-l3-anxcld1-img: () !default;
+$bs-card-r-crdstk-l3-anxcld1-img: map-merge((
+	justify-img: flex-start,
+	img-object-fit: contain,
+	figure-height: auto,
+	figure-width: 100%,
+	picture-height: auto,
+	picture-width: 100%,
+	img-height: auto,
+	img-width: 100%,
+	img-fit-card-margin: -20px -20px 0,
+	img-fit-card-margin-lg: -30px -30px 0,
+	img-border-radius: 5px 5px 0 0,
+), $bs-card-r-crdstk-l3-anxcld1-img);
+.bs-card--r-crdstk-l3-anxcld1 {
+	@if $bs-card-r-crdstk-l3-anxcld1-regular-img-position-bottom {
+		$card: ".bs-card";
+		&.bs-card {
+			#{$card}__container {
+				display: flex;
+				flex-direction: column;
+			}
+			#{$card}__image {
+				order: 1;
+			}
+		}
+	}
+	@if $bs-card-r-crdstk-l3-anxcld1-img-fit-card {
+		$card: ".bs-card";
+		&.bs-card {
+			#{$card}__image {
+				margin:
+ map-get($bs-card-r-crdstk-l3-anxcld1-img, img-fit-card-margin-lg);
+			}
+		}
+	}
+	@if $bs-card-r-crdstk-l3-anxcld1-side-by-side-img-position-bottom {
+		$card: ".bs-card";
+		&.bs-card {
+			#{$card}__container {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+	height: 100%;
+	border-radius: map-get($bs-card-r-crdstk-l3-anxcld1, card-border-radius);
+	background-color:
+ map-get($bs-card-r-crdstk-l3-anxcld1, card-background-color);
+	box-shadow: map-get($bs-card-r-crdstk-l3-anxcld1, card-box-shadow);
+	$card: ".bs-card";
+	&.bs-card {
+		#{$card}__container {
+			@if $bs-card-r-crdstk-l3-anxcld1-has-border {
+				border:
+					map-get($bs-card-r-crdstk-l3-anxcld1, card-border-width)
+					solid
+					map-get($bs-card-r-crdstk-l3-anxcld1, card-border-color);
+			}
+			height: 100%;
+			padding: map-get($bs-card-r-crdstk-l3-anxcld1, wrapper-padding-lg);
+		}
+		#{$card}__image {
+			figure {
+				display: flex;
+				height:
+ map-get($bs-card-r-crdstk-l3-anxcld1-img, figure-height);
+				justify-content:
+ map-get($bs-card-r-crdstk-l3-anxcld1-img, justify-img);
+				margin:
+ map-get($bs-card-r-crdstk-l3-anxcld1, figure-margin-lg);
+			}
+			picture {
+				width: map-get($bs-card-r-crdstk-l3-anxcld1-img, picture-width);
+				height:
+ map-get($bs-card-r-crdstk-l3-anxcld1-img, picture-height);
+			}
+			img {
+				width: map-get($bs-card-r-crdstk-l3-anxcld1-img, img-width);
+				height: map-get($bs-card-r-crdstk-l3-anxcld1-img, img-height);
+				border-radius:
+ map-get($bs-card-r-crdstk-l3-anxcld1-img, img-border-radius);
+				object-fit:
+ map-get($bs-card-r-crdstk-l3-anxcld1-img, img-object-fit);
+			}
+		}
+		#{$card}__title {
+			margin:
+ map-get($bs-card-r-crdstk-l3-anxcld1, title-margin-lg);
+		}
+		#{$card}__subtitle {
+			margin:
+ map-get($bs-card-r-crdstk-l3-anxcld1, sub-title-margin-lg);
+		}
+		#{$card}__description {
+			p {
+				margin:
+ map-get($bs-card-r-crdstk-l3-anxcld1, description-margin-lg);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.bs-card--r-crdstk-l3-anxcld1 {
+		@if $bs-card-r-crdstk-l3-anxcld1-img-fit-card {
+			$card: ".bs-card";
+			&.bs-card {
+				#{$card}__image {
+					margin:
+ map-get($bs-card-r-crdstk-l3-anxcld1-img, img-fit-card-margin);
+				}
+			}
+		}
+		$card: ".bs-card";
+		&.bs-card {
+			#{$card}__container {
+				padding: map-get($bs-card-r-crdstk-l3-anxcld1, wrapper-padding);
+			}
+			#{$card}__image {
+				figure {
+					margin:
+ map-get($bs-card-r-crdstk-l3-anxcld1, figure-margin);
+				}
+			}
+			#{$card}__title {
+				margin:
+ map-get($bs-card-r-crdstk-l3-anxcld1, title-margin);
+			}
+			#{$card}__subtitle {
+				margin:
+ map-get($bs-card-r-crdstk-l3-anxcld1, sub-title-margin);
+			}
+			#{$card}__description {
+				p {
+					margin:
+ map-get($bs-card-r-crdstk-l3-anxcld1, description-margin);
+				}
+			}
+		}
+	}
+}

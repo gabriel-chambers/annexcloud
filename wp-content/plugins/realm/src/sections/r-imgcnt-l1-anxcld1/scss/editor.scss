@@ -1,0 +1,21 @@
+div[data-type="e25m-realm/r-imgcnt-l1-anxcld1"] {
+  .bs-div--r-imgcnt-l1-anxcld1-cards-wrapper{
+    > .bs-div__inner {
+      > .block-editor-inner-blocks{
+        > .block-editor-block-list__layout{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 10px 20px;
+          div[data-type="e25m/card"] {
+            .bs-card--r-imgcnt-l1-anxcld1{
+              height: 100%;
+              .bs-card__container {
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

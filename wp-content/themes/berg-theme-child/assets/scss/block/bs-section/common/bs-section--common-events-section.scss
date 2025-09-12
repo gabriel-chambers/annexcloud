@@ -1,0 +1,19 @@
+.bs-section--common-events-section {
+	padding-right: 15px;
+	padding-left: 15px;
+	h2 {
+		margin-bottom: 40px;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--common-events-section {
+		padding-top: 0;
+		h2 {
+			margin-bottom: 80px;
+		}
+	}
+}
+

@@ -1,0 +1,39 @@
+$r-cntcol-l1-anxcld1-counter: (
+	count-line-height: 63px,
+	img-margin: 0 3px 11px 3px,
+	img-width: 26px,
+);
+
+@import "./../../realm/berg-blocks/bs-div/r-cntcol-l1-anxcld1.scss";
+.bs-div--r-cntcol-l1-anxcld1-counter-wrapper {
+	.bs-counter--r-cntcol-l1-anxcld1 {
+		&.bs-counter {
+			$bs-counter: ".bs-counter";
+			#{$bs-counter}__wrapper {
+				#{$bs-counter}__prefix {
+					img {
+						max-height: 65px;
+					}
+				}
+				#{$bs-counter}__prefix,
+				#{$bs-counter}__count,
+				#{$bs-counter}__postfix,
+				#{$bs-counter}__unit {
+					margin: 0;
+					> * {
+						font-weight: $font-weight-semi-bold;
+						letter-spacing: -0.01em;
+					}
+				}
+			}
+			#{$bs-counter}__title {
+				> * {
+					font-size: 16px;
+					font-weight: $font-weight-bold;
+					line-height: 19.2px;
+					opacity: 0.65;
+				}
+			}
+		}
+	}
+}

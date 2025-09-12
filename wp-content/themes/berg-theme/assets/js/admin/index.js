@@ -1,0 +1,1 @@
+require( './classic-theme' );

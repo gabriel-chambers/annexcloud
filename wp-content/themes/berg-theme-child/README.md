@@ -1,0 +1,2 @@
+# berg-theme-child
+

@@ -1,0 +1,32 @@
+$bs-slider-r-blbslr-l4: repeat(4, 1fr) !default;
+.bs-slider--r-blbslr-l4 {
+	&:is(.bs-slider--r-blbslr-l4-overflow-visible) {
+		.slick-slider {
+			.slick-list {
+				overflow: visible;
+			}
+		}
+	}
+	.slick-track {
+		display: flex;
+		.slick-slide {
+			height: auto;
+			& > div,
+			.slick-slide-wrapper {
+				height: 100%;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-slider--r-blbslr-l4 {
+		&:is(.bs-slider--r-blbslr-l4-lg-stack) {
+			> div:not(.slick-initialized) {
+				display: grid;
+				grid-template-columns: $bs-slider-r-blbslr-l4;
+			}
+		}
+	}
+}
+

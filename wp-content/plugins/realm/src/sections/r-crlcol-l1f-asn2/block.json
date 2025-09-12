@@ -1,0 +1,24 @@
+{
+    "title": "Carousel Collection Layout 1 FW ASN 2",
+    "description": "Carousel Collection Layout 1 FW ASN 2",
+    "category": "widgets",
+    "supports": {
+        "html": false,
+        "inserter": false
+    },
+    "attributes": {
+        "modulePrefix": {
+            "type": "string",
+            "default": "r-crlcol-l1f"
+        },
+        "realmClassNames": {
+            "type": "array",
+            "default": [
+                {
+                    "value": "r-crlcol-l1f--asn2",
+                    "label": "Asn2"
+                }
+            ]
+        }
+    }
+}

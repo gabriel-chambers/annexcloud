@@ -1,0 +1,6 @@
+*
+!.gitignore
+!/berg-theme
+!/berg-theme/**
+!/berg-theme-child
+!/berg-theme-child/**

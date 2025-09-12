@@ -1,0 +1,57 @@
+.r-cntcol-l1--anxcld1-cloud-deliver {
+	&.r-cntcol-l1--anxcld1 {
+		overflow: hidden;
+		padding-bottom: 30px;
+		> .container {
+			position: relative;
+			&::before,
+			&::after {
+				@include after-before;
+				top: -70px;
+				left: -70px;
+				width: 296px;
+				height: 404px;
+				background: url($anxc-deliver-pattern-left) center/contain no-repeat;
+			}
+			&::after {
+				top: auto;
+				right: -117px;
+				bottom: -129px;
+				left: auto;
+				width: 264px;
+				height: 321px;
+			}
+			> .bs-row {
+				position: relative;
+				z-index: 1;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.r-cntcol-l1--anxcld1-cloud-deliver {
+		&.r-cntcol-l1--anxcld1-cloud-deliver {
+			padding-bottom: 90px;
+			> .container {
+				&::before,
+				&::after {
+					top: -121px;
+					left: -281px;
+					width: 590px;
+					height: 806px;
+				}
+				&::after {
+					top: -8px;
+					right: -313px;
+					left: auto;
+					width: 532px;
+					height: 685px;
+				}
+				h2 {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

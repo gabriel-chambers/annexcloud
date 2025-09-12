@@ -1,0 +1,381 @@
+# Copyright (C) 2024 HubSpot
+# This file is distributed under the same license as the HubSpot Content embed plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: HubSpot Content embed 1.3.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hubspot-content-embed\n"
+"Last-Translator: Hubspot <wordpress-support-groups@hubspot.com>\n"
+"Language-Team: Hubspot <wordpress-support-groups@hubspot.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-08-29T14:48:22+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: contentembed\n"
+
+#. Plugin Name of the plugin
+#: content-embed.php
+msgid "HubSpot Content embed"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: content-embed.php
+msgid "https://www.hubspot.com/"
+msgstr ""
+
+#. Description of the plugin
+#: content-embed.php
+msgid "Create content using HubSpot's personalization tools and insert them on your WordPress site."
+msgstr ""
+
+#. Author of the plugin
+#: content-embed.php
+msgid "HubSpot"
+msgstr ""
+
+#. Author URI of the plugin
+#: content-embed.php
+msgid "http://hubspot.com/"
+msgstr ""
+
+#: content-embed.php:114
+msgid "oldVersion"
+msgstr ""
+
+#: content-embed.php:117
+msgid "leadinMissing"
+msgstr ""
+
+#: build/embedEditorTracker.js:263
+#: build/embedEditorTracker.js:276
+#: build/gutenberg.js:1113
+#: build/gutenberg.js:3967
+#: build/gutenberg.js:3980
+#: build/embedEditorTracker.js:131
+#: build/embedEditorTracker.js:143
+#: build/gutenberg.js:597
+#: build/gutenberg.js:2323
+#: build/gutenberg.js:2335
+msgid "error.missingScopes.message"
+msgstr ""
+
+#: build/embedEditorTracker.js:271
+#: build/gutenberg.js:1107
+#: build/gutenberg.js:3975
+#: build/embedEditorTracker.js:138
+#: build/gutenberg.js:594
+#: build/gutenberg.js:2330
+msgid "error.oauth.message"
+msgstr ""
+
+#: build/gutenberg.js:217
+#: build/gutenberg.js:264
+#: build/gutenberg.js:112
+#: build/gutenberg.js:136
+msgid "core.none_selected"
+msgstr ""
+
+#: build/gutenberg.js:510
+#: build/gutenberg.js:262
+msgid "error.data.message"
+msgstr ""
+
+#: build/gutenberg.js:535
+#: build/gutenberg.js:271
+msgid "edit.injectLoading"
+msgstr ""
+
+#: build/gutenberg.js:660
+#: build/gutenberg.js:2953
+#: build/gutenberg.js:319
+#: build/gutenberg.js:1490
+msgid "error.fallback.header"
+msgstr ""
+
+#: build/gutenberg.js:1081
+#: build/gutenberg.js:578
+msgid "error.edit.message"
+msgstr ""
+
+#: build/gutenberg.js:1087
+#: build/gutenberg.js:1120
+#: build/gutenberg.js:584
+#: build/gutenberg.js:600
+msgid "error.create.message"
+msgstr ""
+
+#: build/gutenberg.js:1106
+#: build/gutenberg.js:594
+msgid "error.oauth.header"
+msgstr ""
+
+#: build/gutenberg.js:1112
+#: build/gutenberg.js:597
+msgid "error.missingScopes.header"
+msgstr ""
+
+#: build/gutenberg.js:1119
+#: build/gutenberg.js:600
+msgid "error.create.header"
+msgstr ""
+
+#: build/gutenberg.js:1183
+#: build/gutenberg.js:614
+msgid "error.edit.hsAccountLink"
+msgstr ""
+
+#: build/gutenberg.js:1200
+#: build/gutenberg.js:619
+msgid "error.edit.header"
+msgstr ""
+
+#: build/gutenberg.js:1307
+#: build/gutenberg.js:678
+msgid "edit.button"
+msgstr ""
+
+#: build/gutenberg.js:1357
+#: build/gutenberg.js:1665
+#: build/gutenberg.js:2811
+#: build/gutenberg.js:693
+#: build/gutenberg.js:826
+#: build/gutenberg.js:1432
+msgid "edit.select.loading"
+msgstr ""
+
+#: build/gutenberg.js:1373
+#: build/gutenberg.js:704
+msgid "edit.select.category.noTheme"
+msgstr ""
+
+#: build/gutenberg.js:1377
+#: build/gutenberg.js:708
+msgid "edit.select.category.recent"
+msgstr ""
+
+#: build/gutenberg.js:1378
+#: build/gutenberg.js:709
+msgid "edit.select.noTheme"
+msgstr ""
+
+#: build/gutenberg.js:1434
+#: build/gutenberg.js:1464
+#: build/gutenberg.js:1674
+#: build/gutenberg.js:756
+#: build/gutenberg.js:770
+#: build/gutenberg.js:828
+msgid "edit.select.placeholder"
+msgstr ""
+
+#: build/gutenberg.js:1452
+#: build/gutenberg.js:1691
+#: build/gutenberg.js:770
+#: build/gutenberg.js:837
+msgid "edit.title"
+msgstr ""
+
+#: build/gutenberg.js:1454
+#: build/gutenberg.js:770
+msgid "edit.tooltip.message"
+msgstr ""
+
+#: build/gutenberg.js:1460
+#: build/gutenberg.js:770
+msgid "edit.tooltip.messageLink"
+msgstr ""
+
+#: build/gutenberg.js:1564
+#: build/gutenberg.js:804
+msgid "noEmbeds.heading"
+msgstr ""
+
+#: build/gutenberg.js:1571
+#: build/gutenberg.js:804
+msgid "noEmbeds.pointOne.verb"
+msgstr ""
+
+#: build/gutenberg.js:1572
+#: build/gutenberg.js:804
+msgid "noEmbeds.pointOne.body"
+msgstr ""
+
+#: build/gutenberg.js:1574
+#: build/gutenberg.js:804
+msgid "noEmbeds.pointTwo.verb"
+msgstr ""
+
+#: build/gutenberg.js:1575
+#: build/gutenberg.js:804
+msgid "noEmbeds.pointTwo.body"
+msgstr ""
+
+#: build/gutenberg.js:1577
+#: build/gutenberg.js:804
+msgid "noEmbeds.pointThree.verb"
+msgstr ""
+
+#: build/gutenberg.js:1578
+#: build/gutenberg.js:804
+msgid "noEmbeds.pointThree.body"
+msgstr ""
+
+#: build/gutenberg.js:1591
+#: build/gutenberg.js:809
+msgid "noEmbeds.createButton"
+msgstr ""
+
+#: build/gutenberg.js:1768
+#: build/gutenberg.js:871
+msgid "settings.minHeight.inputLabel"
+msgstr ""
+
+#: build/gutenberg.js:1770
+#: build/gutenberg.js:871
+msgid "settings.minHeight.help"
+msgstr ""
+
+#: build/gutenberg.js:1781
+#: build/gutenberg.js:875
+msgid "settings.minHeight.automatic"
+msgstr ""
+
+#: build/gutenberg.js:1784
+#: build/gutenberg.js:879
+msgid "settings.minHeight.manual"
+msgstr ""
+
+#: build/gutenberg.js:1839
+#: build/gutenberg.js:902
+msgid "descriptionLink"
+msgstr ""
+
+#: build/gutenberg.js:1846
+#: build/gutenberg.js:904
+msgid "settings.title"
+msgstr ""
+
+#: build/gutenberg.js:1941
+#: build/gutenberg.js:939
+msgid "error.unexpected.header"
+msgstr ""
+
+#: build/gutenberg.js:2104
+#: build/gutenberg.js:989
+msgid "error.details"
+msgstr ""
+
+#: build/gutenberg.js:2285
+#: build/gutenberg.js:1076
+msgid "title"
+msgstr ""
+
+#: build/gutenberg.js:2286
+#: build/gutenberg.js:1077
+msgid "description"
+msgstr ""
+
+#: build/gutenberg.js:2287
+#: build/gutenberg.js:1079
+msgid "keywords.content"
+msgstr ""
+
+#: build/gutenberg.js:2287
+#: build/gutenberg.js:1080
+msgid "keywords.embed"
+msgstr ""
+
+#: build/gutenberg.js:2287
+#: build/gutenberg.js:1081
+msgid "keywords.hubspot"
+msgstr ""
+
+#: build/gutenberg.js:2287
+#: build/gutenberg.js:1082
+msgid "keywords.contentEmbed"
+msgstr ""
+
+#: build/gutenberg.js:2712
+#: build/gutenberg.js:1401
+msgid "edit.overlay.button"
+msgstr ""
+
+#: build/gutenberg.js:2790
+#: build/gutenberg.js:1425
+msgid "edit.create.button"
+msgstr ""
+
+#: build/gutenberg.js:2816
+#: build/gutenberg.js:1435
+msgid "edit.select.error"
+msgstr ""
+
+#: build/gutenberg.js:2914
+#: build/gutenberg.js:1472
+msgid "edit.select.searchEmpty"
+msgstr ""
+
+#: build/gutenberg.js:2916
+#: build/gutenberg.js:1472
+msgid "edit.select.noEmbeds"
+msgstr ""
+
+#: build/gutenberg.js:2954
+#: build/gutenberg.js:1491
+msgid "error.fallback.message"
+msgstr ""
+
+#: build/gutenberg.js:3139
+#: build/gutenberg.js:1597
+msgid "error.reload"
+msgstr ""
+
+#: build/gutenberg.js:3236
+#: build/gutenberg.js:1675
+msgid "edit.select.searchPlaceholder"
+msgstr ""
+
+#: build/gutenberg.js:3871
+#: build/gutenberg.js:2278
+msgid "edit.create.popupBlockedTitle"
+msgstr ""
+
+#: build/gutenberg.js:3874
+#: build/gutenberg.js:2282
+msgid "edit.create.popupBlockedLabel"
+msgstr ""
+
+#: build/gutenberg.js:3881
+#: build/gutenberg.js:2288
+msgid "edit.create.name"
+msgstr ""
+
+#: build/gutenberg.js:10941
+#: build/gutenberg.js:8592
+msgid "error.connection"
+msgstr ""
+
+#: block.json
+msgctxt "block title"
+msgid "HubSpot Content embed"
+msgstr ""
+
+#: block.json
+msgctxt "block description"
+msgid "Embed HubSpot content in your Wordpress Site"
+msgstr ""
+
+#: block.json
+msgctxt "block keyword"
+msgid "Hubspot"
+msgstr ""
+
+#: block.json
+msgctxt "block keyword"
+msgid "Embed"
+msgstr ""
+
+#: block.json
+msgctxt "block keyword"
+msgid "Content"
+msgstr ""

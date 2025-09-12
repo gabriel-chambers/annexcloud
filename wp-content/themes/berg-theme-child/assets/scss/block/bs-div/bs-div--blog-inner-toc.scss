@@ -1,0 +1,162 @@
+.bs-div--blog-inner-toc {
+	padding: 42px 20px 34px;
+	margin-bottom: 42px;
+	background: color("white");
+	box-shadow: 0 7px 49px rgba(color(darker-purple), 0.09);
+	&::before {
+		@include after-before;
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 30px;
+		background: url($blog-inner-toc-arrow) center/contain no-repeat;
+	}
+	#ez-toc-container {
+		padding: 0;
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid color("dark-grey");
+		margin: 0 0 28px;
+		background: none;
+		box-shadow: none;
+		.ez-toc-title-container {
+			border-bottom: 1px solid color("dark-grey");
+			margin-bottom: 20px;
+		}
+		p.ez-toc-title {
+			@include title-six;
+			display: block;
+			margin-bottom: 30px; // stylelint-disable-next-line declaration-no-important
+			letter-spacing: 0.1em !important;
+			text-transform: uppercase;
+		}
+		nav {
+			a {
+				color: color("dark-grey");
+				text-decoration: none;
+				transition: color 0.4s ease;
+				&:hover {
+					color: color("purple");
+				}
+			}
+			> ul {
+				> li {
+					/* stylelint-disable no-descending-specificity */
+					margin-bottom: 19px;
+					> a {
+						margin-bottom: 11px;
+						font-size: 18px;
+						font-weight: $font-weight-bold;
+						letter-spacing: 0;
+						line-height: 29px;
+						&:only-child {
+							margin-bottom: 1px;
+						}
+					}
+					> ul {
+						margin-left: 20px;
+						> li:not(:last-child) {
+							margin-bottom: 10px;
+						}
+					}
+					/* stylelint-enable */
+				}
+			}
+		}
+	}
+	// Move this to a common scss bs-div--common-social-share
+	// Social Media
+	.heateor_sss {
+		&_svg {
+			/* stylelint-disable declaration-no-important */
+			display: flex !important;
+			width: 50px !important;
+			height: 50px !important;
+			align-items: center;
+			justify-content: center;
+			border-radius: 5px;
+			background: color("white") !important;
+			box-shadow: 0 5px 20px rgba(color("mid-gray"), 0.2) !important;
+			/* stylelint-enable */
+			svg {
+				// stylelint-disable-next-line declaration-no-important
+				display: none !important;
+			}
+		}
+		&_email {
+			span {
+				&::before {
+					@include email-icon;
+				}
+			}
+			&:hover {
+				span {
+					&::before {
+						@include email-icon-purple;
+					}
+				}
+			}
+		}
+		/* stylelint-disable no-descending-specificity */
+		// change the below social media icons with grayscale
+		&_button_linkedin {
+			span {
+				&::before {
+					@include linkedin-icon;
+				}
+			}
+			&:hover {
+				span {
+					&::before {
+						@include linkedin-icon-purple;
+					}
+				}
+			}
+		}
+		&_facebook {
+			span {
+				&::before {
+					@include facebook-icon;
+				}
+			}
+			&:hover {
+				span {
+					&::before {
+						@include facebook-icon-purple;
+					}
+				}
+			}
+		}
+		&_button_twitter {
+			span {
+				&::before {
+					@include after-before;
+					width: 18px;
+					height: 18px;
+					background-image: url($twitter);
+					background-position: 100%;
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+			}
+			&:hover {
+				span {
+					&::before {
+						background-image: url($twitter-hover);
+					}
+				}
+			}
+		}
+		/* stylelint-enable */
+		&_sharing_ul {
+			display: inline-flex;
+			width: 100%;
+			justify-content: space-between;
+			// stylelint-disable-next-line no-descending-specificity
+			a {
+				// stylelint-disable-next-line declaration-no-important
+				margin: 0 !important;
+			}
+		}
+	}
+}

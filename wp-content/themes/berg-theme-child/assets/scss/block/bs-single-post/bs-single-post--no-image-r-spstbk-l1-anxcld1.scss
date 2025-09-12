@@ -1,0 +1,150 @@
+@import "./../../realm/berg-blocks/bs-single-post/r-no-image-spstbk-l1-anxcld1.scss";
+.bs-section--common-post-blocks {
+	.bs-post__container--no-image {
+		h2 {
+			padding-right: 30px;
+		}
+		.bs-post {
+			&__read-more,
+			&__learn-more {
+				@include tertiary-link-with-arrow;
+				> span {
+					// stylelint-disable-next-line declaration-no-important
+					font-size: 14px !important; // override default style //14->16 //revert
+					&::after {
+						/* stylelint-disable declaration-no-important */
+						margin-left: 31px; //removed important
+						background-position: -135px -14px !important;
+						/* stylelint-enable */
+					}
+				}
+			}
+			&__category {
+				margin-bottom: 12px;
+				span {
+					color: color("white");
+					// stylelint-disable-next-line declaration-no-important
+					font-size: 14px !important; //14->16  //revert
+					&:not(:first-child) {
+						&::before {
+							color: color("white");
+						}
+					}
+				}
+			}
+			&__inner {
+				position: relative;
+				overflow: hidden;// stylelint-disable-next-line declaration-no-important
+				background: none !important;
+				&::after {
+					@include after-before;
+					z-index: 1;
+					right: -2px;
+					bottom: -1px;
+					width: 121px;
+					height: 114px;
+					background: url($featured-post-no-image-pattern-bg-1) top left/contain no-repeat;
+				}
+			}
+			&__details {
+				position: relative;
+				height: 100%;
+				background: $post-no-image-bg;
+				clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 72%, 84.3% 100%, 100% 100%, 0 100%, 0% 100%);
+				&::before {
+					@include after-before;
+					z-index: -1;
+					top: 0;
+					left: -117px;
+					width: 435px;
+					height: 558px;
+					background: url($featured-post-no-image-pattern-bg) top left/contain no-repeat;
+				}
+			}
+			&__title {
+				* {
+					color: color("white");
+					font-size: 22px;
+					letter-spacing: 0;
+					line-height: 26px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.bs-section--common-post-blocks {
+		.bs-post__container--no-image {
+			.bs-post {
+				&__details {
+					padding-bottom: 274px;
+					clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 76%, 89.3% 100%, 100% 100%, 0 100%, 0% 100%);
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(md) {
+	.bs-section--common-post-blocks {
+		.bs-post__container--no-image {
+			.bs-post {
+				&__details {
+					padding-bottom: 274px;
+					clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 75%, 92.3% 101%, 19.7% 101%, 0 100%, 0% 20%);
+				}
+				&__category {
+					span {
+						// stylelint-disable-next-line declaration-no-important
+						font-size: 14px !important; //add 14
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--common-post-blocks {
+		.bs-post__container--no-image {
+			.bs-post {
+				&__details {
+					clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 79%, 81.3% 101%, 19.7% 101%, 0 100%, 0% 20%);
+				}
+				&__read-more,
+				&__learn-more {
+					@include tertiary-link-with-arrow;
+					> span {
+						/* stylelint-disable declaration-no-important */
+						font-size: 16px !important; // override default style
+						/* stylelint-enable */
+						&::after {
+							/* stylelint-disable declaration-no-important */
+							margin-left: 20px !important;
+							background-position: -135px -14px !important;
+							/* stylelint-enable */
+						}
+					}
+				}
+				&__title {
+					max-width: 270px;
+					* {
+						font-size: 26px;
+						letter-spacing: 0;
+						line-height: 31px;
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--common-post-blocks {
+		.bs-post__container--no-image {
+			.bs-post {
+				&__details {
+					clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 79%, 85.3% 101%, 19.7% 101%, 0 100%, 0% 20%);
+				}
+			}
+		}
+	}
+}

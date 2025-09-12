@@ -1,0 +1,21 @@
+{
+  "name": "e25/composer-installer",
+  "type": "composer-plugin",
+  "require": {
+    "php": ">=8.0",
+    "composer-plugin-api": "^2.0",
+    "composer/installers": "^1.12.0",
+    "vlucas/phpdotenv": "v5.5.0"
+  },
+  "require-dev": {
+    "composer/composer": "^2.0"
+  },
+  "extra": {
+    "class": "E25\\ComposerInstaller\\Plugin"
+  },
+  "autoload": {
+    "psr-4": {
+      "E25\\ComposerInstaller\\": "src"
+    }
+  }
+}

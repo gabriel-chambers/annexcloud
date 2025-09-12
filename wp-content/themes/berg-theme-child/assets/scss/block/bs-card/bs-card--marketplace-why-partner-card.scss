@@ -1,0 +1,57 @@
+.bs-card--marketplace-why-partner-card { // stylelint-disable-next-line selector-class-pattern
+	&.bs-card---default {
+		padding: 30px;
+		border-radius: 5px;
+		background: color("cultured");
+		.bs-card {
+			&__image {
+				width: 50px;
+				height: 50px;
+				margin-bottom: 40px;
+				figure {
+					margin-bottom: 0;
+				}
+			}
+			&__title,
+			&__description {
+				* {
+					margin-bottom: 0;
+				}
+			}
+			&__title {
+				margin-bottom: 20px;
+				* {
+					color: color("space-blue");
+					font-size: 22px;
+					font-weight: $font-weight-medium;
+					letter-spacing: 0;
+					line-height: 26px;
+				}
+			}
+			&__description {
+				* {
+					color: color("dark-grey");
+					font-size: 16px;//14->16
+					font-weight: $font-weight-normal;
+					letter-spacing: 0;
+					line-height: 22px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-card--marketplace-why-partner-card {
+		min-height: 306px;// stylelint-disable-next-line selector-class-pattern
+		&.bs-card---default {
+			.bs-card {
+				&__description {
+					* {
+						font-size: 14px;//add 14
+					}
+				}
+			}
+		}
+	}
+}

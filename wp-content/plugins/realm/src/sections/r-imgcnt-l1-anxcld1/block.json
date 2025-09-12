@@ -1,0 +1,24 @@
+{
+    "title": "Image Content Layout 1 ANXCLD 1",
+    "description": "Image Content Layout 1 ANXCLD 1",
+    "category": "widgets",
+    "supports": {
+        "html": false,
+        "inserter": false
+    },
+    "attributes": {
+        "modulePrefix": {
+            "type": "string",
+            "default": "r-imgcnt-l1"
+        },
+        "realmClassNames": {
+            "type": "array",
+            "default": [
+                {
+                    "value": "r-imgcnt-l1--anxcld1",
+                    "label": "Anxcld1"
+                }
+            ]
+        }
+    }
+}

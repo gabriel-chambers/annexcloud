@@ -1,0 +1,29 @@
+div[data-type="e25m-realm/r-crlcol-l1f-asn2"] {
+	.bs-blurb--r-crlcol-l1f-asn2 {
+		height: 100%;
+		.bs-blurb__read-more {
+			> *:first-child {
+				border: 2px solid rgba(0, 0, 0, 0.2);
+			}
+		}
+	}
+	.bs-div--r-crlcol-l1f-asn2-logo-row {
+		> .bs-div__inner {
+			> div > div {
+				display: flex;
+				flex-flow: row wrap;
+				> div {
+					width: 25%;
+					> div,
+					> div > div,
+					> div > div > div,
+					> div > div > div > div,
+					> div > div > div > div > div,
+					> div > div > div > div > div > div {
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}

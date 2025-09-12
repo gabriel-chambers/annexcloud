@@ -1,0 +1,198 @@
+:root {
+  --calypso: #00a4bd;
+  --calypso-medium: #7fd1de;
+  --calypso-light: #e5f5f8;
+  --lorax: #ff7a59;
+  --olaf: #ffffff;
+  --heffalump: #425b76;
+  --marigold-light: #fef8f0;
+  --marigold-medium: #fae0b5;
+  --obsidian: #33475b;
+  --battleship: #cbd6e2;
+  --koala: #eaf0f6;
+  --button-tertiary-light-text: #506e9;
+  --gypsum: #f5f8fa;
+  --slinky: #516f90;
+  --calypso-dark: #0091ae;
+  --flint: #99acc2;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('fonts/LexendDeca-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('fonts/LexendDeca-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('fonts/LexendDeca-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('fonts/LexendDeca-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+.invalid .components-input-control__label {
+  color: red;
+}
+
+.invalid .components-input-control__container {
+  outline: 1px solid red;
+}
+
+.invalid .components-base-control__label {
+  color: red;
+}
+.invalid .components-text-control__input {
+  outline: 1px solid red;
+}
+
+/* Edit in Hubspot button */
+
+.hs-embed-edit-link.hs-embed-edit-link.hs-embed-edit-link > a {
+  all: unset;
+}
+
+button.hs-embed-edit-link.hs-embed-edit-link.hs-embed-edit-link {
+  background-color: white;
+  border: 1px solid var(--battleship) !important;
+  color: var(--slinky);
+  font-weight: 300;
+}
+
+svg.hs-embed-edit-link.hs-embed-edit-link.hs-embed-edit-link {
+  color: var(--slinky);
+  transform: scale(1.2);
+}
+
+.hs-empty-state-create-link.hs-empty-state-create-link.hs-empty-state-create-link
+  > a {
+  all: unset;
+}
+
+button.hs-empty-state-create-link.hs-empty-state-create-link.hs-empty-state-create-link {
+  background-color: white;
+  font-weight: 300;
+}
+
+.hs-empty-state-create-link.hs-empty-state-create-link.hs-empty-state-create-link
+  > a
+  > svg {
+  transform: scale(1.2);
+  padding-left: 5px;
+}
+
+/* Dropdown create embed option */
+.hs-create-new-embed-item.hs-create-new-embed-item {
+  font-family: 'Lexend Deca', Helvetica, Arial, sans-serif;
+  font-weight: 600 !important;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.15s ease-out;
+  color: var(--calypso-dark) !important;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+/* Style the external link icon */
+.hs-create-new-embed-item.hs-create-new-embed-item > svg {
+  color: var(--flint) !important;
+  transform: scale(1.2);
+  stroke-width: 3px;
+  padding-left: 8px;
+}
+
+.hs-text-on-dark.hs-text-on-dark.hs-text-on-dark.hs-text-on-dark {
+  color: var(--calypso) !important;
+}
+
+/* Info at bottom of embed */
+
+.hs-embed-link.hs-embed-link.hs-embed-link {
+  color: var(--calypso-dark) !important;
+  font-weight: 600;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.hs-embed-info.hs-embed-info.hs-embed-info {
+  font-size: 12px;
+  margin-top: 20px;
+  color: var(--slinky) !important;
+}
+
+.hs-content-embed-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index needs to be lower priority than the toolbar that WP pops up, otherwise it will overlap on neighbouring blocks */
+  z-index: 1;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  transition: background-color 0.1s ease-in-out;
+
+  > .hs-button-wrapper {
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border: 3px solid var(--calypso-medium);
+    background-color: rgba(127, 209, 222, 0.25);
+    > .hs-button-wrapper {
+      opacity: 1;
+    }
+  }
+}
+
+.hs-publish-text.hs-publish-text.hs-publish-text.hs-publish-text {
+  font-family: 'Lexend Deca', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: var(--obsidian) !important;
+}
+
+/* .hs-min-height-radio.hs-min-height-radio.hs-min-height-radio {
+  &:input[type='radio'] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+  }
+} */
+
+.hs-min-height-radio-group.hs-min-height-radio-group.hs-min-height-radio-group
+  .components-radio-control__option {
+  margin-bottom: 8px;
+
+  label {
+    margin-top: -1px;
+    vertical-align: middle;
+    font-size: 13px;
+  }
+
+  input[type='radio'] {
+    transform: scale(0.9);
+  }
+}
+
+.hs-embed-inline-error.hs-embed-inline-error.hs-embed-inline-error {
+  font-size: 12px !important;
+}

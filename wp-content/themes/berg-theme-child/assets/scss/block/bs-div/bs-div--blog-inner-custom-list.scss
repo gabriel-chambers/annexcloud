@@ -1,0 +1,26 @@
+.bs-div.bs-div--blog-inner-custom-list {
+	> .bs-div__inner {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 30px;
+		&::after {
+			display: none;
+		}
+	}
+	&-item {
+		h3 {// stylelint-disable-next-line declaration-no-important
+			margin-bottom: 20px !important;
+		}
+		> .bs-div__inner {
+			padding-left: 47px;
+			&::before {
+				@include icon-check;
+			}
+			p {
+				&:first-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

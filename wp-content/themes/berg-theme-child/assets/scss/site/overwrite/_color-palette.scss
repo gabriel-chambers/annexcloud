@@ -1,0 +1,62 @@
+/* USE THIS $colors SASS MAP TO ADD WORDPRESS BACKEND COLOR-PALETTE COLORS */
+
+$colors: (
+	/* Use single quotation marks for color names */
+	/* Need to run 'npm run ng' after adding new colors */
+	"white": #fff,
+	"black": #000,
+	"red": #e91768,
+	"dark-red": #ef545a,
+	"darker-red": #f58e62,
+	"darker-red-1": #a21b55,
+	"purple": #6610f2,
+	"dark-purple": #34087b,
+	"darker-purple": #170830,
+	"light-purple": #6d5bf6,
+	"space-blue": #1c1f39,
+	"dark-blue": #070a24,
+	"darker-blue": #252848,
+	"darker-blue-1": #161935,
+	"darker-blue-2": #17082f,
+	"darker-blue-3": #272b4a,
+	"dark-grey": #41546f,
+	"dark-grey-1": #9c97a5,
+	"dark-grey-2": #494e74,
+	"medium-grey": #aab8c2,
+	"light-grey": #e1e8ed,
+	"lighter-grey": #f5f3f3,
+	"lighter-grey-1": #d9d9d9,
+	"lighter-grey-2": #efefef,//previous code was duplicate of medium grey and i have replaces gradient as well
+	"lighter-grey-3": #f0f2f3,
+	"green": #91d1b3,
+	"neon-blue": #310b9c,
+	"medium-sea-green": #3fa67a,
+	"medium-sea-green-1": #45bb51,
+	"cultured": #f5f6f7,
+	"brewing-storm": #777988,
+	"obsidian-shard": #030516,
+	"black-pearl": #0a1116,
+	"mid-gray": #646f79,
+	"metal": #0b2e38,
+	"eerie-black": #1e1e1e,
+);
+
+$theme-colors: (
+	primary: #1c1f39,
+	secondary: #41546f,
+);
+
+/* GUTENBERG COLOR-PALETTE DEFAULT CLASSES OVERRIDE WITH NEW COLORS */
+
+/* stylelint-disable declaration-no-important */
+:root {
+	@each $key, $value in $colors {
+		.has-#{$key}-color {
+			color: #{$value} !important;
+		}
+		.has-#{$key}-background-color {
+			background-color: #{$value} !important;
+		}
+	}
+}
+/* stylelint-enable declaration-no-important */

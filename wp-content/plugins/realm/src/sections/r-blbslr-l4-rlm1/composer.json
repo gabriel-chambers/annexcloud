@@ -1,0 +1,27 @@
+{
+    "name": "e25/r-blbslr-l4-rlm1",
+    "type": "e25-realm-section",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "extra": {
+        "theme_files": [
+            {
+                "src": "scss/bs-slider--r-blbslr-l4.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-slider/r-blbslr-l4.scss",
+                "overrideFilePath": "assets/scss/block/bs-slider/bs-slider--r-blbslr-l4.scss"
+            },
+            {
+                "src": "scss/bs-slider--r-blbslr-l4-overflow-visible.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-slider/r-blbslr-l4-overflow-visible.scss",
+                "overrideFilePath": "assets/scss/block/bs-slider/bs-slider--r-blbslr-l4-overflow-visible.scss"
+            },
+            {
+                "src": "scss/bs-slider--r-blbslr-l4-lg-stack.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-slider/r-blbslr-l4-lg-stack.scss",
+                "overrideFilePath": "assets/scss/block/bs-slider/bs-slider--r-blbslr-l4-lg-stack.scss"
+            }
+        ]
+    }
+}

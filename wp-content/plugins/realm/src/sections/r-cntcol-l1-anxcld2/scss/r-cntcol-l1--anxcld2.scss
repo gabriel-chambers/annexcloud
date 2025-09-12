@@ -1,0 +1,20 @@
+$r-cntcol-l1-anxcld2: () !default;
+$r-cntcol-l1-anxcld2: map-merge((
+	section-padding: 60px 0,  
+	section-padding-lg: 120px 0 90px 0,
+	column-margin: 0 0 30px 0,
+), $r-cntcol-l1-anxcld2);
+.r-cntcol-l1--anxcld2 {
+	padding: map-get($r-cntcol-l1-anxcld2,section-padding);
+	.bs-row--r-cntcol-l1-anxcld2-counters-wrapper {
+		.bs-column {
+			margin: map-get($r-cntcol-l1-anxcld2, column-margin);
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.r-cntcol-l1--anxcld2 {
+		padding: map-get($r-cntcol-l1-anxcld2,section-padding-lg);
+	}
+}

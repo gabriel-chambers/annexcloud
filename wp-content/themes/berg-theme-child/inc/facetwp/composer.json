@@ -1,0 +1,27 @@
+{
+  "name": "e25/brc-facetwp",
+  "type": "wordpress-facetwp-extension",
+  "license": [
+	"GPL-2.0"
+  ],
+  "description": "Facetwp custom extension for berg theme",
+  "authors": [
+	{
+	  "name": "dev",
+	  "email": "dev@eight25media.com",
+	  "homepage": "https://gitlab.com/e25berg/brc-facetwp"
+	}
+  ],
+  "keywords": [
+	"wordpress",
+	"composer",
+	"wp",
+	"berg",
+	"facetwp"
+  ],
+  "require": {
+	"php": ">=7.0"
+  },
+  "scripts": {
+  }
+}

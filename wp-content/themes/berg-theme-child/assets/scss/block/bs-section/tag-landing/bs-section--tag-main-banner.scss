@@ -1,0 +1,14 @@
+.bs-section--tag-main-banner {
+	background-image: $tag-page-gradient;
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--tag-main-banner {
+		> .container {
+			h1 {
+				font-size: 48px;
+				line-height: 58px;
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.bs-section--common-featured-type-two {
+	position: relative;
+	overflow: hidden;
+	padding: 50px 15px;
+}
+
+@include media-breakpoint-up(xl) {
+	.bs-section--common-featured-type-two {
+		padding: 100px 15px;
+	}
+}

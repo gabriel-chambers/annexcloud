@@ -1,0 +1,13 @@
+.bs-section--common-content {
+	.bs-div--blog-inner-counter-pattern-two {
+		&.bs-div--blog-inner-counter {
+			.bs-div__inner {
+				.bs-counter {
+					padding: 30px;
+					border: none;
+					background: color("lighter-grey-3");
+				}
+			}
+		}
+	}
+}

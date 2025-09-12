@@ -1,0 +1,97 @@
+$r-tabslr-l2-anxcld1-tab-slider: () !default;
+$r-tabslr-l2-anxcld1-tab-slider: map-merge((
+	flex-tabs-lg: 300px,
+	flex-tabs-xl: 330px,
+	flex-content-lg: calc(100% - 300px),
+	flex-content-xl: calc(100% - 330px),
+	tab-padding: 40px 20px 15px 0,
+	tab-padding-lg: 15px 20px 15px 0,
+	tab-text-color: #fff,
+), $r-tabslr-l2-anxcld1-tab-slider);
+.bs-tab-slider--r-tabslr-l2-anxcld1 {
+	position: relative;
+	.bs-slider-tabs {
+		.slick-track {
+			width: auto !important; // override slick inline width
+		}
+		.slick-slide-wrapper {
+			> * {
+				margin-bottom: 0;
+			}
+			p {
+				color: map-get($r-tabslr-l2-anxcld1-tab-slider, tab-text-color);
+				font-size: 22px;
+			}
+		}
+		.slick-slide {
+			padding: map-get($r-tabslr-l2-anxcld1-tab-slider, tab-padding);
+			opacity: 0.5;
+			&.slick-current {
+				opacity: 1;
+			}
+		}
+	}
+	.bs-slider-content {
+		position: static;
+		.slick-arrow {
+			position: absolute;
+			top: auto;
+			bottom: -108px;
+			left: 0;
+			&.slick-next {
+				left: 95px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-tab-slider--r-tabslr-l2-anxcld1 {
+		.bs-slider-tabs {
+			.slick-slide-wrapper {
+				p {
+					font-size: 28px;
+				}
+			}
+			.slick-slide {
+				padding: map-get($r-tabslr-l2-anxcld1-tab-slider, tab-padding-lg);
+			}
+			.slick-list {
+				padding-bottom: 210px;
+			}
+			max-width: map-get($r-tabslr-l2-anxcld1-tab-slider, flex-tabs-lg);
+			flex: 0 0 map-get($r-tabslr-l2-anxcld1-tab-slider, flex-tabs-lg);
+		}
+		.bs-slider-content {
+			max-width: map-get($r-tabslr-l2-anxcld1-tab-slider, flex-content-lg);
+			flex: 0 0 map-get($r-tabslr-l2-anxcld1-tab-slider, flex-content-lg);
+			.slick-list,
+			.slick-track {
+				height: 100%;
+			}
+			.slick-list {
+				min-height: 565px;
+				padding-bottom: 100px;
+			}
+			.slick-arrow {
+				bottom: 108px;
+				&.slick-next {
+					left: 95px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.bs-tab-slider--r-tabslr-l2-anxcld1 {
+		.bs-slider-tabs {
+			max-width: map-get($r-tabslr-l2-anxcld1-tab-slider, flex-tabs-xl);
+			flex: 0 0 map-get($r-tabslr-l2-anxcld1-tab-slider, flex-tabs-xl);
+		}
+		.bs-slider-content {
+			max-width: map-get($r-tabslr-l2-anxcld1-tab-slider, flex-content-xl);
+			flex: 0 0 map-get($r-tabslr-l2-anxcld1-tab-slider, flex-content-xl);
+		}
+	}
+}

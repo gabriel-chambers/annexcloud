@@ -1,0 +1,32 @@
+{
+    "name": "e25/r-crdstk-l3-anxcld3",
+    "type": "e25-realm-section",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "extra": {
+        "theme_files": [
+            {
+                "src": "scss/r-crdstk-l3--anxcld3.scss",
+                "dest": "assets/scss/realm/r-crdstk/r-crdstk-l3--anxcld3.scss",
+                "overrideFilePath": "assets/scss/realm-custom/r-crdstk/r-crdstk-l3--anxcld3.scss"
+            },
+            {
+                "src": "scss/bs-card--r-crdstk-l3-anxcld3.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-card/r-crdstk-l3-anxcld3.scss",
+                "overrideFilePath": "assets/scss/block/bs-card/bs-card--r-crdstk-l3-anxcld3.scss"
+            },
+            {
+                "src": "scss/bs-div--r-crdstk-l3-anxcld3-card-wrapper.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-div/r-crdstk-l3-anxcld3-card-wrapper.scss",
+                "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crdstk-l3-anxcld3-card-wrapper.scss"
+            },
+            {
+                "src": "scss/bs-row--r-crdstk-l3-anxcld3-cards-wrapper.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-row/r-crdstk-l3-anxcld3-cards-wrapper.scss",
+                "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-crdstk-l3-anxcld3-cards-wrapper.scss"
+            }
+        ]
+    }
+}

@@ -1,0 +1,147 @@
+.bs-section--home-loyalty-sm {
+	&.bs-section--slider-widgets {
+		overflow: hidden;
+		padding: 60px 0;
+		>div {
+			padding-right: 0;
+			padding-left: 0;
+			> div {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+		.bs-column--col-one {
+			padding: 0 30px;
+		}
+		.bs-column--col-two {
+			padding: 0;
+		}
+		h2 {
+			margin-bottom: 15px;
+			font-size: 25px;
+			font-weight: $font-weight-bold;
+			letter-spacing: 0;
+			line-height: 32px;
+		}
+		p {
+			font-size: 16px;
+			font-weight: $font-weight-normal;
+			letter-spacing: 0.16px; //revert
+			line-height: 25.6px; //revert//14->16
+		}
+		.bs-pro-button {
+			display: flex;
+			margin-top: 32px; //revert
+			.bs-pro-button__container {
+				margin: 0;
+				font-size: 14px;//14->16 //revert
+				line-height: 18px;
+			}
+		}
+		.bs-slider {
+			margin-top: 40px;
+		}
+		.slick-slider {
+			padding-bottom: 86px;
+			.slick-track {
+				display: flex;
+			}
+			.slick-list {
+				/* stylelint-disable declaration-no-important */
+				padding-left: 20px !important; // to override slick slider inline value
+				/* stylelint-enable */
+			}
+			.slick-slide {
+				height: auto;
+				margin-right: 0;
+				>div {
+					height: 100%;
+				}
+			}
+			.slick-slide-wrapper {
+				height: 100%;
+				padding: 0 10px 20px;
+			}
+			.slick-arrow {
+				top: auto;
+				bottom: -31px;
+				left: 30px;
+				border-color: color("space-blue");
+				background: transparent;
+				box-shadow: none;
+				&::before {
+					@include standard-blog-slider-arrow;
+				}
+				&.slick-disabled {
+					opacity: 0.5;
+				}
+				&.slick-next {
+					left: 126px;
+				}
+			}
+		}
+		.bs-blurb {
+			$blurb : ".bs-blurb";
+			overflow: hidden;
+			height: 100%;
+			border-radius: 5px;
+			box-shadow: 0 4px 19px $boxshadow-one;
+
+			&#{$blurb}---default {
+				#{$blurb}__trigger {
+					display: block;
+					height: 100%;
+				}
+				#{$blurb}__container {
+					height: 100%;
+				}
+
+				#{$blurb}__image {
+					figure {
+						margin: 0;
+					}
+
+				}
+
+				#{$blurb}__content-wrapper {
+					padding: 20px 20px 16px; //revert
+				}
+
+				#{$blurb}__title {
+					margin-bottom: 16px;
+					h3 {
+						color: color("space-blue");
+						font-size: 20px;
+						font-weight: $font-weight-medium;
+						letter-spacing: 0;
+						line-height: 24px;
+					}
+				}
+
+				#{$blurb}__description {
+					p {
+						margin-bottom: 0;
+						color: color("dark-grey");
+						font-size: 14px;
+						letter-spacing: 0.14px; //revert
+						line-height: 1.6; //revert//12->14
+					}
+				}
+			}
+		}
+		.slider-widgets {
+			right: 30px;
+			bottom: 47px;
+			&__slide-counter {
+				.total-slides {
+					&::before {
+						position: relative;
+						padding: 0 1px;
+						content: "/";
+						font-size: 10px;
+					}
+				}
+			}
+		}
+	}
+}

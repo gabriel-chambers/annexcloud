@@ -1,0 +1,7 @@
+<gutenberg-block type="e25m/media-elements" translate="1" label="E25M Media Elements">
+  <key name="image_alt" label="E25M Media Elements - Image Alt" />
+  <key name="image_title" label="E25M Media Elements - Image Title" />
+  <key name="image_caption" label="E25M Media Elements - Image Caption" />
+  <key name="image_link" label="E25M Media Elements - Image Link" />
+  <xpath>//a/@href</xpath>
+</gutenberg-block>

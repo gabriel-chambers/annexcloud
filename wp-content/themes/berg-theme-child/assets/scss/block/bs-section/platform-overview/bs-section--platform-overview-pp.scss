@@ -1,0 +1,20 @@
+.bs-section--platform-overview-pp {
+	&.bs-section--hear-from-our-team.r-tesslr-l1--anxcld1 {
+		padding-top: 60px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.bs-section--platform-overview-pp {
+		&.bs-section--platform-overview-trusted-global { // stylelint-disable-next-line
+			padding-bottom: 110px !important;
+		}
+		&.bs-section--common-post-blocks.r-spstbk-l1--anxcld1 {
+			padding: 122px 0 124px;
+			.bs-row:first-child .bs-column .bs-pro-button {
+				margin-top: -58px;
+			}
+			padding-bottom: 124px;
+		}
+	}
+}

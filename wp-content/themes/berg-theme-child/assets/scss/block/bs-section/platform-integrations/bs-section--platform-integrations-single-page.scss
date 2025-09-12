@@ -1,0 +1,234 @@
+.integration-template-default {
+	.bs-section--platform-integrations-single-page {
+		position: relative;
+		overflow: hidden;
+		padding: 40px 25px 123px;
+		margin: auto;
+		background: color("space-blue");
+		&::after {
+			@include after-before;
+			bottom: 0;
+			left: 0;
+			width: 69px;
+			height: 25px;
+			background: url($marketplace-popup) center/contain no-repeat;
+		}
+		.wp-block-post-terms {
+			@include taxonomy-btn;
+			&__separator {
+				display: none;
+			}
+			a {
+				font-size: 14px;//12->14
+			}
+			margin: 0 0 19px;
+			gap: 10px;
+		}
+		.bs-column {
+			margin-bottom: 22px;
+			h2 {
+				@include title-three;
+			}
+			h3 {
+				@include title-five;
+			}
+			:is(h2, h3, h4, h5, h6) {
+				margin-bottom: 21px;
+				font-weight: $font-weight-bold;
+				letter-spacing: 0;
+			}
+			p {
+				grid-column-start: 1;
+				& + {
+					:is(h2, h3, h4, h5, h6, .bs-pro-button) {
+						margin-top: 24px;
+					}
+				}
+			}
+			:is(h2, h3, h4, h5, h6, p, li) {
+				color: color("white");
+			}
+			p,
+			li {
+				font-size: 14px;//12->14
+				line-height: 22px;
+			}
+			ul,
+			ol {
+				@include list-items-common;
+				padding-left: 0;
+				margin-bottom: 38px;
+				li {
+					margin-bottom: 20px;
+					font-weight: $font-weight-normal;
+				}
+			}
+			ul {
+				@include list-items-ul-purple;
+				li {
+					&::before {
+						left: 0;
+					}
+				}
+			}
+			.bs-row--marketplace-gradient {
+				height: 100%;
+			}
+			&.bs-column--col-marketplace-gradient {
+				margin-bottom: 15px;
+				.bs-div {
+					height: 100%;
+					padding-left: 28px;
+					border-width: 2px;
+					border-left-style: solid;
+					border-image: $marketplace-gradient;
+					p {
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			.bs-pro-button {
+				&.bs-pro-button--primary {
+					.bs-pro-button__container {
+						padding: 16px 48px;
+					}
+				}
+			}
+			.bs-slider {
+				margin-right: -40px;
+				.slick-list {
+					padding-right: 19.5%;
+				}
+				.slick-arrow {
+					top: auto;
+					bottom: -136px;
+					left: auto;
+					&.slick-next {
+						right: 40px;
+					}
+					&.slick-prev {
+						right: 125px;
+					}
+				}
+				.slick-track {
+					display: flex;
+					flex-direction: row;
+				}
+				.slick-slide {
+					/* stylelint-disable */
+					display: flex !important;
+					/* stylelint-enable */
+					overflow: hidden;
+					height: auto;
+					max-height: 360px;
+					align-items: flex-start;
+					justify-content: flex-start;
+					padding: 0 25px 0 0;
+					cursor: pointer;
+					transform: scale(0.84);
+					transform-origin: left;
+					transition: 0.8s all ease-in-out;
+					&.slick-active {
+						transform: scale(1);
+						transition: 0.9s all ease-in-out;
+					}
+					> div,
+					.slick-slide-wrapper,
+					.media-elements,
+					.bs-common-image,
+					figure,
+					picture,
+					img {
+						width: 100%;
+						height: 300px;
+						border-radius: 5px;
+						object-fit: cover;
+						object-position: top;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.integration-template-default {
+		.bs-section--platform-integrations-single-page {
+			max-width: 540px;
+			border-radius: 5px;
+			margin: 0 auto 60px;
+			&::after {
+				width: 252px;
+				height: 89px;
+			}
+			.bs-column {
+				p,
+				li {
+					font-size: 16px;
+					line-height: 26px;
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(md) {
+	.integration-template-default {
+		.bs-section--platform-integrations-single-page {
+			max-width: 720px;
+			.wp-block-post-terms {
+				width: calc(100% - 130px);
+				margin: 22px 0 19px;
+				gap: 20px;
+				a {
+					font-size: $font-size-base;
+				}
+			}
+			.bs-column {
+				.bs-slider {
+					.slick-slide {
+						padding: 0 40px 0 0;
+						> div,
+						.slick-slide-wrapper,
+						.media-elements,
+						.bs-common-image,
+						figure,
+						picture,
+						img {
+							height: 360px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.integration-template-default {
+		.bs-section--platform-integrations-single-page {
+			max-width: 960px;
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.integration-template-default {
+		.bs-section--platform-integrations-single-page {
+			max-width: 1200px;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	.integration-template-default {
+		.bs-section--platform-integrations-single-page {
+			.container {
+				.bs-row {
+					display: block;
+					.bs-column {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

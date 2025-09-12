@@ -1,0 +1,18 @@
+@import "./../../realm/berg-blocks/bs-card/r-crdstk-l4-anxcld1.scss";
+.bs-card--r-crdstk-l4-anxcld1 {
+	$card: ".bs-card";
+	&.bs-card {
+		#{$card}__image {
+			figure {
+				margin-bottom: 41px;
+			}
+		}
+		#{$card}__title {
+			> * {
+				font-size: 26px;
+				letter-spacing: 0;
+				line-height: 31px;
+			}
+		}
+	}
+}

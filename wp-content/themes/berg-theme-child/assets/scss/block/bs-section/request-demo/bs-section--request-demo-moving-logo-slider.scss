@@ -1,0 +1,64 @@
+.bs-section--request-demo-moving-logo-slider {
+	&::before,
+	&::after {
+		display: none;
+	}
+	&.bs-section--common-moving-logo-slider {
+		:is(h2, h3, h4, h5) {
+			letter-spacing: 0.245em;
+		}
+		.clients-wrap {
+			ul {
+				> li {
+					div {
+						width: 140px;
+						height: 90px;
+						background: color("cultured");
+						img {
+							width: 100px;
+							max-width: fit-content;
+							height: 40px;
+							max-height: fit-content;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--request-demo-moving-logo-slider {
+		&.bs-section--common-moving-logo-slider {
+			.clients-wrap {
+				> ul {
+					gap: 28px;
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--request-demo-moving-logo-slider {
+		&.bs-section--common-moving-logo-slider {
+			padding: 111px 0 120px;
+			:is(h2, h3, h4, h5) {
+				margin-bottom: 39px;
+			}
+			.clients-wrap {
+				> ul {
+					gap: 28px;
+					> li {
+						div {
+							width: 170px;
+							height: 100px;
+							img {
+								width: 130px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

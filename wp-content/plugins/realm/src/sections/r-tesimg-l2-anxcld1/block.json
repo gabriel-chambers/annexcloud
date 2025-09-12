@@ -1,0 +1,24 @@
+{
+    "title": "Testimonial Image Layout 2 ANXCLD 1",
+    "description": "Testimonial Image Layout 2 ANXCLD 1",
+    "category": "widgets",
+    "supports": {
+        "html": false,
+        "inserter": false
+    },
+    "attributes": {
+        "modulePrefix": {
+            "type": "string",
+            "default": "r-tesimg-l2"
+        },
+        "realmClassNames": {
+            "type": "array",
+            "default": [
+                {
+                    "value": "r-tesimg-l2--anxcld1",
+                    "label": "Anxcld1"
+                }
+            ]
+        }
+    }
+}

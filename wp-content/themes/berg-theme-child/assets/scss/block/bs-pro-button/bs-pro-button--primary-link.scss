@@ -1,0 +1,6 @@
+.bs-pro-button {
+	&.bs-pro-button--primary-link {
+		@include button-common;
+		@include primary-link;
+	}
+}

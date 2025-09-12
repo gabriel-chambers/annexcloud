@@ -1,0 +1,109 @@
+@import "./../../realm/berg-blocks/bs-single-post/r-featured-spstbk-l1-anxcld1.scss";
+.bs-single-post--featured-r-spstbk-l1-anxcld1 {
+	.bs-post {
+		&__read-more,
+		&__learn-more {
+			@include primary-link;
+			span {
+				&,
+				&.btn {
+					font-size: 14px;//14->16 //revert
+					&::after {
+						margin-left: 32px;
+					}
+				}
+			}
+		}
+		&__title {
+			* {
+				color: color("black");
+				font-size: 22px;
+				font-weight: $font-weight-normal;
+				letter-spacing: 0;
+				line-height: 35px;
+			}
+		}
+		&__category {
+			* {
+				// stylelint-disable-next-line declaration-no-important
+				font-size: 14px !important;//14->16 //revert
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-single-post--featured-r-spstbk-l1-anxcld1 {
+		max-height: 320px;
+		margin-bottom: 0;
+		.bs-post {
+			&__read-more,
+			&__learn-more {
+				bottom: 50px;
+			}
+			&__post-type-name {
+				margin-top: 0;
+				margin-bottom: 13px;
+				span {
+					line-height: 1;
+				}
+			}
+			&__details {
+				padding: 40px 40px 80px;
+			}
+			&__title {
+				* {
+					font-weight: $font-weight-normal;
+					letter-spacing: 0;
+				}
+			}
+			&__category {
+				* {
+					// stylelint-disable-next-line declaration-no-important
+					font-size: 14px !important;//add 14
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-single-post--featured-r-spstbk-l1-anxcld1 {
+		max-height: 320px;
+		margin-bottom: 0;
+		.bs-post {
+			&__title {
+				* {
+					@include title-four;
+					letter-spacing: 0;
+					line-height: 31px;
+				}
+			}
+			&__read-more,
+			&__learn-more {
+				@include primary-link;
+				span {
+					&,
+					&.btn {
+						font-size: 16px;
+						&::after {
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+			&__details {
+				padding: 46px 60px;
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-single-post--featured-r-spstbk-l1-anxcld1 {
+		.bs-post {
+			&__image {
+				width: 100%;
+				max-width: 570px;
+			}
+		}
+	}
+}

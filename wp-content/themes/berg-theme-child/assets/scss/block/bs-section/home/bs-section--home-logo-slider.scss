@@ -1,0 +1,9 @@
+.bs-section--home-logo-slider {
+	padding: 60px 0 0;
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--home-logo-slider {
+		padding: 80px 0;
+	}
+}

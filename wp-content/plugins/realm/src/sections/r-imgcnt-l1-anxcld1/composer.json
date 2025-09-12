@@ -1,0 +1,42 @@
+{
+    "name": "e25/r-imgcnt-l1-anxcld1",
+    "type": "e25-realm-section",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "extra": {
+        "theme_files": [
+            {
+                "src": "scss/r-imgcnt-l1--anxcld1.scss",
+                "dest": "assets/scss/realm/r-imgcnt/r-imgcnt-l1--anxcld1.scss",
+                "overrideFilePath": "assets/scss/realm-custom/r-imgcnt/r-imgcnt-l1--anxcld1.scss"
+            },
+            {
+                "src": "scss/bs-card--r-imgcnt-l1-anxcld1.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-card/r-imgcnt-l1-anxcld1.scss",
+                "overrideFilePath": "assets/scss/block/bs-card/bs-card--r-imgcnt-l1-anxcld1.scss"
+            },
+            {
+                "src": "scss/bs-div--r-imgcnt-l1-anxcld1-content-wrapper.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-div/r-imgcnt-l1-anxcld1-content-wrapper.scss",
+                "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-imgcnt-l1-anxcld1-content-wrapper.scss"
+            },
+            {
+                "src": "scss/bs-div--r-imgcnt-l1-anxcld1-media-wrapper.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-div/r-imgcnt-l1-anxcld1-media-wrapper.scss",
+                "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-imgcnt-l1-anxcld1-media-wrapper.scss"
+            },
+            {
+                "src": "scss/bs-div--r-imgcnt-l1-anxcld1-cards-wrapper.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-div/r-imgcnt-l1-anxcld1-cards-wrapper.scss",
+                "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-imgcnt-l1-anxcld1-cards-wrapper.scss"
+            },
+            {
+                "src": "scss/bs-row--r-imgcnt-l1-anxcld1-media-content-wrapper.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-row/r-imgcnt-l1-anxcld1-media-content-wrapper.scss",
+                "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-imgcnt-l1-anxcld1-media-content-wrapper.scss"
+            }
+        ]
+    }
+}

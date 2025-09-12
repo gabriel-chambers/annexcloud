@@ -1,0 +1,108 @@
+.bs-section--careers-why-join-annexcloud {
+	overflow: hidden;
+	padding: 20px 15px 30px;
+	.bs-row--why-join {
+		margin-bottom: 30px;
+		.bs-column {
+			h2 {
+				@include title-four;
+				color: color("space-blue");
+				font-weight: $font-weight-bold;
+				br {
+					display: none;
+				}
+			}
+			p {
+				font-size: 16px;//14->16
+				font-weight: $font-weight-normal;
+				letter-spacing: 0;
+				line-height: 25px;
+			}
+		}
+	}
+	.bs-row--image-text {
+		.bs-column {
+			margin-bottom: 25px;
+			.bs-div--image-text-wrapper {
+				height: 100%;
+				border-radius: 5px;
+				.bs-div__inner {
+					padding: 0 30px;
+					.media-elements {
+						margin: 0 -30px 30px;
+						/* stylelint-disable max-nesting-depth */
+						* {
+							width: 100%;
+							height: 100%;
+						}
+						picture {
+							height: 179px;
+						}
+						img {
+							border-radius: 5px 5px 0 0;
+							object-fit: cover;
+						}
+						/* stylelint-enable max-nesting-depth */
+					}
+					.video-wrapper {
+						/* stylelint-disable max-nesting-depth */
+						video {
+							border-radius: 5px 5px 0 0;
+						}
+						/* stylelint-enable max-nesting-depth */
+					}
+					h3 {
+						margin-bottom: 20px;
+						color: color("space-blue");
+						font-size: 22px;
+						letter-spacing: 0.1px;
+					}
+					p {
+						margin-bottom: 30px;
+						font-size: 16px;//14->16
+						line-height: 22px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--careers-why-join-annexcloud {
+		padding: 20px 30px 30px;
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--careers-why-join-annexcloud {
+		padding: 50px 0 60px;
+		.bs-row--why-join {
+			margin-bottom: 64px;
+			.bs-column {
+				h2 {
+					@include title-two;
+					font-weight: $font-weight-bold;
+					letter-spacing: 0;
+					br {
+						display: block;
+					}
+				}
+				p {
+					font-size: 22px;
+					line-height: 35px;
+				}
+			}
+		}
+		.bs-row--image-text {
+			.bs-column {
+				.bs-div--image-text-wrapper {
+					.bs-div__inner {
+						p {
+							font-size: 14px;//add 14
+						}
+					}
+				}
+			}
+		}
+	}
+}

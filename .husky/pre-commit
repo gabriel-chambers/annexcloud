@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm exec --prefix wp-content/themes/berg-theme-child/assets cross-env FORCE_COLOR=1 lint-staged -q --shell /bin/bash

@@ -1,0 +1,51 @@
+.bs-section--customer-success-adding-partners {
+	overflow: hidden;
+	&::before {
+		@include after-before;
+		height: 170px;
+		background: color("space-blue");
+		inset: auto 0 0;
+	}
+	h2 {
+		margin: 0 0 20px;
+		color: color("space-blue");
+		font-weight: $font-weight-bold;
+		letter-spacing: normal;
+	}
+	p {
+		max-width: 706px;
+		margin: 0 auto 15px;
+		font-weight: $font-weight-normal;
+		line-height: 1.6;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.bs-section--customer-success-adding-partners {
+		&::before {
+			height: 275px;
+		}
+	}
+}
+@include media-breakpoint-up(sm) {
+	.bs-section--customer-success-adding-partners {
+		&::before {
+			height: 350px;
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--customer-success-adding-partners {
+		&::before {
+			height: 300px;
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--customer-success-adding-partners {
+		padding: 120px 0;
+		&::before {
+			height: 480px;
+		}
+	}
+}

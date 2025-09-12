@@ -1,0 +1,35 @@
+$r-cntcol-l1-anxcld1: (
+	padding: 60px 15px,
+	padding-lg: 122px 0 94px,
+	h2-margin: 0 0 39px ,
+	h2-margin-lg: 0 0 79px ,
+);
+
+@import "./../../realm/r-cntcol/r-cntcol-l1--anxcld1.scss";
+.r-cntcol-l1--anxcld1 {
+	.row {
+		&:nth-child(1) {
+			h2 {
+				color: color("space-blue");
+				font-size: 25px;
+				font-weight: $font-weight-bold;
+				letter-spacing: normal;
+				line-height: 1.3;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.r-cntcol-l1--anxcld1 {
+		.row {
+			&:nth-child(1) {
+				h2 {
+					font-size: 48px;
+					line-height: 1.2;
+				}
+			}
+		}
+	}
+}
+

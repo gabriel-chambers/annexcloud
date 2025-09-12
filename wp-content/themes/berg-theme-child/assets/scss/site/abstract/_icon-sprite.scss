@@ -1,0 +1,444 @@
+/* stylelint-disable block-no-empty */
+
+/* icon sprit common */
+@mixin icon-sprite {
+	background-image: url($icon-sprite);
+	background-repeat: no-repeat;
+	background-size: 250px 250px;
+}
+
+/* separate mixins */
+@mixin link-arrow-white {
+	@include icon-sprite;
+	width: 18px;
+	height: 10px;
+	background-position: -137px -14px;
+}
+@mixin link-arrow-purple {
+	@include icon-sprite;
+	width: 18px;
+	height: 10px;
+	// background-position: -159px -14px;
+	background-position: -114px -14px;
+}
+@mixin link-arrow-dark-purple {
+	@include icon-sprite;
+	width: 18px;
+	height: 10px;
+	background-position: -159px -14px;
+}
+@mixin link-arrow-one-lg {
+	@include icon-sprite;
+	width: 12px;
+	height: 12px;
+	background-position: -47px -5px;
+}
+@mixin link-arrow-two-lg {
+	@include icon-sprite;
+	width: 12px;
+	height: 12px;
+	background-position: -64px -5px;
+	background-position: -275px -21px;
+}
+@mixin link-arrow-three-lg {
+	@include icon-sprite;
+	width: 20px;
+	height: 16px;
+	background-position: -99px -5px;
+}
+@mixin link-arrow-three-sm {
+	@include icon-sprite;
+	width: 15px;
+	height: 12px;
+	background-position: -221px -5px;
+}
+@mixin link-arrow-four-lg {
+	@include icon-sprite;
+	width: 20px;
+	height: 16px;
+	background-position: -124px -5px;
+}
+@mixin link-arrow-four-sm {
+	@include icon-sprite;
+	width: 15px;
+	height: 12px;
+	background-position: -239px -5px;
+}
+@mixin link-arrow-five-lg {
+	@include icon-sprite;
+	width: 12px;
+	height: 12px;
+	background-position: -64px -5px;
+}
+@mixin slider-arrow-one-left {
+	@include icon-sprite;
+	width: 18px;
+	height: 10px;
+	background-position: -137px -14px;
+	transform: rotate(180deg);
+}
+@mixin slider-arrow-one-right {
+	@include icon-sprite;
+	width: 18px;
+	height: 10px;
+	background-position: -137px -14px;
+}
+@mixin list-item-icon-lg {
+	@include icon-sprite;
+	width: 13px;
+	height: 22px;
+	background-position: -5px -30px;
+}
+@mixin list-item-icon-sm {
+	@include icon-sprite;
+	width: 14px;
+	height: 14px;
+	background-position: -26px -30px;
+}
+@mixin accordion-arrow-up {
+	@include icon-sprite;
+	width: 12px;
+	height: 7px;
+	background-position: -30px -17px;
+}
+@mixin accordion-arrow-down {
+	@include icon-sprite;
+	width: 12px;
+	height: 7px;
+	background-position: -30px -5px;
+}
+@mixin accordion-arrow-down-white {
+	@include icon-sprite;
+	width: 14px;
+	height: 8px;
+	background-position: -179px -14px;
+}
+@mixin quote-icon-lg {
+	@include icon-sprite;
+	width: 40px;
+	height: 32px;
+	background-position: -5px -65px;
+}
+@mixin quote-icon-sm {
+	@include icon-sprite;
+	width: 25px;
+	height: 20px;
+	background-position: -50px -65px;
+}
+@mixin youtube-icon-one {
+	@include icon-sprite;
+	width: 25px;
+	height: 18px;
+	background-position: -243px -31px;
+}
+@mixin twitter-icon-one {
+	@include icon-sprite;
+	width: 20px;
+	height: 16px;
+	background-position: -167px -31px;
+}
+@mixin linkedin-icon-one {
+	@include icon-sprite;
+	width: 22px;
+	height: 20px;
+	background-position: -191px -31px;
+}
+@mixin facebook-icon-one {
+	@include icon-sprite;
+	width: 20px;
+	height: 20px;
+	background-position: -142px -31px;
+}
+@mixin close-icon {
+	@include icon-sprite;
+	width: 20px;
+	height: 20px;
+	background-position: -5px -5px;
+}
+@mixin arrow-head-icon {
+	@include icon-sprite;
+	width: 7px;
+	height: 10px;
+	background-position: -80px -4px;
+}
+@mixin arrow-head-icon-two {
+	@include icon-sprite;
+	width: 7px;
+	height: 10px;
+	background-position: -89px -4px;
+}
+@mixin arrow-head-icon-three {
+	@include icon-sprite;
+	width: 7px;
+	height: 10px;
+	background-position: -281px -37px;
+}
+@mixin search-icon {
+	@include icon-sprite;
+	width: 16px;
+	height: 16px;
+	background-position: -179px -5px;
+}
+@mixin plus-icon {
+	@include icon-sprite;
+	width: 15px;
+	height: 15px;
+	background-position: -80px -30px;
+}
+@mixin plus-icon-lg {
+	@include icon-sprite;
+	width: 30px;
+	height: 30px;
+	background-position: -45px -30px;
+}
+@mixin download-icon-one {
+	@include icon-sprite;
+	width: 18px;
+	height: 18px;
+	background-position: -99px -30px;
+}
+@mixin download-icon-two {
+	@include icon-sprite;
+	width: 18px;
+	height: 18px;
+	background-position: -120px -30px;
+}
+@mixin globe-icon {
+	@include icon-sprite;
+	width: 16px;
+	height: 16px;
+	background-position: -200px -5px;
+}
+@mixin diamond-icon {
+	@include icon-sprite;
+	width: 28px;
+	height: 28px;
+	background-position: -81px -75px;
+}
+@mixin diamond-icon-two {
+	@include icon-sprite;
+	width: 28px;
+	height: 28px;
+	background-position: -115px -76px;
+}
+@mixin play-icon {
+	@include icon-sprite;
+	width: 82px;
+	height: 82px;
+	background-position: -62px -168px;
+}
+@mixin pause-icon {
+	@include icon-sprite;
+	width: 100px;
+	height: 100px;
+	background-position: -110px -107px;
+}
+@mixin search-icon-white {
+	@include icon-sprite;
+	@include after-before;
+	top: 8px;
+	left: 0;
+	width: 36px;
+	height: 36px;
+	background-position: -6px -89px;
+}
+@mixin search-icon-1 {
+	@include icon-sprite;
+	@include after-before;
+	top: 16px;
+	right: 14px;
+	width: 20px;
+	height: 20px;
+	background-position: -28px -4px;
+}
+@mixin search-icon-2 {
+	@include icon-sprite;
+	width: 18px;
+	height: 18px;
+	margin-right: 26px;
+	background-position: -28px -6px;
+	cursor: pointer;
+}
+@mixin search-icon-3 {
+	@include icon-sprite;
+	width: 20px;
+	height: 20px;
+	background-position: -196px -6px;
+	cursor: pointer;
+}
+@mixin indicator-arrow {
+	@include icon-sprite;
+	@include after-before;
+	top: 12px;
+	left: 23px;
+	width: 18px;
+	height: 18px;
+	background-position: -9px -65px;
+}
+@mixin close-icon-white {
+	@include icon-sprite;
+	position: fixed;
+	top: 45px;
+	right: 45px;
+	width: 36px;
+	height: 36px;
+	background-position: -5px -133px;
+}
+@mixin speech-bubble {
+	@include icon-sprite;
+	width: 28px;
+	height: 24px;
+	background-position: -187px -101px;
+}
+@mixin check-mark {
+	@include after-before;
+	@include icon-sprite;
+	top: 1px;
+	width: 16px;
+	height: 16px;
+	background-position: -216px -9px;
+}
+@mixin close-purple {
+	@include after-before;
+	@include icon-sprite;
+	top: 50%;
+	right: 20px;
+	width: 12px;
+	height: 12px;
+	background-position: -220px -101px;
+	transform: translateY(-50%);
+}
+@mixin close-red {
+	@include after-before;
+	@include icon-sprite;
+	top: 50%;
+	left: 0;
+	width: 12px;
+	height: 12px;
+	background-position: -220px -119px;
+	transform: translateY(-50%);
+}
+@mixin loading {
+	@include icon-sprite;
+	width: 16px;
+	height: 16px;
+	background-position: -186px -129px;
+}
+@mixin pagination-arrow {
+	@include icon-sprite;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	width: 18px;
+	height: 11px;
+	background-position: -207px -139px;
+	transform: none;
+	visibility: visible;
+}
+@mixin toolbox {
+	@include icon-sprite;
+	@include after-before;
+	width: 17px;
+	height: 15px;
+	background-position: -185px -150px;
+}
+@mixin location {
+	@include icon-sprite;
+	@include after-before;
+	width: 15px;
+	height: 17px;
+	background-position: -186px -169px;
+}
+@mixin clock {
+	@include icon-sprite;
+	@include after-before;
+	width: 31px;
+	height: 31px;
+	background-position: -148px -169px;
+}
+@mixin email-icon {
+	@include icon-sprite;
+	@include after-before;
+	width: 18px;
+	height: 18px;
+	background-position: -228px -227px;
+}
+@mixin email-icon-purple {
+	background-position: -202px -227px;
+}
+@mixin linkedin-icon {
+	@include icon-sprite;
+	@include after-before;
+	width: 18px;
+	height: 18px;
+	background-position: -179px -207px;
+}
+@mixin linkedin-icon-purple {
+	background-position: -157px -207px;
+}
+@mixin facebook-icon {
+	@include icon-sprite;
+	@include after-before;
+	width: 18px;
+	height: 18px;
+	background-position: -177px -228px;
+}
+@mixin facebook-icon-purple {
+	background-position: -155px -228px;
+}
+@mixin twitter-icon {
+	@include icon-sprite;
+	@include after-before;
+	width: 18px;
+	height: 18px;
+	background-position: -229px -207px;
+}
+@mixin twitter-icon-purple {
+	background-position: -203px -207px;
+}
+@mixin icon-check {
+	@include icon-sprite;
+	@include after-before;
+	left: 0;
+	width: 32px;
+	height: 32px;
+	background-position: -6px -174px;
+}
+@mixin speech-bubble-light-gray {
+	@include icon-sprite;
+	width: 28px;
+	height: 24px;
+	background-position: -6px -211px;
+}
+@mixin search-right-arrow-purple {
+	@include icon-sprite;
+	width: 18px;
+	height: 11px;
+	background-position: -113px -13px;
+}
+@mixin search-right-arrow-purple-hover {
+	@include icon-sprite;
+	width: 19px;
+	height: 11px;
+	background-position: -157px -13px;
+}
+@mixin breadcrumb-arrow-dark-gray {
+	@include icon-sprite;
+	width: 6px;
+	height: 10px;
+	background-position: -233px -153px;
+}
+@mixin standard-blog-slider-arrow {
+	@include icon-sprite;
+	width: 18px;
+	height: 10px;
+	background-position: -232px -137px;
+}
+@mixin speech-bubble-dark-gray-small {
+	@include icon-sprite;
+	top: -4px;
+	width: 22px;
+	height: 25px;
+	background-position: -37px -217px;
+}

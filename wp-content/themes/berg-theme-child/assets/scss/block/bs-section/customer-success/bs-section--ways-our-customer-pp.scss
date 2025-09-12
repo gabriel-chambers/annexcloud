@@ -1,0 +1,64 @@
+.bs-section--ways-our-customer-pp {
+	.bs-slider--r-tesslr-l1-anxcld1 {
+		.bs-div--r-tesslr-l1-anxcld1-slide-wrapper {
+			.bs-div--r-slide-content-wrapper {
+				.wp-block-quote {
+					height: 100%;
+				}
+			}
+		}
+		.slick-arrow {
+			top: -80px;
+		}
+	}
+	&.bs-section--common-ready-to-get-started {
+		margin-bottom: -26px;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.bs-section--ways-our-customer-pp {
+		&.bs-section--common-ready-to-get-started {
+			margin-bottom: -88px;
+		}
+	}
+}
+@include media-breakpoint-up(md) {
+	.bs-section--ways-our-customer-pp {
+		.bs-slider--r-tesslr-l1-anxcld1 {
+			.slick-arrow {
+				top: -100px;
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--ways-our-customer-pp {
+		.bs-slider--r-tesslr-l1-anxcld1 {
+			padding-top: 11px;
+			.bs-div--r-tesslr-l1-anxcld1-slide-wrapper {
+				.bs-div--r-slide-content-wrapper {
+					.wp-block-quote {
+						height: 96%;
+					}
+				}
+			}
+		}
+		&.r-tesslr-l1--anxcld1.bs-section--hear-from-our-team {
+			padding-bottom: 101px;
+		}
+		&.bs-section--common-ready-to-get-started {
+			margin-bottom: -269px;
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--ways-our-customer-pp {
+		.bs-slider--r-tesslr-l1-anxcld1 {
+			.slick-arrow {
+				top: -164px;
+			}
+		}
+	}
+}
+

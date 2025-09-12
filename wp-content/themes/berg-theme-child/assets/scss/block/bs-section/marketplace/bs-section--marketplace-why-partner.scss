@@ -1,0 +1,54 @@
+.bs-section--marketplace-why-partner {
+	padding-right: 15px;
+	padding-left: 15px;
+	h2 {
+		@include title-two;
+		margin-bottom: 40px;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+	}
+	> .container {
+		position: relative;
+		&::before {
+			@include after-before;
+			bottom: -240px;
+			left: -502px;
+			width: 745px;
+			height: 746px;
+			background: url($thank-404-right-pattern) center/contain no-repeat;
+		}
+	}
+	.bs-column {
+		&:last-child {
+			display: grid;
+			row-gap: 30px;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--marketplace-why-partner {
+		.bs-column {
+			&:last-child {
+				gap: 30px;
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--marketplace-why-partner {
+		padding: 120px 0;
+	}
+}
+
+@media screen and (width >= 1600px) {
+	.bs-section--marketplace-why-partner {
+		> .container {
+			&::before {
+				bottom: -160px;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,27 @@
+/* stylelint-disable declaration-no-important */
+.bs-slider--r-tesslr-l1 {
+	.slick-slider {
+		.slick-track {
+			display: flex;
+			flex-direction: row;
+		}
+		.slick-slide {
+			height: auto;
+			> div,
+			:is([class$="-slide-wrapper"]) {
+				height: inherit;
+			}
+		}
+		.slick-slide-wrapper {
+			display: block !important; // slick inline style override for remove unwanted gap
+			height: 100%;
+		}
+	}
+	div[data-slick]:not(.slick-initialized) {
+		display: flex;
+		overflow: hidden;
+		.slick-slide-wrapper {
+			flex: 1 0 100%;
+		}
+	}
+}

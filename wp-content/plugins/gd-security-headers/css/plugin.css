@@ -1,0 +1,94 @@
+/* Grids */
+.gdsih-grid-csp .column-id,
+.gdsih-grid-xxp .column-id {
+    width: 72px;
+}
+
+.gdsih-grid-csp .column-violated_directive,
+.gdsih-grid-csp .column-effective_directive,
+.gdsih-grid-csp .column-ip,
+.gdsih-grid-xxp .column-ip {
+    width: 150px;
+}
+
+.gdsih-grid-csp .column-reported,
+.gdsih-grid-xxp .column-reported {
+    width: 112px;
+}
+
+.gdsih-grid-csp .column-data,
+.gdsih-grid-xxp .column-data {
+    width: 12%;
+}
+
+.d4p-group-inner .form-table.gdsih-grid-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.d4p-group-inner .form-table.gdsih-grid-table th,
+.d4p-group-inner .form-table.gdsih-grid-table td {
+    padding: 7px;
+    line-height: 20px;
+}
+
+.d4p-group-inner .form-table.gdsih-grid-table tr:last-child {
+    border-bottom: none;
+}
+
+.d4p-group-inner .form-table.gdsih-grid-table tr:last-child th,
+.d4p-group-inner .form-table.gdsih-grid-table tr:last-child td {
+    padding: 7px;
+}
+
+.d4p-group-dashboard-card .d4p-group-stats ul.gdsih-headers-overview li {
+    width: 100%;
+    padding: 2px 0;
+}
+
+.d4p-group-dashboard-card .d4p-group-stats ul.gdsih-headers-overview li:first-child {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+}
+
+.d4p-group-dashboard-card .d4p-group-stats ul.gdsih-headers-overview li span {
+    float: right;
+    border-radius: 2px;
+    margin-left: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0px 6px 2px;
+    line-height: 1.5;
+}
+
+.gdsih-security-reports li > strong {
+    display: inline-block;
+    width: calc(100% - 70px);
+    word-break: break-all;
+}
+
+.gdsih-security-reports li > a {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    width: 70px;
+}
+
+.gdsih-list-rec {
+    list-style: disc outside;
+    margin-left: 20px;
+}
+
+.gdsih-code-block {
+    margin: 20px 0 0;
+    border: 1px dashed #888;
+    font-family: monospace;
+    font-weight: normal;
+    overflow: auto;
+}
+
+.gdsih-code-block pre {
+    margin: 10px;
+    padding: 0;
+}

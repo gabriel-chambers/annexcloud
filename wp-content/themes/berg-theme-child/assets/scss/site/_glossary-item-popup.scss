@@ -1,0 +1,41 @@
+div.glossaryItemBody { /* stylelint-disable-line */
+	//class name from Tooltippro plugin
+	section.bs-section {
+		padding: 0;
+		margin: 0;
+		&.bs-section--common-ready-to-get-started,
+		&.bs-section--common-blog-banner {
+			display: none;
+		}
+		.bs-column {
+			padding: 0;
+			margin: 0;
+		}
+		.container {
+			padding: 0;
+			margin: 0;
+		}
+		.bs-row {
+			margin: 0;
+			.bs-column {
+				max-width: 100%;
+				flex: 100%;
+				padding: 0;
+				margin: 0;
+				font-size: 100%;
+				line-height: 1.3;
+			}
+			strong {
+				display: inline-block;
+				margin: 10px 0 0;
+			}
+			ul li,
+			ol li,
+			p {
+				margin-bottom: 0;
+				font-size: 100%;
+				line-height: 1.3;
+			}
+		}
+	}
+}

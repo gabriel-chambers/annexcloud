@@ -1,0 +1,45 @@
+.bs-section--platform-overview-annexcloud {
+	padding: 60px 15px;
+	h2 {
+		margin-bottom: 40px;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+		line-height: 32px;
+	}
+	.media-elements {
+		.play-button,
+		.pause-button {
+			z-index: 10;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--platform-overview-annexcloud {
+		text-align: center;
+		h2 {
+			font-size: 25px;
+		}
+		.media-elements {
+			.bs-common-image {
+				figure {
+					// stylelint-disable-next-line declaration-no-important
+					justify-content: center !important; // to override default important
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--platform-overview-annexcloud {
+		padding: 120px 15px;
+		background: $platform-integration-post-list-bg;
+		h2 {
+			font-size: 48px;
+			line-height: 58px;
+		}
+		.media-elements {
+			margin-top: 80px;
+		}
+	}
+}

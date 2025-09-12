@@ -1,0 +1,14 @@
+.bs-section--about-leadership {
+	padding: 60px 15px;
+	h2 {
+		margin-bottom: 78px;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--about-leadership {
+		padding: 121px 0 39px;
+	}
+}

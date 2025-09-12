@@ -1,0 +1,187 @@
+$r-crdstk-l4-anxcld2:(
+	section-padding: 0 30px 60px,
+	section-padding-lg: 0 0 120px,
+	cards-wrapper-padding-lg: 0 0 0 43px
+);
+
+$r-crdstk-l4-anxcld2-counter-wrapper:(
+	padding: 30px 0 0,
+	padding-lg: 83px 0 0 61px,
+	color: color("white"),
+	counter-font-size:32px,
+	counter-font-color: color("red"),
+	counter-font-size-lg: 32px
+);
+
+@import "./../../realm/r-crdstk/r-crdstk-l4--anxcld2.scss";
+.r-crdstk-l4--anxcld2 {
+	> .container {
+		position: relative;
+		overflow: hidden;
+		&::before,
+		&::after {
+			@include after-before;
+		}
+		&::before {
+			z-index: 1;
+			top: -21px;
+			left: -167px;
+			width: 331px;
+			height: 303px;
+			background: url($usecase-counter-pattern-one) center/contain no-repeat;
+		}
+		&::after {
+			right: 14px;
+			bottom: -1px;
+			display: none;
+			width: 70px;
+			height: 91px;
+			background: url($usecase-counter-pattern-two) center/contain no-repeat;
+		}
+		> .bs-row {
+			padding-right: 30px;
+			padding-left: 30px;
+			&::before {
+				@include after-before;
+				top: 0;
+				right: 15px;
+				left: 15px;
+				height: 100%;
+				background-color: color("space-blue");
+			}
+			> .bs-column {
+				&:last-child {
+					.bs-row {
+						.bs-column {// stylelint-disable-next-line max-nesting-depth
+							&:not(:last-child) {// stylelint-disable-next-line max-nesting-depth
+								> .bs-div {
+									border-bottom: 1px solid rgba(color("white"), 0.3);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.bs-div--r-crdstk-l4-anxcld2-counter-wrapper {// stylelint-disable-next-line selector-class-pattern
+		.bs-counter.bs-counter---default {
+			.bs-counter {
+				&__wrapper {
+					margin-bottom: 22px;
+				}
+				&__count {
+					span {
+						color: map-get($r-crdstk-l4-anxcld2-counter-wrapper, counter-font-color);
+						font-size: map-get($r-crdstk-l4-anxcld2-counter-wrapper, counter-font-size);
+						font-weight: $font-weight-bold;
+					}
+				}
+				&__summary {
+					@include line-clamp($numberOfLines: 2);
+					* {
+						@include title-six;
+						color: color("white");
+						letter-spacing: 0.1em;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+	.bs-row--r-crdstk-l4-anxcld2-cards-wrapper {
+		position: relative;
+		z-index: 1;
+		p {
+			@include body-normal;
+			line-height: 29px;
+		}
+		.bs-div--r-crdstk-l4-anxcld2-card-wrapper {
+			.bs-card--r-crdstk-l4-anxcld2.bs-card {
+				.bs-card {
+					&__image {
+						figure {
+							margin-bottom: 21px;
+						}
+					}
+					&__description {
+						* {
+							font-weight: $font-weight-normal;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.r-crdstk-l4--anxcld2 {
+		> .container {
+			> .bs-row {
+				> .bs-column {
+					&:last-child {
+						.bs-row {
+							.bs-column {// stylelint-disable-next-line max-nesting-depth
+								&:not(:last-child) {// stylelint-disable-next-line max-nesting-depth
+									&::after {
+										@include after-before;
+										top: 50%;
+										right: 4px;
+										width: 1px;
+										height: calc(100% - 60px);
+										background: rgba(color("white"), 0.3);
+										transform: translateY(-50%);
+									}// stylelint-disable-next-line max-nesting-depth
+									> .bs-div {
+										border: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.r-crdstk-l4--anxcld2 {
+		> .container {
+			&::after {
+				display: block;
+			}
+			> .bs-row {
+				padding-right: 0;
+				padding-left: 0;
+				> .bs-column {
+					&:last-child {
+						.bs-row {
+							.bs-column {// stylelint-disable-next-line max-nesting-depth
+								&:not(:last-child) {// stylelint-disable-next-line max-nesting-depth
+									&::after {
+										@include after-before;
+										height: calc(100% - 120px);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.bs-div--r-crdstk-l4-anxcld2-counter-wrapper {
+			margin-bottom: 23px;
+		}
+		.bs-row--r-crdstk-l4-anxcld2-cards-wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 262px);// stylelint-disable-next-line no-descending-specificity
+			.bs-column {
+				max-width: 100%;
+			}
+			.bs-div--r-crdstk-l4-anxcld2-card-wrapper {
+				padding-bottom: 60px;
+			}
+		}
+	}
+}

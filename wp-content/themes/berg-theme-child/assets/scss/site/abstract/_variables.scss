@@ -1,0 +1,172 @@
+/* Base Colors */
+$primary-color: theme-color("primary");
+$secondary-color: theme-color("secondary");
+
+/* Button Color */
+$primary-btn-color: color("white");
+$primary-btn-color-hover: color("white");
+$primary-btn-bg-color: color("purple");
+$primary-btn-bg-color-hover: color("dark-purple");
+
+$secondary-btn-color: color("dark-blue");
+$secondary-btn-color-hover: color("white");
+$secondary-btn-bg-color: transparent;
+$secondary-btn-bg-color-hover: color("purple");
+
+$tertiary-btn-color: color("white");
+$tertiary-btn-color-hover: color("purple");
+$tertiary-btn-bg-color: transparent;
+$tertiary-btn-bg-color-hover: color("white");
+
+/* Link Color */
+$primary-link-color: color("purple");
+$primary-link-color-hover: color("dark-purple");
+$primary-link-bg-color: transparent;
+$primary-link-bg-color-hover: transparent;
+
+$secondary-link-color: color("dark-grey");
+$secondary-link-color-hover: color("purple");
+$secondary-link-bg-color: transparent;
+$secondary-link-bg-color-hover: transparent;
+
+$tertiary-link-color: color("white");
+$tertiary-link-color-hover: color("white");
+$tertiary-link-bg-color: transparent;
+$tertiary-link-bg-color-hover: transparent;
+
+
+/* ALTERNATE FONTS */
+$alternative-font-one: "DM Sans", serif;
+
+// Boxshadows
+$boxshadow-one:rgba(35, 34, 36, 0.18);
+$boxshadow-two: 0 -10px 49px rgba(23, 8, 47, 0.12);
+$boxshadow-three: 0 5px 20px rgba(100, 111, 121, 0.2);
+$boxshadow-four-transparent: 0 0 0 rgba(23, 8, 47, 0.1);
+$boxshadow-four: 0 17px 50px rgba(23, 8, 47, 0.1);
+$boxshadow-five: 0 4px 44px #080a21;
+$boxshadow-five-transparent: 0 0 0 #080a21;
+
+// Gradients
+$gradient-one: linear-gradient(13.5deg, color("red") -0.09%, color("dark-red") 49.46%, color("darker-red") 100.04%);
+$gradient-two: linear-gradient(14.09deg, color("darker-red-1") 38.65%, color("red") 85.96%, color("dark-red") 125.17%);
+$gradient-three: linear-gradient(356.63deg, color("lighter-red-1") 3.05%, color("darker-red") 94.45%);
+$ready-to-get-gradient: linear-gradient(86.14deg, color("darker-red-1") 33.02%, color("red") 71.83%, color("dark-red") 100.97%, color("darker-red") 118.69%);
+$ready-to-get-gradient-mobile: linear-gradient(49.51deg, color("darker-red-1") 48.95%, color("red") 90.37%, color("dark-red") 121.47%, color("darker-red") 140.38%);
+$testimonial-slash: linear-gradient(14.04deg, color("darker-red-1") 0%, color("red") 46.47%, color("dark-red") 84.08%, color("darker-red") 100%);
+$moving-logo-left-shade: linear-gradient(90deg, rgba(color("white"), 1) 0%, rgba(color("white"), 0) 100%);
+$moving-logo-right-shade: linear-gradient(90deg, rgba(color("white"), 0) 0%, rgba(color("white"), 1) 100%);
+$forrester-gradient-one: linear-gradient(241.59deg, color("purple") 15.3%, color("neon-blue") 102.66%);
+$forrester-gradient-two: linear-gradient(264.68deg, color("purple") 0%, color("neon-blue") 80.27%);
+$built-for-lifetime-gradient-one: linear-gradient(0deg, color("white") 13.13%, rgba(color("white"), 0) 96.34%);
+$built-for-lifetime-gradient-two: linear-gradient(180deg, rgba(color("red"), 0) -0.23%, color("red") 10.54%, color("dark-red") 22.35%, color("darker-red") 41.4%, rgba(color("darker-red"), 0) 100.23%);
+$ultimate-guide-bg: linear-gradient(280.14deg, color("light-grey") 0%, rgba(color("medium-grey"), 0) 86.8%);
+$ultimate-guide-bg-mobile: linear-gradient(11.44deg, color("light-grey") 0.76%, rgba(color("medium-grey"), 0) 77.75%);
+$post-no-image-bg: linear-gradient(211.36deg, color("darker-blue") 0%, color("darker-blue-1") 101.32%);
+$about-our-mission-gradient: linear-gradient(264.68deg, color("purple") 0%, color("neon-blue") 80.27%);
+$common-featured-type-one-gradient: linear-gradient(180deg, color("cultured") 0%, rgba(245, 246, 247, 0) 100%);
+$common-featured-type-one-gradient-larger: linear-gradient(180deg, color("cultured") 0%, rgba(245, 246, 247, 0) 75%);
+$headquarters-gradient: linear-gradient(81.85deg, color("darker-red-1") 41.11%, color("red") 76.5%, color("dark-red") 103.08%, color("darker-red") 119.24%);
+$gradient-accordion-border: linear-gradient(89.92deg, #e91768 0.13%, #ef545a 49.66%, #f58e62 100.23%);
+$blog-banner-mobile-gradient: linear-gradient(180deg, color("cultured") 70%, color("white") 0);
+$blog-banner-desktop-gradient: linear-gradient(180deg, color("cultured") 616px, color("white") 0);
+$thank-you-gradient: linear-gradient(180deg, color("cultured") 0%, rgba(color("cultured"), 0) 100%);
+$header-overlay-bg: rgba(color("dark-blue"), 0.85);
+$tag-page-gradient: linear-gradient(180deg, color("cultured") 0%, color("white") 100%);
+$become-a-partner-gradient-one: linear-gradient(-90deg, color("space-blue") 0%, rgba(color("space-blue"), 0) 83.82%);
+$become-a-partner-gradient-two: linear-gradient(0deg, color("space-blue") 0%, rgba(color("space-blue"), 0) 83.82%);
+$use-case-list-gradient: linear-gradient(to top, color("red") 0%, color("dark-red") 50%, color("darker-red") 100%);
+$platform-integration-post-list-bg: linear-gradient(180deg, rgba(225, 232, 237, 0.33) 0%, rgba(225, 232, 237, 0) 4.18%);
+$marketplace-gradient: linear-gradient(to top, #e91768, #ef545a, #f58e62) 1 100%;
+$image-content-bottom-gradient: linear-gradient(0deg, rgba(225, 232, 237, 0.33) 0%, rgba(225, 232, 237, 0) 29.52%);
+$slider-accordion-slide-border-gradient: linear-gradient(90deg, color("red") 0%, color("dark-red") 50%, color("darker-red") 100%);
+$banner-text-seperator: linear-gradient(90.4deg, color("red") 0%, color("dark-red") 49.48%, color("darker-red") 100%);
+$blog-standard-expert-cta-bg: linear-gradient(264.68deg, #6610f2 0%, #310b9c 80.27%);
+$blog-standard-slider-two-shade: linear-gradient(270deg, rgba(color("white"), 0) 0%, color("white") 50%);
+
+$h1-mobile-font-size: 35px;
+$h2-mobile-font-size: 25px;
+$h3-mobile-font-size: 23px;
+$h4-mobile-font-size: 22px;
+$h5-mobile-font-size: 16px;//14->16
+$h6-mobile-font-size: 16px;//14->16
+$fourteen-font-size: 14px;
+$twentytwo-font-size: 22px;
+$eighteen-font-size: 18px;
+$thirtytwo-font-size: 32px;
+
+/* SET VARIABLES FOR FILES AND FOLDER PATHS */
+
+/* Image Path */
+$image-base-path: "../images/";
+$icon-sprite: "#{$image-base-path}icon-sprite.svg";
+$logo-part: "#{$image-base-path}logo-part.svg";
+$forrester-left-pattern: "#{$image-base-path}forrester-left-mobile.webp";
+$forrester-right-pattern: "#{$image-base-path}forrester-right-pattern.webp";
+$ready-to-get-logo: "#{$image-base-path}ready-to-start-logo.svg";
+$ready-to-get-logo-mobile: "#{$image-base-path}ready-to-start-logo-mobile.svg";
+$ready-to-get-pattern: "#{$image-base-path}ready-to-start-pattern.webp";
+$ready-to-get-pattern-mobile: "#{$image-base-path}ready-to-start-pattern-mobile.webp";
+$featured-post-no-image-pattern-bg: "#{$image-base-path}featured-post-no-image-pattern-bg.webp";
+$featured-post-no-image-pattern-bg-1: "#{$image-base-path}featured-post-no-image-pattern-bg-1.png";
+$home-banner-bottom-bg: "#{$image-base-path}banner-bottom-bg.webp";
+$home-banner-counter-bg: "#{$image-base-path}counter-left-bg.webp";
+$enterprise-test-bg-icon: "#{$image-base-path}enterprise-test-bg-icon.svg";
+$enterprise-test-bg-icon-mb: "#{$image-base-path}enterprise-test-bg-icon-mobile.svg";
+$ultimate-guide-pattern-mobile: "#{$image-base-path}ultimate-guide-pattern-mobile.svg";
+$ultimate-guide-pattern-desktop: "#{$image-base-path}ultimate-guide-pattern-desktop.svg";
+$banner-clippath: "#{$image-base-path}banner-clippath.webp";
+$benefits-img-clippath: "#{$image-base-path}benefits-img-clip-path.webp";
+$benefits-img-pattern: "#{$image-base-path}benefits-img-pattern.svg";
+$about-our-mission-right-bg: "#{$image-base-path}our-mission-bg-right.webp";
+$events-post-date-line-gradient-bg: "#{$image-base-path}events-shaded-seporator.svg";
+$events-featured-pattern: "#{$image-base-path}events-featured-pattern.svg";
+$interested-in-learning: "#{$image-base-path}interested-in-learning.webp";
+$headquarters-pattern: "#{$image-base-path}headquarters-pattern.webp";
+$search-icon-small: "#{$image-base-path}search-icon-small.svg";
+$close-clear-icon: "#{$image-base-path}close-clear.svg";
+$request-demo-logo: "#{$image-base-path}request-demo-logo.svg";
+$headquarters-pattern-logo: "#{$image-base-path}headquarters-pattern-logo.svg";
+$blog-inner-testimonial-sep: "#{$image-base-path}blog-inner-testimonial-sep.svg";
+$blog-inner-testimonial-pattern: "#{$image-base-path}blog-inner-testimonial-pattern.svg";
+$blog-banner-left-top: "#{$image-base-path}blog-banner-left-top.webp";
+$blog-inner-toc-arrow: "#{$image-base-path}toc-arrow-img.svg";
+$request-demo-logo-2: "#{$image-base-path}request-demo-logo-2.svg";
+$thank-you-right-pattern: "#{$image-base-path}thank-you-right-pattern.svg";
+$thank-404-right-pattern: "#{$image-base-path}common-thnk-404-img.svg";
+$careers-benefit-pattern-mobile: "#{$image-base-path}careers-benefit-pattern-mobile.svg";
+$right-arrow-search: "#{$image-base-path}right-arrow-search.svg";
+$marketplace-popup: "#{$image-base-path}marketplace_popup.svg";
+$marketplace-popup-close: "#{$image-base-path}marketplace_popup-close.svg";
+$become-partner-pattern: "#{$image-base-path}become-partner-pattern.svg";
+$use-case-detail-bg: "#{$image-base-path}use-case-detail-bg.svg";
+$post-close-icon: "#{$image-base-path}post-close-icon.svg";
+$post-open-arrow: "#{$image-base-path}post-open-arrow.svg";
+$inline-video-mask: "#{$image-base-path}inline-video-mask.svg";
+$interested-in-learning-pattern: "#{$image-base-path}interested-in-learning-pattern.webp";
+$anxc-deliver-pattern-left: "#{$image-base-path}anxc-deliver-pattern-left.svg";
+$anxc-deliver-pattern-right: "#{$image-base-path}anxc-deliver-pattern-right.svg";
+$poleftright: "#{$image-base-path}poleftright.svg";
+$incentive-engine-deploy-left-bg: "#{$image-base-path}incentive-deployed-left-bg.svg";
+$incentive-engine-deploy-right-bg: "#{$image-base-path}incentive-deployed-right-bg.svg";
+$usecase-counter-pattern-one: "#{$image-base-path}usecase-counter-pattern-one.svg";
+$usecase-counter-pattern-two: "#{$image-base-path}usecase-counter-pattern-two.svg";
+$all-the-capabilities-left-mask: "#{$image-base-path}all-the-capabilities-left-mask.svg";
+$all-the-capabilities-right-mask: "#{$image-base-path}all-the-capabilities-right-mask.svg";
+$slider-content-bg: "#{$image-base-path}slider-content-bg.svg";
+$slider-video-content-bg: "#{$image-base-path}slider-video-bg.webp";
+$slider-content-desktop-bg: "#{$image-base-path}slider-content-desktop-bg.svg";
+$slider-accordion-top--bg: "#{$image-base-path}slider-accordion-top--bg.webp";
+$slider-accordion-bottom--bg: "#{$image-base-path}slider-accordion-bottom--bg.webp";
+$all-the-capabilities-right-mask-sm: "#{$image-base-path}all-the-capabilities-right-mask-sm.svg";
+$all-the-capabilities-image-mask-sm: "#{$image-base-path}all-the-capabilities-image-mask-sm.svg";
+$all-the-capabilities-image-mask: "#{$image-base-path}all-the-capabilities-image-mask.svg";
+$fb-gray: "#{$image-base-path}fb-gray.svg";
+$linkedin-gray: "#{$image-base-path}linkedin-gray.svg";
+$twitter-gray: "#{$image-base-path}twitter-gray.svg";
+$double-quote-icon-white: "#{$image-base-path}double-quote-white.svg";
+$blog-standard-expert-bg: "#{$image-base-path}blog-standard-expert-bg.webp";
+$select-drop-arrow: "#{$image-base-path}select-drop-arrow.svg";
+$twitter: "#{$image-base-path}twitter.svg";
+$twitter-hover: "#{$image-base-path}twitter-hover.svg";
+

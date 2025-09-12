@@ -1,0 +1,114 @@
+.bs-post-block--about-leadership {
+	&.bs-posts {
+		.bs-post {
+			$bs-post: ".bs-post";
+			margin: 0 0 17px;
+			&__inner {
+				background-color: transparent;
+				#{$bs-post}__details {
+					padding: 10px 0 0;
+				}
+				#{$bs-post}__image {
+					height: 400px;
+					figure {
+						clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), calc(100% - 37px) 100%, 0 100%);
+						img {
+							height: 100%;
+							filter: grayscale(100%);
+						}
+					}
+				}
+				#{$bs-post}__title,
+				#{$bs-post}__category {
+					* {
+						color: color("white");
+					}
+				}
+				#{$bs-post}__title {
+					min-height: inherit;
+					max-height: inherit;
+					* {
+						margin: 0 0 16px;
+					}
+				}
+				#{$bs-post}__category {
+					&::after {
+						display: none;
+					}
+				}
+				/* stylelint-disable -- to avoid max nesting lint error */
+				&:hover {
+					#{$bs-post}__image {
+						figure {
+							img {
+								filter: none;
+							}
+						}
+					}
+				}
+				/* stylelint-enable */
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-post-block--about-leadership {
+		&.bs-posts {
+			.bs-post {
+				$bs-post: ".bs-post";
+				&__inner {
+					#{$bs-post}__details {
+						padding: 40px 0 0;
+					}
+					#{$bs-post}__image {
+						height: 215px;
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-post-block--about-leadership {
+		&.bs-posts {
+			.bs-post {
+				$bs-post: ".bs-post";
+				&__inner {
+					#{$bs-post}__title {
+						* {
+							font-size: $h3-font-size;
+							font-weight: $font-weight-normal;
+							line-height: 38px;
+						}
+					}
+					#{$bs-post}__image {
+						height: 300px;
+					}
+					#{$bs-post}__category {
+						* {
+							font-size: 14px;//14->16 ( removed $h6-font-size variable )
+							font-weight: $font-weight-medium;
+							letter-spacing: 0.1em;
+							line-height: 17px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-post-block--about-leadership {
+		&.bs-posts {
+			.bs-post {
+				$bs-post: ".bs-post";
+				&__inner {
+					#{$bs-post}__image {
+						height: 400px;
+					}
+				}
+			}
+		}
+	}
+}

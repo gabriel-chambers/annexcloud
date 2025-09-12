@@ -1,0 +1,4 @@
+*
+!.gitignore
+# Uncomment the line below on project environments to be able to commit the file
+#!core-components.json

@@ -1,0 +1,228 @@
+.bs-section--use-case-posts {
+	$bs-posts: ".bs-posts";
+	$bs-post: ".bs-post";
+	overflow: hidden;
+	.bs-row {
+		&--filter-widget {
+			margin-bottom: 25px;
+			> .bs-column {
+				padding: 0;
+			}
+			.facetwp-facet {
+				/* stylelint-disable-next-line declaration-no-important */
+				margin-block: 5px !important;
+				.fs-label {
+					font-weight: $font-weight-normal;
+				}
+				.fs-dropdown {
+					padding: 34px 20px 28px 16px;
+					.fs-options {
+						max-height: 318px;
+						.fs-option {
+							padding-bottom: 11px;
+						}
+						.fs-option-label {
+							line-height: 1.2;
+						}
+					}
+				}
+			}
+			.facetwp-type-search {
+				.facetwp-search {
+					width: 100%;
+					min-width: 0;
+				}
+			}
+		}
+		.facetwp-facet {
+			&-pagination {
+				/* stylelint-disable-next-line declaration-no-important */
+				margin-top: 53px !important;
+				margin-bottom: 20px;
+				.facetwp-type-pager {
+					@extend .facetwp-pager;
+				}
+			}
+			&.facetwp-type-reset {
+				/* stylelint-disable-next-line declaration-no-important */
+				margin-block: 0 !important;
+			}
+		}
+	}
+	#{$bs-posts} {
+		margin: 0 -15px;
+	}
+	#{$bs-posts}__column {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	#{$bs-post} {
+		box-shadow: $boxshadow-four-transparent;
+		transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+		&::after {
+			@include after-before;
+			bottom: -71px;
+			left: calc(50% - 28px);
+			width: 37px;
+			height: 30px;
+			margin: auto;
+			background: url($post-open-arrow) 0 0 no-repeat;
+			opacity: 0;
+			pointer-events: none;
+			transition: bottom 0.2s ease-in-out 0.1s, opacity 0.2s ease-in-out 0.1s;
+		}
+		&__inner {
+			padding: 29px 30px 25px;
+			border: 1px solid color("medium-grey");
+			border-radius: 5px;
+		}
+		&__image {
+			width: 50px;
+			height: 50px;
+			margin-bottom: 31px;
+			img {
+				object-fit: contain;
+			}
+		}
+		&__details {
+			padding: 0;
+			> * {
+				> * {
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		&__title {
+			min-height: 0;
+			margin-bottom: 20px;
+			> * {
+				font-size: 18px;
+				font-weight: $font-weight-bold;
+				line-height: 1.2;
+			}
+		}
+		&__description {
+			margin-bottom: 21px;
+			p {
+				@include line-clamp(3);
+				font-size: 16px;//14->16
+				font-weight: $font-weight-normal;
+				line-height: 1.6;
+			}
+		}
+		#{$bs-post}__learn-more {
+			position: relative;
+			inset: auto;
+			#{$bs-post}__learn-more-text {
+				text-align: left;
+				&::after {
+					position: relative;
+					top: 2px;
+					left: 0;
+					flex: 0 0 auto;
+				}
+			}
+		}
+		&--active {
+			background-color: color("white");
+			box-shadow: $boxshadow-four;
+			&::after {
+				bottom: -43px;
+				opacity: 1;
+				transition: bottom 0.1s ease-in-out 0.1s, opacity 0.1s ease-in-out 0.1s;
+			}
+			#{$bs-post}__trigger {
+				pointer-events: none;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--use-case-posts {
+		$bs-posts: ".bs-posts";
+		$bs-post: ".bs-post";
+		.bs-row {
+			&--filter-widget {
+				> .bs-column {
+					padding: 0 15px;
+				}
+			}
+		}
+		#{$bs-posts} {
+			margin: 0;
+		}
+		#{$bs-posts}__column {
+			max-width: 33.33%;
+			flex: 33.33%;
+		}
+		#{$bs-post} {
+			#{$bs-post}__inner {
+				display: flex;
+				flex-flow: column;
+			}
+			#{$bs-post}__details {
+				display: flex;
+				height: auto;
+				flex: 1;
+				flex-flow: column;
+			}
+			#{$bs-post}__learn-more {
+				margin-top: auto;
+				#{$bs-post}__learn-more-text {
+					justify-content: flex-start;
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--use-case-posts {
+		$bs-posts: ".bs-posts";
+		$bs-post: ".bs-post";
+		padding: 114px 0 98px;
+		.bs-row {
+			&--filter-widget {
+				margin-bottom: 37px;
+			}
+			.facetwp-facet {
+				&-pagination {
+					/* stylelint-disable-next-line declaration-no-important */
+					margin-top: 71px !important;
+				}
+			}
+		}
+		#{$bs-post} {
+			&:hover {
+				background-color: color("white");
+				box-shadow: $boxshadow-four;
+			}
+			&__title {
+				> * {
+					font-size: 22px;
+				}
+			}
+			&__description {
+				p {
+					font-size: 18px;
+				}
+			}
+			#{$bs-post}__trigger {
+				&:hover {
+					#{$bs-post}__image {
+						img {
+							transform: scale(1);
+						}
+					}
+				}
+			}
+		}
+		&.bs-section--use-case-categories {
+			padding: 60px 0 100px;
+		}
+	}
+}

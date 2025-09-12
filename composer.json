@@ -1,0 +1,86 @@
+{
+  "name": "e25/annex-cloud",
+  "type": "project",
+  "description": "WordPress",
+  "authors": [
+    {
+      "name": "Dev",
+      "email": "dev@eight25media.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress/wordpress",
+        "type": "webroot",
+        "version": "6.8.1",
+        "dist": {
+          "type": "zip",
+          "url": "https://wordpress.org/wordpress-6.8.1-no-content.zip"
+        },
+        "require": {
+          "fancyguy/webroot-installer": "^1.0"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "composer/installers": "^1.12",
+    "wordpress/wordpress": "6.8.1",
+    "humanmade/s3-uploads": "^3.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.5.6",
+    "roave/security-advisories": "dev-latest",
+    "wp-coding-standards/wpcs": "^2.3"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "fancyguy/webroot-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {},
+    "webroot-dir": "wp",
+    "webroot-package": "wordpress/wordpress"
+  },
+  "scripts": {
+    "pre-install-cmd": [
+      "rm -rf wp-admin",
+      "rm -rf wp-includes",
+      "E25\\Composer\\Events\\PreInstallHandler::handle"
+    ],
+    "pre-update-cmd": [
+      "rm -rf wp-admin",
+      "rm -rf wp-includes",
+      "E25\\Composer\\Events\\PreInstallHandler::handle"
+    ],
+    "post-install-cmd": [
+      "mv wp/* .",
+      "rm -rf wp",
+      "find . -type f -exec chmod 755 {} +",
+      "find . -type d -exec chmod 755 {} +"
+    ],
+    "post-update-cmd": [
+      "mv wp/* .",
+      "rm -rf wp",
+      "find . -type f -exec chmod 755 {} +",
+      "find . -type d -exec chmod 755 {} +"
+    ],
+    "test": [
+      "phpcs"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "E25\\Composer\\": "e25-composer"
+    }
+  }
+}

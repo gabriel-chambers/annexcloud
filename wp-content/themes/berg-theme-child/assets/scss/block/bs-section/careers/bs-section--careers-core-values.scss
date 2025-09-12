@@ -1,0 +1,25 @@
+.bs-section--careers-core-values {
+	padding: 60px 15px;
+	.bs-row {
+		h2 {
+			margin-bottom: 30px;
+			font-weight: $font-weight-bold;
+			letter-spacing: 0;
+		}
+		.bs-column {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--careers-core-values {
+		padding: 120px 0;
+		.bs-row {
+			h2 {
+				margin-bottom: 0;
+				line-height: 58px;
+			}
+		}
+	}
+}

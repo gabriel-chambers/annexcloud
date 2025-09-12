@@ -1,0 +1,800 @@
+/* Need to include color palette colors for the backend as well */
+@import "site/overwrite/color-palette";
+
+/* make sure to wrap every selector within [data-type=<block>] selector
+example
+[data-type="e25m/section"] {
+  border-color: red;
+}
+realm sections */
+div[data-type^="e25m-realm"] {
+	max-width: 100%;
+	/* stylelint-disable declaration-no-important */
+	border: 5px solid #0e4059 !important;
+	/* stylelint-enable declaration-no-important */
+}
+
+// Logo moving slider back-end styles
+.bs-section--common-moving-logo-slider {
+	.bs-row {
+		.bs-column {
+			.clients-list {
+				display: grid;
+				padding: 30px;
+				border: 5px solid #91d1b3;
+				gap: 30px;
+				grid-template-columns: repeat(auto-fill, 110px);
+				list-style: none;
+				li {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 10px;
+					border: 1px dashed #91d1b3;
+				}
+			}
+			.logo-button-wrapper {
+				margin-bottom: 30px;
+				button {
+					border-radius: 0;
+					margin-top: 0;
+					background-color: #91d1b3;
+				}
+			}
+		}
+	}
+}
+//Home forrester section backend styles
+.bs-section--home-forrester {
+	div[data-type="e25m/column"] {
+		> .block-editor-inner-blocks {
+			width: 100%;
+			> .block-editor-block-list__layout {
+				display: flex;
+				div[data-type="e25m/media-elements"] {
+					max-width: 300px;
+				}
+				div[data-type="e25m/blurb"] {
+					width: calc(100% - 300px);
+					> div {
+						width: 100%;
+						height: 100%;
+						> div {
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+section {
+	&.bs-section--home-banner-counter {
+		.bs-row--home-banner-counter {
+			div[data-type="e25m/column"] {
+				> .block-editor-inner-blocks {
+					width: 100%;
+				}
+			}
+			div[data-title="Counter"] {
+				width: 33%;
+			}
+		}
+		div[data-type="e25m/row"] {
+			.bs-row--home-banner {
+				div[data-type="e25m/column"] {
+					> .block-editor-inner-blocks { /* stylelint-disable-line */
+						> .block-editor-block-list__layout {
+							display: flex;
+							> .wp-block-e25m-div {/* stylelint-disable-line */
+								width: 50%;
+							}
+						}
+					}
+				}
+			}
+		}
+		div[data-type="e25m/slider-v2"] {
+			width: 100%;
+		}
+	}
+}
+// Careers benefit back-end styles
+.bs-section--careers-benefits {
+	/* stylelint-disable */
+	div[data-type="e25m/column"] {
+		> .block-editor-inner-blocks {
+			> .block-editor-block-list__layout {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				> .block-editor-block-list__block {
+					&:first-child {
+						.wp-block[data-type="e25m/div"] .bs-div {
+							.block-editor-block-list__layout {
+								display: grid;
+								grid-template-columns: 1fr 1fr;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/* stylelint-enable */
+}
+
+//Blog inner testimonial
+/* stylelint-disable */
+div[data-type="e25m/div"] {
+	.bs-div--blog-inner-testimonial {
+		.block-editor-block-list__layout:not(blockquote) {
+			display: grid;
+			grid-template-columns: 185px auto;
+		}
+		p {
+			color: #fff !important;
+		}
+		&.bs-div--blog-inner-testimonial-no-image {
+			.block-editor-block-list__layout:not(blockquote) {
+				grid-template-columns: auto;
+			}
+		}
+	}
+	.bs-div--common-accordion-item {
+		margin: 10px;
+	}
+	.bs-div--standard-blog-inner-tags {
+		> .bs-div__inner {
+			> .block-editor-inner-blocks {
+				> .block-editor-block-list__layout {
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
+	}
+}
+/* stylelint-enable */
+//Blog inner testimonial
+/* stylelint-disable no-descending-specificity */
+.bs-div--blog-inner-counter {
+	.block-editor-block-list__layout {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+/* stylelint-enable */
+//Blog inner testimonial
+/* stylelint-disable no-descending-specificity */
+.bs-div--blog-inner-two-col-grid {
+	>.bs-div__inner {
+		>.block-editor-inner-blocks {
+			>.block-editor-block-list__layout {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				.bs-div,
+				.bs-div__inner,
+				.block-editor-inner-blocks,
+				.block-editor-block-list__layout,
+				.wp-block-e25m-card,
+				.bs-card {
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+/* stylelint-enable */
+//Headquarters
+/* stylelint-disable no-descending-specificity  */
+.bs-section--about-headquarters {
+	.wp-block[data-type="e25m/column"] {
+		.bs-column--contact-field {
+			> .block-editor-inner-blocks {
+				> .block-editor-block-list__layout {
+					display: grid;
+					grid-template-columns: 40px auto;
+					> .block-editor-block-list__block {
+						> .bs-div {
+							height: 100%;
+							/* stylelint-disable max-nesting-depth */
+							&:first-child {
+								background-color: #91d1b3;
+							}
+							/* stylelint-enable */
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//homepage main banner
+.bs-section--home-banner-counter {
+	div[data-type="e25m/div"] {
+		.bs-div--banner-content {
+			height: 100%;
+		}
+		.bs-div--banner-image {
+			height: 100%;
+			* {
+				height: 100%;
+				max-height: 350px;
+			}
+		}
+	}
+}
+
+/* stylelint-disable */
+.wp-block[data-type="e25m/section"] {
+	//Careers Benefit
+	&:not(:first-child) {
+		.bs-section--careers-benefits {
+			.wp-block[data-type="e25m/row"] {
+				.wp-block[data-type="e25m/column"] {
+					> .block-editor-inner-blocks {
+						> .block-editor-block-list__layout {
+							> .wp-block[data-type="e25m/div"] {
+								&:first-child {
+									.wp-block[data-type="e25m/div"] {
+										.wp-block[data-type="e25m/card"] {
+											.bs-card--common-benefits-card {
+												.bs-card__container-left {
+													figure {
+														height: 195px;
+													}
+												}
+											}
+										}
+									}
+								}
+								&:last-child{
+									[data-type="e25m/media-elements"]{
+										.media-elements,
+										figure{
+											height: auto;
+										}
+									} 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	// About us
+	//Our team counter
+	.bs-section--about-our-team-counter {
+		.wp-block[data-type="e25m/row"] {
+			&:last-child {
+				.wp-block[data-type="e25m/column"] {
+					>.block-editor-inner-blocks {
+						border: 5px solid #91d1b3;
+						.wp-block[data-type="e25m/div"] {
+							.bs-div {
+								border: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//Request demo
+	.bs-section--request-demo-content-form,
+	.bs-section--common-image-content {
+		[data-type="e25m/media-elements"] {
+			.media-elements {
+				&,
+				figure {
+					height: auto;
+				}
+			}
+		}
+	}
+	//Single resource
+	//banner
+	.bs-section--common-blog-banner {
+		[data-type="e25m-custom/author"] {
+			.profile-desc {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-evenly;
+			}
+			figure {
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				margin: 5px auto;
+				img {
+					border-radius: 50%;
+				}
+			}
+		}
+		[data-title="Read Time"] {
+			.reading-time {
+				text-align: right;
+			}
+		}
+	}
+	//Home page
+	//Banner
+	.bs-section--home-banner-counter {
+		.bs-row--home-banner-counter {
+			div[data-title=Counter] {
+				.bs-counter {
+					height: 100%;
+					.bs-counter__container {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						flex-wrap: wrap;
+						flex-direction: row;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+	//Annexcloud platform
+	.bs-section--home-is-purpose-built {
+		.wp-block[data-type="e25m/row"] {
+			.bs-row {
+				text-align: center;
+			}
+		}
+	}
+}
+/* stylelint-enable */
+//blog inner & request a demo pages- you might also be interested section
+.bs-section--blog-related-posts {
+	/* stylelint-disable no-descending-specificity */
+	div[data-type="e25m/single-post"] {
+		height: 100%;
+	}
+	/* stylelint-enable no-descending-specificity */
+}
+
+/* stylelint-disable */
+.wp-block[data-type="e25m/section"] {
+	//Careers Our Core Values
+	.bs-section--careers-core-values {
+		.bs-column {
+			div[data-type="e25m/div"],
+			.bs-div--careers-core-values {
+				height: 100%;
+			}
+		}
+	}
+	// Careers why join annexlcloud
+	.bs-section--careers-why-join-annexcloud {
+		.wp-block[data-type="e25m/column"] {
+			&.bs-column {
+				> .block-editor-inner-blocks {
+					border: 5px solid #91d1b3;
+				}
+				.wp-block[data-type="e25m/div"] {
+					.bs-div {
+						border: none;
+					}
+				}
+			}
+		}
+	}
+}
+/* stylelint-enable */
+
+//about us - our mission
+/* stylelint-disable no-descending-specificity */
+.bs-section--about-our-mission {
+	.bs-column {
+		div[data-type="e25m/div"] {
+			.bs-div--content-wrapper {
+				height: 100%;
+			}
+		}
+	}
+}
+/* stylelint-enable */
+// about us - additional resources
+/* stylelint-disable no-descending-specificity */
+.bs-section--about-additional-resources {
+	div[data-type="e25m/single-post"] {
+		height: 100%;
+	}
+}
+/* stylelint-enable */
+//about us loyalty is not
+/* stylelint-disable no-descending-specificity */
+.bs-section--about-who-we-are {
+	.bs-column {
+		div[data-type="e25m/div"],
+		.bs-div--about-who-we-are {
+			height: 100%;
+		}
+	}
+}
+/* stylelint-enable */
+
+//Enterprise tested
+/* stylelint-disable no-descending-specificity */
+.r-tabslr-l2-anxcld1 {
+	.bs-div--r-tabslr-l2-anxcld1-slide-wrapper {
+		.block-editor-block-list__layout {
+			div[data-type="e25m/div"]:nth-child(2) {
+				.media-elements,
+				figure {
+					height: 100px;
+				}
+				.media-elements {
+					picture {
+						max-width: 100px;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+}
+/* stylelint-enable */
+
+//Home Annex cloud deliveries Counter section
+/* stylelint-disable */
+.r-cntcol-l1--anxcld1 {
+	.bs-row--r-cntcol-l1-anxcld1-counter {
+		div[data-type="e25m/column"] {
+			> .block-editor-inner-blocks {
+				> .block-editor-block-list__layout {
+					> div[data-type="e25m/div"] {
+						height: 100%;
+						.bs-div--r-cntcol-l1-anxcld1-counter-wrapper {
+							height: 100%;
+							> .bs-div__inner {
+								height: 100%;
+								> .block-editor-inner-blocks {
+									height: 100%;
+									> .block-editor-block-list__layout {
+										height: 100%;
+										div[data-type="e25m/counter"] {
+											height: 100%;
+											.bs-counter--r-cntcol-l1-anxcld1 {
+												height: 100%;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	div[data-type="e25m/counter"] {
+		.bs-counter--r-cntcol-l1-anxcld1 {
+			.bs-counter__container {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+			}
+			.bs-counter__title {
+				> * {
+					font-size: 16px;
+				}
+			}
+			.bs-counter__wrapper {
+				display: flex;
+				align-items: flex-end;
+				justify-content: center;
+				order: -1;
+				.bs-counter__prefix,
+				.bs-counter__postfix,
+				.bs-counter__count {
+					> * {
+						font-size: 25px;
+					}
+				}
+				.bs-counter__prefix,
+				.bs-counter__postfix {
+					img {
+						width: 15px;
+						height: auto;
+						max-height: 50px;
+						margin-bottom: 4px;
+					}
+				}
+			}
+		}
+	}
+}
+[data-type="e25m/mobile-content"] {
+	[data-type="e25m/mobile-content-wrapper"] {
+		> .block-editor-inner-blocks {
+			max-width: 100%;
+		}
+	}
+}
+/* stylelint-enable */
+
+// events banner
+/* stylelint-disable no-descending-specificity */
+.bs-section--events-featured-event {
+	div[data-type="e25m/post-block"] {
+		.bs-post__inner {
+			display: flex;
+			.bs-post__details {
+				width: 100%;
+				max-width: calc(100% - 200px);
+				padding-right: 50px;
+			}
+			.bs-post__featured-image {
+				width: 100%;
+				max-width: 200px;
+			}
+		}
+	}
+}
+/* stylelint-enable */
+
+// careers page - main banner
+/* stylelint-disable no-descending-specificity */
+.bs-section--careers-banner {
+	.block-editor-block-list__layout {
+		div[data-type="e25m/div"] {
+			> .bs-div {
+				height: 100%;
+			}
+		}
+	}
+}
+/* stylelint-enable */
+// Home - Resource to help you
+/* stylelint-disable no-descending-specificity */
+.r-spstbk-l1--anxcld1 {
+	div[data-type="e25m/row"] {
+		.bs-single-post--featured-r-spstbk-l1-anxcld1 {
+			.bs-post__inner {
+				display: flex;
+			}
+			.bs-post__image,
+			.bs-post__details {
+				height: 100%;
+			}
+			.bs-post__details {
+				padding-left: 20px;
+			}
+		}
+	}
+	div[data-type="e25m/single-post"] {
+		height: 100%;
+	}
+}
+/* stylelint-enable */
+
+//homepage - loyalty is all we do section - desktop
+/* stylelint-disable no-descending-specificity */
+.bs-section--home-loyalty-xl {
+	div[data-type="e25m/column"] {
+		&.bs-column--col-two {
+			max-width: 66.66666667%;
+			flex: 0 0 66.66666667%;
+			.bs-div--loyalty-is-all-main-bg-wrapper {
+				.block-editor-block-list__layout {
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+					div[data-type="e25m/media-elements"] {
+						width: 100%;
+						grid-column: 1/4;
+						grid-row: 1/2;
+					}
+					div[data-type="e25m/blurb"] {
+						/* stylelint-disable max-nesting-depth */
+						>div {
+							height: 100%;
+							.bs-blurb {
+								height: 100%;
+							}
+						}
+						/* stylelint-enable max-nesting-depth */
+					}
+				}
+			}
+		}
+	}
+}
+/* stylelint-enable no-descending-specificity */
+// Why partner - Marketplace
+/* stylelint-disable no-descending-specificity */
+.bs-section--marketplace-why-partner {
+	div[data-type="e25m/column"]:last-child {
+		.block-editor-block-list__layout {
+			display: grid;
+			gap: 30px;
+			grid-template-columns: repeat(2, 1fr);
+			div[data-type="e25m/card"] {
+				.bs-card {
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+/* stylelint-enable */
+//Enterprise readiness blurb section
+/* stylelint-disable */
+.r-blbstk-l3--anxcld1{
+	.bs-row--r-blbstk-l3-anxcld1-blurbs-wrapper{
+		div[data-type="e25m/column"]{
+			> .block-editor-inner-blocks{
+				> .block-editor-block-list__layout{
+					div[data-type="e25m/div"]{
+						height: 100%;
+						.bs-div--r-blbstk-l3-anxcld1-blurb-wrapper{
+							height: 100%;
+							> .bs-div__inner    {
+								height: 100%;
+								> .block-editor-inner-blocks{
+									height: 100%;
+									> .block-editor-block-list__layout{
+										height: 100%;
+										div[data-type="e25m/blurb"]{
+											height: 100%;
+											> div {
+												height: 100%;
+												.bs-blurb--r-blbstk-l3-anxcld1 {
+													height: 100%;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* stylelint-enable */
+// stylelint-disable-next-line no-descending-specificity
+div[data-type="e25m/card"] {
+	.bs-card--common-accordion-head {
+		.bs-card__subtitle,
+		.bs-card__description {
+			display: none;
+		}
+	}
+}
+/* stylelint-disable no-descending-specificity */
+div[data-type="e25m-realm/r-crdstk-l4-anxcld1"] {
+	div[data-type="e25m/row"] {
+		&:last-child {
+			div[data-type="e25m/column"].bs-column {
+				> .block-editor-inner-blocks {
+					> .block-editor-block-list__layout {
+						display: flex;
+						> div[data-type="e25m/div"] {// stylelint-disable-next-line max-nesting-depth
+							.bs-div,
+							.bs-div__inner,
+							.block-editor-inner-blocks,
+							.block-editor-block-list__layout,
+							.block-editor-block-list__block,
+							.bs-card {
+								height: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+div[data-type="e25m-realm/r-cntcol-l1-anxcld1"] {
+	div[data-type="e25m/row"] {
+		&:last-child {
+			div[data-type="e25m/column"] {
+				.bs-counter__wrapper {
+					* {
+						font-size: 50px;
+					}
+				}
+			}
+		}
+	}
+}
+div[data-type="e25m-realm/r-spstbk-l1-anxcld1"] {
+	div[data-type="e25m/row"] {
+		&:first-child {
+			div[data-type="e25m/column"] {
+				&:last-child {
+					div[data-type="e25m/pro-button"] {
+						display: flex;
+						justify-content: flex-end;
+					}
+				}
+			}
+		}
+	}
+}
+.bs-section--common-banner-variable-height {
+	div[data-type="e25m/column"] {
+		ul[data-type="core/list"] {
+			padding: 0;
+			> li {
+				display: inline-block;
+				&:not(:last-child) {
+					border-right: 1px solid #000;
+				}
+				.rich-text {
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+}
+div[data-type="e25m-realm/r-cntcol-l1-anxcld2"] {
+	div[data-type="e25m/counter"] {
+		.bs-counter {
+			&__container {
+				display: flex;
+				flex-direction: column;
+			}
+			&__wrapper {
+				order: 1;
+				margin-right: auto;
+				margin-left: auto;
+				.bs-counter {
+					&__prefix,
+					&__postfix,
+					&__count {
+						* { /* stylelint-disable declaration-no-important */
+							font-size: 50px !important;
+							/* stylelint-enable declaration-no-important */
+						}
+					}
+				}
+			}
+			&__title {
+				order: 2;
+			}
+			&__summary {
+				order: 3;
+			}
+		}
+	}
+}
+.accordion-section {
+	&.left-panel-floating::after {
+		width: 1px;
+	}
+	&.right-panel-floating::after {
+		width: 1px;
+	}
+	&.right-panel-floating {
+		.block-editor-inner-blocks {
+			.block-editor-block-list__layout {
+				/* stylelint-disable-next-line declaration-no-important */
+				gap: 0 !important;
+			}
+		}
+	}
+}
+.wp-block[data-type="e25m/advance-accordion"] {
+	.accordion-section {
+		.block-list-appender {
+			width: auto;
+		}
+		.accordion__block__card-header {
+			width: 100%;
+		}
+	}
+	&.left-panel-floating::after {
+		width: 1px;
+	}
+	&.right-panel-floating::after {
+		width: 1px;
+	}
+}

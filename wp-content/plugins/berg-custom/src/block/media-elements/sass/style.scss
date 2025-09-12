@@ -1,0 +1,155 @@
+.media-elements {
+  .figure-caption {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+    background: #fff;
+    z-index: 1;
+  }
+  .bs-common-image {
+    width: 100%;
+    figure {
+      margin: 0;
+      flex-wrap: wrap;
+      img {
+        object-fit: contain;
+      }
+      .img-thumbnail {
+        width: auto;
+      }
+    }
+  }
+  .bs-common-mask {
+    &__wrap {
+      position: relative;
+    }
+    &__layer {
+      width: 100%;
+      height: 100%;
+      min-width: auto;
+      min-height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      background-size: cover;
+    }
+  }
+  .embed-responsive {
+    + *:not(span) {
+      display: none;
+    }
+  }
+  > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  a {
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+  .video-wrapper {
+    position: relative;
+    &__poster-image {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      &.hide {
+        display: none;
+      }
+    }
+  }
+  video {
+    display: block;
+  }
+  .play-button,
+  .pause-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+    &.hide {
+      display: none;
+    }
+  }
+  .pause-button:not(.hide) {
+    display: none;
+  }
+  &:hover {
+    .pause-button:not(.hide) {
+      display: block;
+      opacity: 0.18;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .common-video-popup {
+    position: relative;
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .play-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  .d-md-none {
+    &.d-lg-none {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .media-elements {
+    .common-video-popup {
+      &:hover {
+        > *,
+        .play-icon,
+        a img {
+          opacity: 0.8;
+        }
+      }
+    }
+    > a {
+      &:hover {
+        img,
+        .bs-common-mask__layer {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.wp-block[data-type="e25m-realm/section-holder"] {
+	padding: 25px 10px;
+	border: 1px solid;
+	span:not(.dashicon) {
+		display: block;
+		margin-bottom: 15px;
+		font-size: 14px;
+		font-weight: 700;
+		.dashicon {
+			margin-right: 10px;
+		}
+	}
+}

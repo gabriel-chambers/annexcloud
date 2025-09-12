@@ -1,0 +1,32 @@
+{
+    "name": "e25/r-spstbk-l1-anxcld1",
+    "type": "e25-realm-section",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "extra": {
+        "theme_files": [
+            {
+                "src": "scss/r-spstbk-l1--anxcld1.scss",
+                "dest": "assets/scss/realm/r-spstbk/r-spstbk-l1--anxcld1.scss",
+                "overrideFilePath": "assets/scss/realm-custom/r-spstbk/r-spstbk-l1--anxcld1.scss"
+            },
+            {
+                "src": "scss/bs-single-post--r-spstbk-l1-anxcld1.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-single-post/r-spstbk-l1-anxcld1.scss",
+                "overrideFilePath": "assets/scss/block/bs-single-post/bs-single-post--r-spstbk-l1-anxcld1.scss"
+            },
+            {
+				"src": "scss/bs-single-post--no-image-r-spstbk-l1-anxcld1.scss",
+				"dest": "assets/scss/realm/berg-blocks/bs-single-post/r-no-image-spstbk-l1-anxcld1.scss",
+				"overrideFilePath": "assets/scss/block/bs-single-post/bs-single-post--no-image-r-spstbk-l1-anxcld1.scss"
+			},
+			{
+				"src": "scss/bs-single-post--featured-r-spstbk-l1-anxcld1.scss",
+				"dest": "assets/scss/realm/berg-blocks/bs-single-post/r-featured-spstbk-l1-anxcld1.scss",
+				"overrideFilePath": "assets/scss/block/bs-single-post/bs-single-post--featured-r-spstbk-l1-anxcld1.scss"
+			}
+        ]
+    }
+}

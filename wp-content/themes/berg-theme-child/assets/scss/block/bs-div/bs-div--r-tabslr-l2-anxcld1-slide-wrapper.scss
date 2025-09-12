@@ -1,0 +1,136 @@
+$r-tabslr-l2-anxcld1-slide-media: (
+	border-radius: 8px 8px 0 0,
+	border-radius-lg: 0,
+	bg-color: transparent,
+	padding: 0,
+	padding-lg: 0,
+	max-height: 240px,
+	max-height-md: 360px,
+	flex-lg: 420px,
+	flex-xl: 582px,
+	transform-lg: translate(30px, 0),
+	transform-xl: translate(30px, 0),
+);
+
+//content variables
+$r-tabslr-l2-anxcld1-slide-content: (
+	border-radius: 0 0 8px 8px,
+	border-radius-lg: 8px,
+	bg-color: color("white"),
+	padding: 20px,
+	padding-lg: 40px,
+	flex-lg: 392px,
+	flex-xl: 492px,
+	transform-lg: translate(-183px, 141px),
+	transform-xl: translate(-234px, 121px),
+);
+
+@import "./../../realm/berg-blocks/bs-div/r-tabslr-l2-anxcld1-slide-wrapper.scss";
+.bs-div--r-tabslr-l2-anxcld1-slide-wrapper {
+	.bs-div--r-slide-content-wrapper {
+		.media-elements {
+			max-width: 78px;
+			margin-bottom: 20px;
+			figure,
+			picture,
+			img {
+				max-height: 60px;
+				object-fit: contain;
+			}
+		}
+		.wp-block-quote {
+			display: block;
+			margin-bottom: 0;
+			color: color("dark-blue");
+			p {
+				@include line-clamp($numberOfLines: 3);
+				margin-bottom: 18px;
+				font-size: 16px;//14->16
+				font-weight: $font-weight-normal;
+				line-height: 19.2px; //revert
+			}
+			cite {
+				color: color("brewing-storm");
+				font-size: 12px;//12->14  //revert
+				font-style: normal;
+				font-weight: $font-weight-semi-bold;
+				line-height: 18px;
+				strong {
+					position: relative;
+					display: inline-block;
+					color: color("space-blue");
+					font-weight: $font-weight-bold;
+					&::after {
+						@include after-before;
+						position: relative;
+						display: inline-block;
+						width: 9px;
+						height: 12px;
+						margin: 0 12px 0 15px;
+						background: $testimonial-slash;
+						clip-path: polygon(80% 0, 107% 0, 10% 125%, 8% 100%);
+					}
+				}
+			}
+		}
+		.bs-pro-button {
+			margin-top: 36px;
+			a {
+				justify-content: flex-start;
+				font-size: 14px;//14->16  //revert
+			}
+		}
+	}
+	.bs-div--r-slide-media-wrapper {
+		> .bs-div__inner {
+			clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%, 0 26%);
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-div--r-tabslr-l2-anxcld1-slide-wrapper {
+		.bs-div--r-slide-content-wrapper {
+			height: fit-content;
+			min-height: 190px;
+			box-shadow: -50px -19px 77px rgba(color("black"), 0.2);
+			.media-elements {
+				max-width: 145px;
+				margin-bottom: 51px;
+			}
+			.wp-block-quote {
+				p {
+					margin-bottom: 31px;
+					font-size: 22px;
+					line-height: 35px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+				cite {
+					font-size: 16px;
+					font-weight: $font-weight-normal;
+					line-height: 24px;
+					strong {
+						&::after {
+							width: 10px;
+							height: 18px;
+							margin-bottom: -2px;
+						}
+					}
+				}
+			}
+			.bs-pro-button {
+				a {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.bs-div--r-slide-media-wrapper {
+		filter: drop-shadow(0 10px 13px color("obsidian-shard"));
+		> .bs-div__inner {
+			clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%, 0 27%);
+		}
+	}
+}

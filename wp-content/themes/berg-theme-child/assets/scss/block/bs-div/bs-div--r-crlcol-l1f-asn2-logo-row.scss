@@ -1,0 +1,64 @@
+$r-crlcol-l1f-asn2: (
+	animation-speed: 140s,
+	blurb-width: 146px,
+	blurb-height: 146px,
+);
+
+@import "./../../realm/berg-blocks/bs-div/r-crlcol-l1f-asn2-logo-row.scss";
+.bs-div--r-crlcol-l1f-asn2-logo-row {
+	padding: 10px 0;
+	margin: 0 -30px;
+	&:first-of-type {
+		padding-top: 40px;
+	}
+	&:nth-of-type(2) {
+		padding-bottom: 40px;
+	}
+	> .bs-div__inner {
+		&.continue-marquee {// stylelint-disable-next-line declaration-no-important
+			animation-play-state: running !important; // override default
+		}
+		> .bs-div {
+			border-radius: 5px;
+			margin: 0 0 0 24px;
+			box-shadow: 0 1px 26px rgba(color(dark-grey-1), 0.28);
+			> .bs-div__inner {
+				height: 100%;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.bs-div--r-crlcol-l1f-asn2-logo-row {
+		margin: 0;
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-div--r-crlcol-l1f-asn2-logo-row {
+		margin: 0;
+		&:first-child {
+			padding-top: 34px;
+		}
+		&:last-child {
+			padding-bottom: 34px;
+		}
+	}
+}
+
+@keyframes marquee-rtl {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-33.33%);
+	}
+}
+@keyframes marquee-ltr {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(33.33%);
+	}
+}

@@ -1,0 +1,53 @@
+/* stylelint-disable declaration-no-important */
+* {
+	outline: 0 !important;
+}
+/* stylelint-enable declaration-no-important */
+html {
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+}
+.btn {
+	&:active,
+	&:focus {
+		box-shadow: none;
+	}
+}
+input,
+textarea,
+button,
+select {
+	-o-appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+select::-ms-expand {
+	display: none;
+}
+section {
+	padding: 60px 30px;
+}
+main {
+	margin: 60px auto 0;
+}
+
+@include media-breakpoint-up(md) {
+	section {
+		padding: 60px 0;
+	}
+}
+@include media-breakpoint-up(lg) {
+	section {
+		padding: 80px 0;
+	}
+}
+@include media-breakpoint-up(xl) {
+	section {
+		padding: 100px 0;
+	}
+	main {
+		margin: 84px auto 0;
+	}
+}

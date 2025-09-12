@@ -1,0 +1,79 @@
+$bs-single-post-r-spstbk-l1-anxcld1: (
+	post-clip-path: none,
+	post-no-image-background-color: #1c1f39,
+	post-no-image-text-color: #fff,
+	post-no-image-padding-bottom: 208px,
+	post-no-image-inner-background-color: #f5f3f3,
+	post-border-bottom: 0,
+);
+
+@import "./../../realm/berg-blocks/bs-single-post/r-spstbk-l1-anxcld1.scss";
+.bs-single-post--r-spstbk-l1-anxcld1 {
+	&:not(.bs-post__container--no-image) {
+		.bs-post {
+			&__read-more,
+			&__learn-more {
+				@include primary-link;
+				> span {
+					&,
+					.btn {
+						// stylelint-disable-next-line declaration-no-important
+						font-size: 14px !important;//14->16 //revert
+						&::after {
+							// stylelint-disable-next-line declaration-no-important
+							margin-left: 30px; // override default style //remove important
+						}
+					}
+				}
+			}
+			&__title {
+				* {
+					font-size: 22px;// stylelint-disable-next-line declaration-no-important
+					letter-spacing: 0 !important;
+				}
+			}
+			&__category {
+				span {// stylelint-disable-next-line declaration-no-important
+					font-size: 14px !important;//14->16 //revert
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-single-post--r-spstbk-l1-anxcld1 {
+		&:not(.bs-post__container--no-image) {
+			.bs-post {
+				&__title {
+					* {
+						@include title-four;
+						line-height: 31px;
+					}
+				}
+				&__details {
+					padding: 24px 30px 62px;
+				}
+				&__category {
+					span {// stylelint-disable-next-line declaration-no-important
+						font-size: 14px !important;//add 14
+					}
+				}
+				&__read-more,
+				&__learn-more {
+					> span {
+						&,
+						.btn {
+							// stylelint-disable-next-line declaration-no-important
+							font-size: 16px !important;
+							&::after {
+								// stylelint-disable-next-line declaration-no-important
+								margin-left: 20px !important; // override default style
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

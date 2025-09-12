@@ -1,0 +1,117 @@
+.bs-section--home-pp {
+	&.r-blbslr-l4--anxcld1 {
+		padding: 49px 15px 60px; //revert
+		.bs-row {
+			&:nth-child(1) {
+				h2 {
+					margin-bottom: 10px;
+				}
+			}
+		}
+		.bs-slider--r-blbslr-l4-anxcld1 {
+			padding: 20px 0 0;
+		}
+	}
+	&.r-cntcol-l1--anxcld1 {
+		padding-bottom: 0;
+		.bs-row--r-cntcol-l1-anxcld1-counter {
+			.bs-column {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	&.bs-section--home-loyalty-sm {
+		padding: 60px 0 0;
+		.slick-slider {
+			padding-bottom: 67px;
+			.slick-arrow {
+				bottom: -30px;
+			}
+		}
+		.slider-widgets {
+			bottom: 26px;
+		}
+	}
+	&.bs-section--ultimate-guide {
+		padding-bottom: 41px;
+		/* stylelint-disable no-descending-specificity */
+		.bs-column {
+			&:last-child {
+				> p {
+					&:first-child {
+						margin-bottom: 13px;
+					}
+				}
+			}
+		}
+		/* stylelint-enable  */
+	}
+	&.r-tabslr-l2--anxcld1 {
+		padding: 57px 15px 150px;//revert
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--home-pp {
+		&.r-cntcol-l1--anxcld1 {
+			padding: 120px 0 0;
+			.bs-row--r-cntcol-l1-anxcld1-counter {
+				.bs-column {
+					&:last-child {
+						margin-bottom: 30px;
+					}
+				}
+			}
+		}
+		&.r-blbslr-l4--anxcld1 {
+			.bs-blurb--r-blbslr-l4-anxcld1 {
+				&.bs-blurb {
+					.bs-blurb__image {
+						margin: 0 0 24px;
+					}
+				}
+			}
+			.bs-slider--r-blbslr-l4-anxcld1 {
+				padding: 62px 0 0;
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--home-pp {
+		&.r-blbslr-l4--anxcld1 {
+			padding: 90px 0 120px;
+		}
+		&.bs-section--home-built-for-lifetime {
+			padding-bottom: 52px;
+		}
+		&.bs-section--home-loyalty-xl {
+			padding-top: 113px;
+			padding-bottom: 60px;
+		}
+		&.bs-section--home-forrester {
+			margin: 63px 0 0;
+		}
+		&.bs-section--home-is-purpose-built {
+			padding-top: 200px;
+			padding-bottom: 119px;
+		}
+		&.bs-section--ultimate-guide {
+			padding-bottom: 42px;
+			.bs-column {
+				&:last-child {
+					> p {
+						&:first-child {
+							margin-bottom: 21px;
+						}
+					}
+				}
+			}
+		}
+		&.r-tabslr-l2--anxcld1 {
+			padding: 120px 15px 95px;
+		}
+	}
+}

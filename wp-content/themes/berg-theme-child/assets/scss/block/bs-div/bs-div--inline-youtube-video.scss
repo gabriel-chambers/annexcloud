@@ -1,0 +1,117 @@
+.bs-div--inline-youtube-video {
+	position: relative;
+	margin: 35px -15px 0;
+	> div {
+		position: relative;
+		z-index: 1;
+	}
+	&::before,
+	&::after {
+		@include after-before;
+		background: url($inline-video-mask) center / contain no-repeat;
+	}
+	&::before {
+		top: -30px;
+		right: -100px;
+		width: 254px;
+		height: 193px;
+	}
+	&::after {
+		bottom: -45px;
+		left: -75px;
+		width: 200px;
+		height: 173px;
+	}
+	.play-button {
+		border-radius: 50%;
+		transition: background-color 0.3s ease-in-out;
+		&:hover {
+			background-color: color("red");
+		}
+	}
+	.media-elements {
+		&,
+		video,
+		iframe {
+			overflow: hidden;
+			border-radius: 5px;
+		}
+		&.teaser {
+			position: relative;
+			&::after {
+				@include after-before;
+				background: rgba(color("dark-blue"), 0.3);
+				inset: 0;
+			}
+		}
+		figure,
+		picture {
+			width: 100%;
+		}
+		.bs-common-image {
+			figure {
+				img {
+					width: 100%;
+					aspect-ratio: 117/66;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.bs-div--inline-youtube-video {
+		.play-button {
+			/* stylelint-disable-next-line declaration-no-important */
+			width: 55px !important;
+			/* stylelint-disable-next-line declaration-no-important */
+			height: 55px !important;
+		}
+	}
+}
+@include media-breakpoint-up(sm) {
+	.bs-div--inline-youtube-video {
+		&::before {
+			right: -100px;
+			width: 300px;
+			height: 260px;
+		}
+	}
+}
+@include media-breakpoint-up(md) {
+	.bs-div--inline-youtube-video {
+		margin: 65px 0 0;
+		&::before {
+			top: -60px;
+			right: -135px;
+			width: 400px;
+			height: 347px;
+		}
+		&::after {
+			left: -100px;
+			width: 254px;
+			height: 193px;
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-div--inline-youtube-video {
+		margin: 79px 0 0;
+		&::before {
+			top: -50px;
+			right: -258px;
+			width: 830px;
+			height: 797px;
+		}
+		&::after {
+			bottom: -64px;
+			left: -96px;
+			width: 300px;
+			height: 290px;
+		}
+		.play-button {
+			top: calc(50% + 25px);
+		}
+	}
+}

@@ -1,0 +1,50 @@
+@include media-breakpoint-up(xl) {
+	.bs-section--newsroom-post-list {
+		&.bs-section--resources {
+			.bs-row {
+				.facetwp-facet-pagination {
+					// stylelint-disable-next-line declaration-no-important
+					margin-top: 70px !important;// override resources page margin top value
+				}
+			}
+			.bs-row--filter-widget {
+				margin-right: -20px;
+				margin-left: -20px;
+				>.bs-column {
+					padding-right: 20px;
+					padding-left: 20px;
+				}
+				.facetwp-type-search {
+					.facetwp-icon {
+						padding-left: 11px;
+					}
+					.facetwp-search {
+						padding-left: 53px;
+					}
+				}
+			}
+			.facetwp-template {
+				margin-top: 8px;
+			}
+			.bs-posts {
+				&__column {
+					margin-bottom: 30px;
+				}
+				.bs-post {
+					&__date {
+						margin: 0 0 13px;
+						span {
+							font-size: 12px;
+							letter-spacing: 0.245em;
+							line-height: 12px;
+						}
+					}
+					&__details {
+						min-height: auto;
+						padding: 24px 0 64px;
+					}
+				}
+			}
+		}
+	}
+}

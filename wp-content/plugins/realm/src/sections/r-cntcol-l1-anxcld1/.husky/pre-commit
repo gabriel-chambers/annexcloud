@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx wp-scripts lint-js --fix ./**/*.js && npx wp-scripts lint-style --fix ./**/*.scss 
+git add -u

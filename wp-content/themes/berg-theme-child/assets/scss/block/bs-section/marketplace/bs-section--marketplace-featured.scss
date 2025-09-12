@@ -1,0 +1,30 @@
+.bs-section--marketplace-featured {
+	h2 {
+		margin-bottom: 50px;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+		line-height: 1.28;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--marketplace-featured {
+		h2 {
+			font-size: $h2-mobile-font-size;
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--marketplace-featured {
+		padding-bottom: 120px;
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--marketplace-featured {
+		h2 {
+			margin-bottom: 60px;
+			font-size: $thirtytwo-font-size;
+			line-height: 38px;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+.bs-section--platform-overview-trusted-global {
+	.bs-div--r-slide-content-wrapper {
+		.bs-div__inner {
+			.wp-block-quote {
+				cite {
+					bottom: 5px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.bs-section--platform-overview-trusted-global {
+		// stylelint-disable-next-line declaration-no-important
+		padding: 120px 0 !important;
+		.bs-row--common-title-description {
+			margin-bottom: 34px;
+		}
+		.bs-slider--r-tesslr-l1-anxcld1 {
+			.slick-arrow {
+				top: -114px;
+			}
+			.bs-div--r-slide-content-wrapper {
+				.bs-div__inner {
+					padding: 40px 40px 27px 39px;
+					.wp-block-quote {
+						p {
+							margin-bottom: 31px;
+						}
+						cite {
+							bottom: 14px;
+							margin-top: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"title": "Convertible Section Slider",
+	"description": "A component which act as a column to slider converter",
+	"category": "widgets",
+	"supports": {
+		"html": true
+	},
+	"attributes": {
+		"numberOfElements": {
+			"type": "number",
+			"default": 1
+		},
+		"minColSize": {
+			"type": "number",
+			"default": 3
+		},
+		"enableSlider": {
+			"type": "boolean",
+			"default": false
+		},
+		"showSliderToggle": {
+			"type": "boolean",
+			"default": false
+		},
+		"autoConversion": {
+			"type": "boolean",
+			"default": false
+		},
+		"conversionPoint": {
+			"type": "number",
+			"default": 3
+		},
+		"composition": {
+			"type": "object",
+			"default": {
+				"wrapper": "e25m/row",
+				"wrapperProps": {},
+				"elementContainer": "e25m/column",
+				"elementContainerProps": {
+					"sizeMd": 12,
+					"sizeSm": 12,
+					"sizeXs": 12,
+					"sizeLg": 12,
+					"sizeXl": 12,
+					"colClassList": ["bs-column", "col-sm-12"]
+				},
+				"element": "e25m/blurb",
+				"elementProps": {}
+			}
+		},
+		"rowLimit": {
+			"type": "object",
+			"default": {
+				"sizeXl": 3,
+				"sizeLg": 3,
+				"sizeMd": 4,
+				"sizeSm": 12,
+				"sizeXs": 12
+			}
+		}
+	}
+}

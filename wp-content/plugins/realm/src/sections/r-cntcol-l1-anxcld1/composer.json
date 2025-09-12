@@ -1,0 +1,33 @@
+{
+    "name": "e25/r-cntcol-l1-anxcld1",
+    "type": "e25-realm-section",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0",
+        "e25/r-cntcol-l1-rlm1":"1.8059.001-rc1"
+    },
+    "extra": {
+        "theme_files": [
+            {
+                "src": "scss/r-cntcol-l1--anxcld1.scss",
+                "dest": "assets/scss/realm/r-cntcol/r-cntcol-l1--anxcld1.scss",
+                "overrideFilePath": "assets/scss/realm-custom/r-cntcol/r-cntcol-l1--anxcld1.scss"
+            },
+            {
+                "src": "scss/bs-counter--r-cntcol-l1-anxcld1.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-counter/r-cntcol-l1-anxcld1.scss",
+                "overrideFilePath": "assets/scss/block/bs-counter/bs-counter--r-cntcol-l1-anxcld1.scss"
+            },
+            {
+				"src": "scss/bs-div--r-cntcol-l1-anxcld1-counter-wrapper.scss",
+				"dest": "assets/scss/realm/berg-blocks/bs-div/r-cntcol-l1-anxcld1.scss",
+				"overrideFilePath": "assets/scss/block/bs-div/bs-div--r-cntcol-l1-anxcld1-counter-wrapper.scss"
+			},
+            {
+				"src": "scss/bs-row--r-cntcol-l1-anxcld1-counter.scss",
+				"dest": "assets/scss/realm/berg-blocks/bs-row/r-cntcol-l1-anxcld1.scss",
+				"overrideFilePath": "assets/scss/block/bs-row/bs-row--r-cntcol-l1-anxcld1-counter.scss"
+			}
+        ]
+    }
+}

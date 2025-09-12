@@ -1,0 +1,124 @@
+.bs-section--privacy-content {
+	padding: 0 15px 67px;
+	.bs-advance-accordion {
+		display: block;
+		&__left-container {
+			display: none;
+		}
+		.card {
+			.accordion__block__btn {
+				padding: 20px 0;
+				border-top: 1px solid color("dark-grey");
+				background-color: color("white");
+				color: color("dark-grey");
+				font-size: 24px;
+				font-weight: $font-weight-semi-bold;
+				&:not(.expand-fixed) {
+					&::after {
+						top: -12px;
+						right: 2px;
+						width: 12px;
+						height: 12px;
+						border: 1px solid color("dark-grey");
+						border-width: 1px 1px 0 0;
+					}
+				}
+				&:hover {
+					color: color("space-blue");
+					&:not(.expand-fixed) {
+						&::after {
+							border-color: color("purple");
+						}
+					}
+				}
+				span {
+					display: block;
+					width: calc(100% - 45px);
+				}
+			}
+      /* stylelint-disable */
+			&.active {
+				.accordion__block__btn {
+					border-top: 0;
+					background: $gradient-accordion-border 0% 0%/100% 1px no-repeat;
+					color: color("space-blue");
+					&:not(.expand-fixed) {
+						&::after {
+							top: 11px;
+							border-width: 1px 1px 0 0;
+						}
+					}
+				}
+			}
+      /* stylelint-enable */
+			&-body {
+				padding: 2px 0 20px;
+				h2 {
+					margin: 25px 0 17px;
+					color: color("space-blue");
+					font-size: $h5-font-size;
+					font-weight: $font-weight-normal;
+					letter-spacing: 0;
+				}
+			}
+			&:last-child {
+				border-bottom: 1px solid color("dark-grey");
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--privacy-content {
+		padding: 25px 0 102px;
+		.bs-advance-accordion {
+			.card {
+				&-body {
+					padding: 2px 0 32px;
+					ol,
+					ul {
+						& + h2 {
+							margin-top: -24px;
+						}
+					}
+					p {
+						margin-bottom: 29px;
+						& + :is(ul, ol) {
+							margin: -8px 0 48px;
+						}
+						&:first-child {
+							margin-bottom: 26px;
+						}
+					}
+          /* stylelint-disable */
+					h2 {
+						font-size: $h4-font-size;
+						& + p {
+							margin-bottom: 24px;
+							& + p {
+								margin-top: 30px;
+							}
+							& + :is(ul, ol) {
+								margin-top: -3px;
+							}
+						}
+					}
+          /* stylelint-enable */
+				}
+				.accordion__block__btn {
+					padding: 39.2px 0;
+					font-size: $h3-font-size;
+					&:not(.expand-fixed) {
+						&::after {
+							width: 18px;
+							height: 18px;
+						}
+					}
+				}
+			}
+		}
+		.bs-row--privacy-contact {
+			margin-top: 81px;
+		}
+	}
+}

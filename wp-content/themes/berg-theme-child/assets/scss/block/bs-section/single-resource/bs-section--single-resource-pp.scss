@@ -1,0 +1,14 @@
+@include media-breakpoint-up(xl) {
+	.bs-section--single-resource-pp {
+		&.bs-section--common-blog-banner {
+			padding-bottom: 31px;
+		}
+		&.bs-section--common-content {
+			padding-bottom: 86px;
+		}
+		&.bs-section--blog-related-posts {
+			padding-top: 121px;
+			padding-bottom: 89px;
+		}
+	}
+}

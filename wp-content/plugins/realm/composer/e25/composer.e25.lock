@@ -1,0 +1,1224 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e0fe9b811a813291ec26b68bf99e0d56",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
+                "symfony/process": "^2.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "pantheon",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "symfony",
+                "tastyigniter",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v1.12.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-09-13T08:19:44+00:00"
+        },
+        {
+            "name": "davidbarratt/custom-installer",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidbarratt/custom-installer.git",
+                "reference": "b7300b374697dc09a2b9e4934b13f54f6d541dbb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidbarratt/custom-installer/zipball/b7300b374697dc09a2b9e4934b13f54f6d541dbb",
+                "reference": "b7300b374697dc09a2b9e4934b13f54f6d541dbb",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "composer-plugin-api": "~1 || ~2"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0@dev || ~2.0@dev",
+                "phpunit/phpunit": "~4.1",
+                "squizlabs/php_codesniffer": "~2.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "DavidBarratt\\CustomInstaller\\CustomInstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "DavidBarratt\\CustomInstaller\\": "src"
+                }
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Install custom types into custom locations.",
+            "homepage": "https://github.com/davidbarratt/custom-installer",
+            "support": {
+                "issues": "https://github.com/davidbarratt/custom-installer/issues",
+                "source": "https://github.com/davidbarratt/custom-installer/tree/1.1.0"
+            },
+            "time": "2020-12-11T16:40:39+00:00"
+        },
+        {
+            "name": "e25/r-blbslr-l4-anxcld1",
+            "version": "1.8059.001-rc2",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/blurb-slider-layout-4-annexcloud-1.git",
+                "reference": "5a01aef684e862f57b9884d3f7e1dbd0ea4263f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fblurb-slider-layout-4-annexcloud-1/repository/archive.zip?sha=5a01aef684e862f57b9884d3f7e1dbd0ea4263f4",
+                "reference": "5a01aef684e862f57b9884d3f7e1dbd0ea4263f4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "e25/r-blbslr-l4-rlm1": "1.8059.001-rc1",
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-blbslr-l4--anxcld1.scss",
+                        "dest": "assets/scss/realm/r-blbslr/r-blbslr-l4--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-blbslr/r-blbslr-l4--anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-slider--r-blbslr-l4-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-slider/r-blbslr-l4-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-slider/bs-slider--r-blbslr-l4-anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-blurb--r-blbslr-l4-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-blurb/r-blbslr-l4-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-blurb/bs-blurb--r-blbslr-l4-anxcld1.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-05-02T14:55:41+00:00"
+        },
+        {
+            "name": "e25/r-blbslr-l4-rlm1",
+            "version": "1.8059.001-rc1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/blurb-slider-layout-4-realm-1.git",
+                "reference": "37c17efcbcb8e0a11763b3b22403a84ad08bf995"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fblurb-slider-layout-4-realm-1/repository/archive.zip?sha=37c17efcbcb8e0a11763b3b22403a84ad08bf995",
+                "reference": "37c17efcbcb8e0a11763b3b22403a84ad08bf995",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/bs-slider--r-blbslr-l4.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-slider/r-blbslr-l4.scss",
+                        "overrideFilePath": "assets/scss/block/bs-slider/bs-slider--r-blbslr-l4.scss"
+                    },
+                    {
+                        "src": "scss/bs-slider--r-blbslr-l4-overflow-visible.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-slider/r-blbslr-l4-overflow-visible.scss",
+                        "overrideFilePath": "assets/scss/block/bs-slider/bs-slider--r-blbslr-l4-overflow-visible.scss"
+                    },
+                    {
+                        "src": "scss/bs-slider--r-blbslr-l4-lg-stack.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-slider/r-blbslr-l4-lg-stack.scss",
+                        "overrideFilePath": "assets/scss/block/bs-slider/bs-slider--r-blbslr-l4-lg-stack.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-04-27T10:33:25+00:00"
+        },
+        {
+            "name": "e25/r-blbstk-l3-anxcld1",
+            "version": "1.8062000.001",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/blurb-stack-layout-3-annexcloud-1.git",
+                "reference": "274b57517ba1fe71bb8134a12e6d5f9a6aeb7c5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fblurb-stack-layout-3-annexcloud-1/repository/archive.zip?sha=274b57517ba1fe71bb8134a12e6d5f9a6aeb7c5b",
+                "reference": "274b57517ba1fe71bb8134a12e6d5f9a6aeb7c5b",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-blbstk-l3--anxcld1.scss",
+                        "dest": "assets/scss/realm/r-blbstk/r-blbstk-l3--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-blbstk/r-blbstk-l3--anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-blurb--r-blbstk-l3-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-blurb/r-blbstk-l3-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-blurb/bs-blurb--r-blbstk-l3-anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-blbstk-l3-anxcld1-blurb-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-blbstk-l3-anxcld1-blurb-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-blbstk-l3-anxcld1-blurb-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-row--r-blbstk-l3-anxcld1-blurbs-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-row/r-blbstk-l3-anxcld1-blurbs-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-blbstk-l3-anxcld1-blurbs-wrapper.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-06-06T05:09:48+00:00"
+        },
+        {
+            "name": "e25/r-cntcol-l1-anxcld1",
+            "version": "1.8059.001-rc2",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/counter-collection-layout-1-annexcloud-1.git",
+                "reference": "e24e23af742fb0be120d052f8e6bad8aa54143a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fcounter-collection-layout-1-annexcloud-1/repository/archive.zip?sha=e24e23af742fb0be120d052f8e6bad8aa54143a3",
+                "reference": "e24e23af742fb0be120d052f8e6bad8aa54143a3",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "e25/r-cntcol-l1-rlm1": "1.8059.001-rc1",
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-cntcol-l1--anxcld1.scss",
+                        "dest": "assets/scss/realm/r-cntcol/r-cntcol-l1--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-cntcol/r-cntcol-l1--anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-counter--r-cntcol-l1-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-counter/r-cntcol-l1-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-counter/bs-counter--r-cntcol-l1-anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-cntcol-l1-anxcld1-counter-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-cntcol-l1-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-cntcol-l1-anxcld1-counter-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-row--r-cntcol-l1-anxcld1-counter.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-row/r-cntcol-l1-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-cntcol-l1-anxcld1-counter.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-04-28T14:07:05+00:00"
+        },
+        {
+            "name": "e25/r-cntcol-l1-anxcld2",
+            "version": "1.8062000.001",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/counter-collection-layout-1-annexcloud-2.git",
+                "reference": "66b28069a1fc7df2ae771874b8c0d410cb240409"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fcounter-collection-layout-1-annexcloud-2/repository/archive.zip?sha=66b28069a1fc7df2ae771874b8c0d410cb240409",
+                "reference": "66b28069a1fc7df2ae771874b8c0d410cb240409",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "e25/r-cntcol-l1-rlm1": "1.8059.001-rc1",
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-cntcol-l1--anxcld2.scss",
+                        "dest": "assets/scss/realm/r-cntcol/r-cntcol-l1--anxcld2.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-cntcol/r-cntcol-l1--anxcld2.scss"
+                    },
+                    {
+                        "src": "scss/bs-counter--r-cntcol-l1-anxcld2.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-counter/r-cntcol-l1-anxcld2.scss",
+                        "overrideFilePath": "assets/scss/block/bs-counter/bs-counter--r-cntcol-l1-anxcld2.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-cntcol-l1-anxcld2-counter-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-cntcol-l1-anxcld2-counter-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-cntcol-l1-anxcld2-counter-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-row--r-cntcol-l1-anxcld2-counters-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-row/r-cntcol-l1-anxcld2-counters-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-cntcol-l1-anxcld2-counters-wrapper.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-06-05T11:12:46+00:00"
+        },
+        {
+            "name": "e25/r-cntcol-l1-rlm1",
+            "version": "1.8059.001-rc1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/counter-collection-layout-1-realm-1.git",
+                "reference": "264b089c239ab44fe84ed8492a2f44113aaa4cff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fcounter-collection-layout-1-realm-1/repository/archive.zip?sha=264b089c239ab44fe84ed8492a2f44113aaa4cff",
+                "reference": "264b089c239ab44fe84ed8492a2f44113aaa4cff",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/bs-counter--r-cntcol-l1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-counter/r-cntcol-l1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-counter/bs-counter--r-cntcol-l1.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-cntcol-l1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-cntcol-l1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-cntcol-l1.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-cntcol-l1-count-left.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-cntcol-l1-count-left.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-cntcol-l1-count-left.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-cntcol-l1-prefix-top.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-cntcol-l1-prefix-top.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-cntcol-l1-prefix-top.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-cntcol-l1-count-top.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-cntcol-l1-count-top.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-cntcol-l1-count-top.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-04-28T05:12:51+00:00"
+        },
+        {
+            "name": "e25/r-crdstk-l3-anxcld1",
+            "version": "1.8062.001-rc1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/card-stack-layout-3-annexcloud-1.git",
+                "reference": "f4e03f7020666458d1f72a7635c99be166646c44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fcard-stack-layout-3-annexcloud-1/repository/archive.zip?sha=f4e03f7020666458d1f72a7635c99be166646c44",
+                "reference": "f4e03f7020666458d1f72a7635c99be166646c44",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-crdstk-l3--anxcld1.scss",
+                        "dest": "assets/scss/realm/r-crdstk/r-crdstk-l3--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-crdstk/r-crdstk-l3--anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-card--r-crdstk-l3-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-card/r-crdstk-l3-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-card/bs-card--r-crdstk-l3-anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-row--r-crdstk-l3-anxcld1-card-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-row/r-crdstk-l3-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-crdstk-l3-anxcld1-card-wrapper.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-05-15T13:09:44+00:00"
+        },
+        {
+            "name": "e25/r-crdstk-l3-anxcld2",
+            "version": "1.8062.001-rc1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/card-stack-layout-3-annexcloud-2.git",
+                "reference": "9d1884950e50c7f0bdfcd922a7706f0c92567cb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fcard-stack-layout-3-annexcloud-2/repository/archive.zip?sha=9d1884950e50c7f0bdfcd922a7706f0c92567cb5",
+                "reference": "9d1884950e50c7f0bdfcd922a7706f0c92567cb5",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-crdstk-l3--anxcld2.scss",
+                        "dest": "assets/scss/realm/r-crdstk/r-crdstk-l3--anxcld2.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-crdstk/r-crdstk-l3--anxcld2.scss"
+                    },
+                    {
+                        "src": "scss/bs-card--r-crdstk-l3-anxcld2.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-card/r-crdstk-l3-anxcld2.scss",
+                        "overrideFilePath": "assets/scss/block/bs-card/bs-card--r-crdstk-l3-anxcld2.scss"
+                    },
+                    {
+                        "src": "scss/bs-row--r-crdstk-l3-anxcld2-card-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-row/r-crdstk-l3-anxcld2.scss",
+                        "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-crdstk-l3-anxcld2-card-wrapper.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-05-15T13:11:23+00:00"
+        },
+        {
+            "name": "e25/r-crdstk-l3-anxcld3",
+            "version": "1.8062000.001",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/card-stack-layout-3-annexcloud-3.git",
+                "reference": "9d0220f3f61d9281e2ac45f17318e90a999c5c6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fcard-stack-layout-3-annexcloud-3/repository/archive.zip?sha=9d0220f3f61d9281e2ac45f17318e90a999c5c6e",
+                "reference": "9d0220f3f61d9281e2ac45f17318e90a999c5c6e",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-crdstk-l3--anxcld3.scss",
+                        "dest": "assets/scss/realm/r-crdstk/r-crdstk-l3--anxcld3.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-crdstk/r-crdstk-l3--anxcld3.scss"
+                    },
+                    {
+                        "src": "scss/bs-card--r-crdstk-l3-anxcld3.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-card/r-crdstk-l3-anxcld3.scss",
+                        "overrideFilePath": "assets/scss/block/bs-card/bs-card--r-crdstk-l3-anxcld3.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-crdstk-l3-anxcld3-card-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-crdstk-l3-anxcld3-card-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crdstk-l3-anxcld3-card-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-row--r-crdstk-l3-anxcld3-cards-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-row/r-crdstk-l3-anxcld3-cards-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-crdstk-l3-anxcld3-cards-wrapper.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-06-05T09:51:21+00:00"
+        },
+        {
+            "name": "e25/r-crdstk-l4-anxcld1",
+            "version": "1.8062000.001",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/card-stack-layout-4-annexcloud-1.git",
+                "reference": "f506532adfd40d41fcd349fbba9654164d7c451c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fcard-stack-layout-4-annexcloud-1/repository/archive.zip?sha=f506532adfd40d41fcd349fbba9654164d7c451c",
+                "reference": "f506532adfd40d41fcd349fbba9654164d7c451c",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-crdstk-l4--anxcld1.scss",
+                        "dest": "assets/scss/realm/r-crdstk/r-crdstk-l4--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-crdstk/r-crdstk-l4--anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-card--r-crdstk-l4-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-card/r-crdstk-l4-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-card/bs-card--r-crdstk-l4-anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-crdstk-l4-anxcld1-card-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-crdstk-l4-anxcld1-card-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crdstk-l4-anxcld1-card-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-row--r-crdstk-l4-anxcld1-title-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-row/r-crdstk-l4-anxcld1-title-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-crdstk-l4-anxcld1-title-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-row--r-crdstk-l4-anxcld1-cards-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-row/r-crdstk-l4-anxcld1-cards-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-crdstk-l4-anxcld1-cards-wrapper.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-06-05T09:20:49+00:00"
+        },
+        {
+            "name": "e25/r-crdstk-l4-anxcld2",
+            "version": "1.8062000.001",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/card-stack-layout-4-annexcloud-2.git",
+                "reference": "fac9c6f8cb44d68a7847286a7093f626c31ec2b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fcard-stack-layout-4-annexcloud-2/repository/archive.zip?sha=fac9c6f8cb44d68a7847286a7093f626c31ec2b6",
+                "reference": "fac9c6f8cb44d68a7847286a7093f626c31ec2b6",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-crdstk-l4--anxcld2.scss",
+                        "dest": "assets/scss/realm/r-crdstk/r-crdstk-l4--anxcld2.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-crdstk/r-crdstk-l4--anxcld2.scss"
+                    },
+                    {
+                        "src": "scss/bs-card--r-crdstk-l4-anxcld2.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-card/r-crdstk-l4-anxcld2.scss",
+                        "overrideFilePath": "assets/scss/block/bs-card/bs-card--r-crdstk-l4-anxcld2.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-crdstk-l4-anxcld2-card-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-crdstk-l4-anxcld2-card-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crdstk-l4-anxcld2-card-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-crdstk-l4-anxcld2-counter-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-crdstk-l4-anxcld2-counter-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crdstk-l4-anxcld2-counter-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-row--r-crdstk-l4-anxcld2-cards-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-row/r-crdstk-l4-anxcld2-cards-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-crdstk-l4-anxcld2-cards-wrapper.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-06-05T09:01:59+00:00"
+        },
+        {
+            "name": "e25/r-crlcol-l1f-asn2",
+            "version": "1.8062000.001",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/logo-carousel-layout-1f-asana-1.git",
+                "reference": "8ccbea709a25472f5df7fb2a788cfea9bcaffedf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Flogo-carousel-layout-1f-asana-1/repository/archive.zip?sha=8ccbea709a25472f5df7fb2a788cfea9bcaffedf",
+                "reference": "8ccbea709a25472f5df7fb2a788cfea9bcaffedf",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "js/custom.js",
+                        "dest": "assets/js/realm/r-crlcol/r-crlcol-l1f-asn2.js",
+                        "overrideFilePath": "assets/js/realm-custom/r-crlcol/r-crlcol-l1f--asn2.js"
+                    },
+                    {
+                        "src": "scss/r-crlcol-l1f--asn2.scss",
+                        "dest": "assets/scss/realm/r-crlcol/r-crlcol-l1f--asn2.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-crlcol/r-crlcol-l1f--asn2.scss"
+                    },
+                    {
+                        "src": "scss/bs-blurb--r-crlcol-l1f-asn2.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-blurb/r-crlcol-l1f-asn2.scss",
+                        "overrideFilePath": "assets/scss/block/bs-blurb/bs-blurb--r-crlcol-l1f-asn2.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-crlcol-l1f-asn2-logo-row-ltr.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-crlcol-l1f-asn2-logo-row-ltr.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crlcol-l1f-asn2-logo-row-ltr.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-crlcol-l1f-asn2-logo-row-rtl.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-crlcol-l1f-asn2-logo-row-rtl.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crlcol-l1f-asn2-logo-row-rtl.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-crlcol-l1f-asn2-logo-row.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-crlcol-l1f-asn2-logo-row.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crlcol-l1f-asn2-logo-row.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-03-23T11:11:17+00:00"
+        },
+        {
+            "name": "e25/r-imgcnt-l1-anxcld1",
+            "version": "1.8062000.001",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/image-content-layout-1-annexcloud-1.git",
+                "reference": "27235d72070d34c7d7ee231afbb2b85daf4c0b09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fimage-content-layout-1-annexcloud-1/repository/archive.zip?sha=27235d72070d34c7d7ee231afbb2b85daf4c0b09",
+                "reference": "27235d72070d34c7d7ee231afbb2b85daf4c0b09",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-imgcnt-l1--anxcld1.scss",
+                        "dest": "assets/scss/realm/r-imgcnt/r-imgcnt-l1--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-imgcnt/r-imgcnt-l1--anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-card--r-imgcnt-l1-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-card/r-imgcnt-l1-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-card/bs-card--r-imgcnt-l1-anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-imgcnt-l1-anxcld1-content-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-imgcnt-l1-anxcld1-content-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-imgcnt-l1-anxcld1-content-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-imgcnt-l1-anxcld1-media-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-imgcnt-l1-anxcld1-media-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-imgcnt-l1-anxcld1-media-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-imgcnt-l1-anxcld1-cards-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-imgcnt-l1-anxcld1-cards-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-imgcnt-l1-anxcld1-cards-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-row--r-imgcnt-l1-anxcld1-media-content-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-row/r-imgcnt-l1-anxcld1-media-content-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-row/bs-row--r-imgcnt-l1-anxcld1-media-content-wrapper.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-06-07T12:12:27+00:00"
+        },
+        {
+            "name": "e25/r-spstbk-l1-anxcld1",
+            "version": "1.8059.001-rc1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/single-post-block-layout-1-annexcloud-1.git",
+                "reference": "0f1d318422dc00f7579869c2c6457b14c3903d8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Fsingle-post-block-layout-1-annexcloud-1/repository/archive.zip?sha=0f1d318422dc00f7579869c2c6457b14c3903d8c",
+                "reference": "0f1d318422dc00f7579869c2c6457b14c3903d8c",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-spstbk-l1--anxcld1.scss",
+                        "dest": "assets/scss/realm/r-spstbk/r-spstbk-l1--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-spstbk/r-spstbk-l1--anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-single-post--r-spstbk-l1-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-single-post/r-spstbk-l1-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-single-post/bs-single-post--r-spstbk-l1-anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-single-post--no-image-r-spstbk-l1-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-single-post/r-no-image-spstbk-l1-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-single-post/bs-single-post--no-image-r-spstbk-l1-anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-single-post--featured-r-spstbk-l1-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-single-post/r-featured-spstbk-l1-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-single-post/bs-single-post--featured-r-spstbk-l1-anxcld1.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-04-27T08:37:28+00:00"
+        },
+        {
+            "name": "e25/r-tabslr-l2-anxcld1",
+            "version": "1.8059.001-rc2",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/tab-slider-layout-2-annexcloud-1.git",
+                "reference": "00e405d0968f9a4ca450c6739801d93deb15bb9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Ftab-slider-layout-2-annexcloud-1/repository/archive.zip?sha=00e405d0968f9a4ca450c6739801d93deb15bb9b",
+                "reference": "00e405d0968f9a4ca450c6739801d93deb15bb9b",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "e25/r-tabslr-l2-rlm1": "1.8059.001-rc1",
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-tabslr-l2--anxcld1.scss",
+                        "dest": "assets/scss/realm/r-tabslr/r-tabslr-l2--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-tabslr/r-tabslr-l2--anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-tabslr-l2-anxcld1-slide-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-tabslr-l2-anxcld1-slide-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-tabslr-l2-anxcld1-slide-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-tab-slider--r-tabslr-l2-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-tab-slider/r-tabslr-l2-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-tab-slider/bs-tab-slider--r-tabslr-l2-anxcld1.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-05-03T04:49:06+00:00"
+        },
+        {
+            "name": "e25/r-tabslr-l2-rlm1",
+            "version": "1.8059.001-rc1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/tab-slider-layout-2-realm-1.git",
+                "reference": "ae7cdcba000e5ba6ca44fb74cb35a3839a9dea69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Ftab-slider-layout-2-realm-1/repository/archive.zip?sha=ae7cdcba000e5ba6ca44fb74cb35a3839a9dea69",
+                "reference": "ae7cdcba000e5ba6ca44fb74cb35a3839a9dea69",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/bs-div--r-title-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-title-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-title-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-slide-media-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-slide-media-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-slide-media-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-slide-content-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-slide-content-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-slide-content-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-tab-slider--r-tabslr-l2.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-tab-slider/r-tabslr-l2.scss",
+                        "overrideFilePath": "assets/scss/block/bs-tab-slider/bs-tab-slider--r-tabslr-l2.scss"
+                    },
+                    {
+                        "src": "scss/bs-tab-slider--r-tabslr-l2-tabs-right.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-tab-slider/r-tabslr-l2-tabs-right.scss",
+                        "overrideFilePath": "assets/scss/block/bs-tab-slider/bs-tab-slider--r-tabslr-l2-tabs-right.scss"
+                    },
+                    {
+                        "src": "scss/bs-tab-slider--r-tabslr-l2-tabs-columns.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-tab-slider/r-tabslr-l2-tabs-columns.scss",
+                        "overrideFilePath": "assets/scss/block/bs-tab-slider/bs-tab-slider--r-tabslr-l2-tabs-columns.scss"
+                    },
+                    {
+                        "src": "scss/bs-tab-slider--r-tabslr-l2-tabs-bottom-mobile.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-tab-slider/r-tabslr-l2-tabs-bottom-mobile.scss",
+                        "overrideFilePath": "assets/scss/block/bs-tab-slider/bs-tab-slider--r-tabslr-l2-tabs-bottom-mobile.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-04-23T05:50:22+00:00"
+        },
+        {
+            "name": "e25/r-tesimg-l2-anxcld1",
+            "version": "1.8062000.001",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/testimonial-image-layout-2-annexcloud-1.git",
+                "reference": "09bd83173b0bd7733bcd417ae888dcb74e54fa2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Ftestimonial-image-layout-2-annexcloud-1/repository/archive.zip?sha=09bd83173b0bd7733bcd417ae888dcb74e54fa2b",
+                "reference": "09bd83173b0bd7733bcd417ae888dcb74e54fa2b",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-tesimg-l2--anxcld1.scss",
+                        "dest": "assets/scss/realm/r-tesimg/r-tesimg-l2--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-tesimg/r-tesimg-l2--anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-tesimg-l2-anxcld1-media-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-tesimg-l2-anxcld1-media-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-tesimg-l2-anxcld1-media-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-tesimg-l2-anxcld1-content-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-tesimg-l2-anxcld1-content-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-tesimg-l2-anxcld1-content-wrapper.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-06-06T11:28:08+00:00"
+        },
+        {
+            "name": "e25/r-tesslr-l1-anxcld1",
+            "version": "1.8062.001-rc1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/testimonial-slider-layout-1-annexcloud-1.git",
+                "reference": "82ce63fdd83727b3c8c90ce1a9476a1fe9d160a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Ftestimonial-slider-layout-1-annexcloud-1/repository/archive.zip?sha=82ce63fdd83727b3c8c90ce1a9476a1fe9d160a4",
+                "reference": "82ce63fdd83727b3c8c90ce1a9476a1fe9d160a4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/r-tesslr-l1--anxcld1.scss",
+                        "dest": "assets/scss/realm/r-tesslr/r-tesslr-l1--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/realm-custom/r-tesslr/r-tesslr-l1--anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-slider--r-tesslr-l1-anxcld1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-slider/r-tesslr-l1-anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-slider/bs-slider--r-tesslr-l1-anxcld1.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-tesslr-l1-anxcld1-slide-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-tesslr-l1--anxcld1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-tesslr-l1-anxcld1-slide-wrapper.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-05-15T15:34:33+00:00"
+        },
+        {
+            "name": "e25/r-tesslr-l1-rlm1",
+            "version": "1.8062.001-rc1",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.com:e25realm/testimonial-slider-layout-1-realm-1.git",
+                "reference": "ff2239b8ea5e0cc72adf26f7f8b0622894b1030d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/e25realm%2Ftestimonial-slider-layout-1-realm-1/repository/archive.zip?sha=ff2239b8ea5e0cc72adf26f7f8b0622894b1030d",
+                "reference": "ff2239b8ea5e0cc72adf26f7f8b0622894b1030d",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/gandalf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "e25-realm-section",
+            "extra": {
+                "theme_files": [
+                    {
+                        "src": "scss/bs-div--r-title-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-title-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-title-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-slide-media-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-slide-media-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-slide-media-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-div--r-slide-content-wrapper.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-div/r-slide-content-wrapper.scss",
+                        "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-slide-content-wrapper.scss"
+                    },
+                    {
+                        "src": "scss/bs-slider--r-tesslr-l1.scss",
+                        "dest": "assets/scss/realm/berg-blocks/bs-slider/r-tesslr-l1.scss",
+                        "overrideFilePath": "assets/scss/block/bs-slider/bs-slider--r-tesslr-l1.scss"
+                    }
+                ]
+            },
+            "notification-url": "https://repo.packagist.com/gandalf/downloads/",
+            "time": "2023-05-15T13:27:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "RC",
+    "stability-flags": {
+        "e25/r-blbslr-l4-anxcld1": 5,
+        "e25/r-cntcol-l1-anxcld1": 5,
+        "e25/r-tabslr-l2-anxcld1": 5,
+        "e25/r-spstbk-l1-anxcld1": 5,
+        "e25/r-tesslr-l1-rlm1": 5,
+        "e25/r-tesslr-l1-anxcld1": 5,
+        "e25/r-crdstk-l3-anxcld1": 5,
+        "e25/r-crdstk-l3-anxcld2": 5
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.3|^8.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

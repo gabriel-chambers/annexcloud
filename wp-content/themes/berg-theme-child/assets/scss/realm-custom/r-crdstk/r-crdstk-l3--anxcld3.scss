@@ -1,0 +1,64 @@
+$r-crdstk-l3-anxcld3: (
+	section-padding: 50px 15px,
+	section-padding-lg: 120px 0 10px,
+	column-margin: 0 0 30px,
+);
+
+@import "./../../realm/r-crdstk/r-crdstk-l3--anxcld3.scss";
+.r-crdstk-l3--anxcld3 {
+	.bs-div--r-crdstk-l3-anxcld3-card-wrapper {
+		.bs-card--r-crdstk-l3-anxcld3 {
+			&.bs-card {
+				.bs-card {
+					&__description {
+						&__title {// stylelint-disable-next-line max-nesting-depth
+							* {
+								font-size: 18px;
+								line-height: 1.2;
+							}
+						}
+						* {
+							font-weight: $font-weight-normal;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.r-crdstk-l3--anxcld3 {
+		.bs-div--r-crdstk-l3-anxcld3-card-wrapper {
+			padding-top: 26px;
+			.bs-card--r-crdstk-l3-anxcld3 {
+				&.bs-card {
+					.bs-card {
+						&__title {
+							margin-bottom: 21px;
+							* {
+								margin-bottom: 0;
+								font-size: 28px;
+								letter-spacing: 0;
+							}
+						}
+						&__image {
+							figure {
+								width: 55px;
+								height: 55px;
+								margin-bottom: 37px;
+							}
+						}
+						&__description {
+							* {
+								color: color("dark-grey");
+								font-size: 16px;
+								line-height: 24px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

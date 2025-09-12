@@ -1,0 +1,16 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+@import "variables";
+
+//Editor Global
+.editor-post-title {
+	label,
+	textarea {
+		text-align: center;
+	}
+}

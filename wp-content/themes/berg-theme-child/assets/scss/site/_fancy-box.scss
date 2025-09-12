@@ -1,0 +1,51 @@
+// leadership popup
+.bs-post__target--popup-leadership {
+	$bs-post: ".bs-post";
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+	&.fancybox__content {
+		.is-close-btn {
+			position: absolute;
+			top: 22px;
+			right: 22px;
+			background: transparent;
+			svg {
+				color: color("mid-gray");
+			}
+		}
+	}
+	.bs-row--leadership-popup {
+		margin: 0 -15px;
+	}
+	#{$bs-post} {
+		&__details {
+			height: 100%;
+			padding: 0;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	html.with-fancybox body.hide-scrollbar {
+		/* stylelint-disable -- declaration-no-important*/
+		overflow: auto !important;
+		/* stylelint-enable */
+		margin-right: 0;
+	}
+	// leadership popup
+	.bs-post__target--popup-leadership {
+		$bs-post: ".bs-post";
+		min-height: 685px;
+		padding: 0;
+		margin: 15px 131px 39px;
+		#{$bs-post} {
+			&__details {
+				#{$bs-post}__description,
+				.bs-row {
+					height: 100%;
+				}
+			}
+		}
+	}
+}

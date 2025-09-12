@@ -1,0 +1,35 @@
+/* Grid containers */
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1200px,
+);
+$enable-responsive-font-sizes: false;
+
+$body-color: #41546f;
+
+/* Font family */
+$font-family-base: "Plus Jakarta Sans", sans-serif;
+$font-family-secondary: "Lexend", sans-serif;
+
+/* Font sizes */
+$font-size-base: 1rem;
+$font-size-lg: 1rem;
+$font-size-sm: 0.75rem;
+$font-size-xs: 0.625rem;
+
+$h1-font-size: 60px;
+$h2-font-size: 48px;
+$h3-font-size: 32px;
+$h4-font-size: 26px;
+$h5-font-size: 22px;
+$h6-font-size: 16px;//14->16
+
+/* $font-weight-lighter: lighter; */
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;

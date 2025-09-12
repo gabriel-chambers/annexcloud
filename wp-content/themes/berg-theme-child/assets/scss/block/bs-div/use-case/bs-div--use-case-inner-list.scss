@@ -1,0 +1,65 @@
+.bs-div--use-case-inner-list {
+	padding-left: 30px;
+	margin-block: 24px 40px;
+	&::before {
+		@include after-before;
+		top: 0;
+		left: 0;
+		width: 2px;
+		height: 100%;
+		background: $use-case-list-gradient;
+	}
+	> div {
+		> * {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		p,
+		li {
+			margin-bottom: 12px;
+			font-size: 16px;//14->16
+		}
+		ul {
+			padding: 0;
+			list-style-type: none;
+			li {
+				position: relative;
+				padding-left: 18px;
+				margin-bottom: 5px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				&::before {
+					@include after-before;
+					top: 9px;
+					left: 0;
+					width: 6px;
+					height: 6px;
+					border-radius: 100%;
+					background-color: color("purple");
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-div--use-case-inner-list {
+		> div {
+			p,
+			li {
+				font-size: 16px;
+			}
+			ul {
+				li {
+					&::before {
+						top: 11px;
+						width: 8px;
+						height: 8px;
+					}
+				}
+			}
+		}
+	}
+}

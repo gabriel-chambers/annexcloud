@@ -1,0 +1,4 @@
+{
+    "wp-content/themes/berg-theme-child/assets/js/**/*.js": "eslint --max-warnings 0",
+    "wp-content/themes/berg-theme-child/assets/scss/**/*.scss": "stylelint --max-warnings 0"
+}

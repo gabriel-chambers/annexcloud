@@ -1,0 +1,50 @@
+
+
+@include media-breakpoint-up(lg) {
+	.bs-section--request-demo-pp {
+		&.bs-section--request-demo-content-form {
+			.hs-form-private {
+				.hs-submit {
+					.hs-button {
+						line-height: 20px;//revert
+					}
+				}
+			}
+		}
+		&.bs-section--request-demo-moving-logo-slider {
+			&.bs-section--common-moving-logo-slider {
+				padding: 59px 0 120px;
+				&::before,
+				&::after {
+					display: none;
+				}
+			}
+		}
+		&.bs-section--hear-from-our-team {
+			.bs-div--r-tesslr-l1-anxcld1-slide-wrapper {
+				.bs-div--r-slide-content-wrapper {
+					:is(h1, h2, h3, h4, h5, h6) {
+						margin-bottom: 23px;
+					}
+					.wp-block-quote {
+						p {
+							&:first-child {
+								text-indent: 53px;
+							}
+						}
+						cite {
+							/* stylelint-disable max-nesting-depth */
+							strong {
+								&::after {
+									margin: 0 11px 0 17px;
+								}
+
+							}
+							/* stylelint-enable max-nesting-depth */
+						}
+					}
+				}
+			}
+		}
+	}
+}

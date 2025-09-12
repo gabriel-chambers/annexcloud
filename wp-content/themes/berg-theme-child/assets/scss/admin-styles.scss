@@ -1,0 +1,35 @@
+@import "site/overwrite/color-palette";
+
+$editor-panel-green: #e5f5e5;
+.edit-post-layout {
+	.interface-interface-skeleton__sidebar {
+		&,
+		.components-panel,
+		.block-editor-block-inspector__no-blocks {
+			background-color: $editor-panel-green;
+		}
+	}
+}
+.select2-results__options {
+	.select2-results__option--highlighted {
+		&:hover {
+			background-color: #0073aa;
+			color: #fff;
+			cursor: pointer;
+		}
+	}
+}
+
+// To override font styles applied to Settings panel field labels
+.components-base-control__field,
+.components-base-control {
+	label {
+		&.components-text.components-input-control__label,
+		&.components-input-control__label,
+		&.components-base-control__label {
+			font-size: 13px;
+			font-weight: 400;
+			text-transform: none;
+		}
+	}
+}

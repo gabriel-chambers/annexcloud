@@ -1,0 +1,23 @@
+$r-tabslr-l2-anxcld1: () !default;
+$r-tabslr-l2-anxcld1: map-merge((
+	section-padding: 72px 0 150px,
+	section-padding-lg: 125px 0 95px,
+	title-wrapper-padding: 0 0 50px,
+	title-wrapper-padding-lg: 0 0 72px,
+), $r-tabslr-l2-anxcld1);
+.r-tabslr-l2--anxcld1 {
+	overflow: hidden;
+	padding: map-get($r-tabslr-l2-anxcld1, section-padding);
+	.bs-div--r-title-wrapper {
+		padding: map-get($r-tabslr-l2-anxcld1, title-wrapper-padding);
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.r-tabslr-l2--anxcld1 {
+		padding: map-get($r-tabslr-l2-anxcld1, section-padding-lg);
+		.bs-div--r-title-wrapper {
+			padding: map-get($r-tabslr-l2-anxcld1, title-wrapper-padding-lg);
+		}
+	}
+}

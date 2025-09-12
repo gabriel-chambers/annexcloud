@@ -1,0 +1,15 @@
+
+.bs-single-post--r-spstbk-l1-anxcld1-resource {
+	&.bs-single-post--r-spstbk-l1-anxcld1 {
+		&.bs-post {
+			.bs-post {
+				&__title {
+					> * {
+						@include line-clamp(3);
+						text-overflow: ellipsis;
+					}
+				}
+			}
+		}
+	}
+}

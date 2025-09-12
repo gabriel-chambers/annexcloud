@@ -1,0 +1,17 @@
+.bs-div--standard-blog-inner-pdf-reader {
+	margin: 29px 0 13px;
+	.pdfemb-viewer {
+		border: none;
+	}
+	.pdfemb-toolbar button,
+	.pdfemb-toolbar button[disabled] {
+		padding: 2px 5px 0;
+		margin: 3px -2px 4px 4px;
+	}
+	.pdfemb-toolbar {
+		div {
+			margin: 6px 9px 6px 5px;
+			letter-spacing: -0.1px;
+		}
+	}
+}

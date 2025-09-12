@@ -1,0 +1,20 @@
+$r-blbstk-l3-anxcld1: () !default;
+$r-blbstk-l3-anxcld1: map-merge((
+	section-padding: 50px 0,
+	section-padding-lg: 120px 0,
+	column-margin: 0 0 30px ,
+), $r-blbstk-l3-anxcld1);
+.r-blbstk-l3--anxcld1{
+	padding: map-get($r-blbstk-l3-anxcld1, section-padding);
+	.bs-row--r-blbstk-l3-anxcld1-blurbs-wrapper {
+		.bs-column {
+			margin: map-get($r-blbstk-l3-anxcld1, column-margin);
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.r-blbstk-l3--anxcld1{
+		padding: map-get($r-blbstk-l3-anxcld1, section-padding-lg);
+	}
+}

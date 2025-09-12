@@ -1,0 +1,42 @@
+{
+    "name": "e25/r-crlcol-l1f-asn2",
+    "type": "e25-realm-section",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "extra": {
+        "theme_files": [
+            {
+                "src": "js/custom.js",
+                "dest": "assets/js/realm/r-crlcol/r-crlcol-l1f-asn2.js",
+                "overrideFilePath": "assets/js/realm-custom/r-crlcol/r-crlcol-l1f--asn2.js"
+            },
+            {
+                "src": "scss/r-crlcol-l1f--asn2.scss",
+                "dest": "assets/scss/realm/r-crlcol/r-crlcol-l1f--asn2.scss",
+                "overrideFilePath": "assets/scss/realm-custom/r-crlcol/r-crlcol-l1f--asn2.scss"
+            },
+            {
+                "src": "scss/bs-blurb--r-crlcol-l1f-asn2.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-blurb/r-crlcol-l1f-asn2.scss",
+                "overrideFilePath": "assets/scss/block/bs-blurb/bs-blurb--r-crlcol-l1f-asn2.scss"
+            },
+            {
+                "src": "scss/bs-div--r-crlcol-l1f-asn2-logo-row-ltr.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-div/r-crlcol-l1f-asn2-logo-row-ltr.scss",
+                "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crlcol-l1f-asn2-logo-row-ltr.scss"
+            },
+            {
+                "src": "scss/bs-div--r-crlcol-l1f-asn2-logo-row-rtl.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-div/r-crlcol-l1f-asn2-logo-row-rtl.scss",
+                "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crlcol-l1f-asn2-logo-row-rtl.scss"
+            },
+            {
+                "src": "scss/bs-div--r-crlcol-l1f-asn2-logo-row.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-div/r-crlcol-l1f-asn2-logo-row.scss",
+                "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-crlcol-l1f-asn2-logo-row.scss"
+            }
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+.bs-section--why-annex-pp {
+	&.bs-section--home-logo-slider {
+		padding-bottom: 52px;
+	}
+	&.bs-section--request-demo-moving-logo-slider {
+		padding-bottom: 63px;
+	}
+	&.bs-section--implementation-process-we-are-with-you {
+		padding-bottom: 20px;
+	}
+	&.r-spstbk-l1--anxcld1 {
+		padding-top: 59px;
+		h2 {
+			margin-bottom: 38px;
+		}
+		> .container {
+			> .bs-row:first-child {
+				> .bs-column {
+					&:first-child {
+						margin-bottom: 1px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--why-annex-pp {
+		&.bs-section--home-logo-slider {
+			padding: 119px 0 90px;
+		}
+		&.bs-section--request-demo-moving-logo-slider {
+			padding: 119px 0 120px;
+		}
+		&.bs-section--implementation-process-we-are-with-you {
+			padding-bottom: 0;
+			.bs-row:first-child {
+				margin-bottom: 58px;
+			}
+		}
+		&.r-spstbk-l1--anxcld1 {
+			&.bs-section--common-post-blocks {
+				padding-top: 122px;
+				> .container {
+					> .bs-row:first-child {
+						> .bs-column {
+							&:first-child {
+								margin-bottom: 41px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

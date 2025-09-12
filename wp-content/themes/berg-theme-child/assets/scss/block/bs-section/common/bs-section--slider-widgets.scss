@@ -1,0 +1,35 @@
+// stylelint-disable declaration-no-important
+.bs-section--slider-widgets {
+	.slider-widgets {
+		position: absolute;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		&__slide-counter {
+			position: relative;
+			color: color("space-blue");
+			font-size: 12px;//12->14 //revert
+			font-weight: $font-weight-medium;
+			line-height: 14px;
+			.total-slides {
+				position: relative;
+				&::before {
+					position: absolute;
+					content: "/";
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.bs-section--slider-widgets {
+		.slider-widgets {
+			display: none !important; // override realm styles
+			&__slide-counter {
+				font-size: 12px;//add 12
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+    "title": "Counter Collection Layout 1 ANXCLD 1",
+    "description": "Counter Collection Layout 1 ANXCLD 1",
+    "category": "widgets",
+    "supports": {
+        "html": false,
+        "inserter": false
+    },
+    "attributes": {
+        "modulePrefix": {
+            "type": "string",
+            "default": "r-cntcol-l1"
+        },
+        "realmClassNames": {
+            "type": "array",
+            "default": [
+                {
+                    "value": "r-cntcol-l1--anxcld1",
+                    "label": "Anxcld1"
+                }
+            ]
+        }
+    }
+}

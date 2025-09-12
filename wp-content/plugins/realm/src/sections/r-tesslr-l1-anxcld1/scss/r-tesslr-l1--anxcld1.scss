@@ -1,0 +1,46 @@
+$r-tesslr-l1-anxcld1: () !default;
+$r-tesslr-l1-anxcld1: map-merge((
+	padding-mobile: 60px 0,
+	padding-xl: 120px 0,
+), $r-tesslr-l1-anxcld1);
+.r-tesslr-l1--anxcld1 {
+	overflow: hidden;
+	padding: map-get($r-tesslr-l1-anxcld1, padding-mobile);
+	h2 {
+		letter-spacing: 0;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.r-tesslr-l1--anxcld1 {
+		.bs-row {
+			padding-left: calc(((100% - 560px) / 2));
+		}
+	}
+}
+@include media-breakpoint-up(md) {
+	.r-tesslr-l1--anxcld1 {
+		.bs-row {
+			padding-left: calc(((100% - 690px) / 2));
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.r-tesslr-l1--anxcld1 {
+		.bs-row {
+			padding-left: calc(((100% - 930px) / 2));
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.r-tesslr-l1--anxcld1 {
+		padding: map-get($r-tesslr-l1-anxcld1, padding-xl);
+		.bs-row {
+			padding-left: calc(((100% - 1170px) / 2));
+		}
+		h2 {
+			margin-bottom: 70px;
+			font-size: 48px;
+		}
+	}
+}

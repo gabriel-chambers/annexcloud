@@ -1,0 +1,24 @@
+{
+    "title": "Blurb Slider Layout 4",
+    "description": "Blurb Slider Layout 4",
+    "category": "widgets",
+    "supports": {
+        "html": false,
+        "inserter": false
+    },
+    "attributes": {
+        "modulePrefix": {
+            "type": "string",
+            "default": "r-blbslr-l4"
+        },
+        "realmClassNames": {
+            "type": "array",
+            "default": [
+                {
+                    "value": "r-blbslr-l4--rlm1",
+                    "label": "Rlm1"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="165px" height="24px" viewBox="0 0 165 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 27 Copy</title>
+    <defs>
+        <linearGradient x1="50%" y1="3.92%" x2="20.25%" y2="96.08%" id="linearGradient-1">
+            <stop stop-color="#EEFF5C" offset="0%"></stop>
+            <stop stop-color="#ED7D31" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="3.92%" x2="20.25%" y2="96.08%" id="linearGradient-2">
+            <stop stop-color="#404D67" offset="0%"></stop>
+            <stop stop-color="#404D67" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Core-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.148879278">
+        <g id="Why-WorkN" transform="translate(-835.000000, -7507.000000)" fill="url(#linearGradient-2)" fill-rule="nonzero">
+            <g id="Group-28" transform="translate(135.000000, 7063.000000)">
+                <g id="Group-21" transform="translate(700.000000, 128.000000)">
+                    <g id="Group-27-Copy" transform="translate(0.000000, 316.000000)">
+                        <g id="icons8-star-copy-5">
+                            <polygon id="Path" points="12.5 19.288 20.2252782 24 18.1749299 15.12 25 9.14514286 16.012621 8.37485714 12.5 0 8.98737899 8.37485714 8.78897265e-16 9.14514286 6.82507012 15.12 4.77472179 24"></polygon>
+                        </g>
+                        <g id="icons8-star-copy" transform="translate(35.000000, 0.000000)">
+                            <polygon id="Path" points="12.5 19.288 20.2252782 24 18.1749299 15.12 25 9.14514286 16.012621 8.37485714 12.5 0 8.98737899 8.37485714 8.78897265e-16 9.14514286 6.82507012 15.12 4.77472179 24"></polygon>
+                        </g>
+                        <g id="icons8-star-copy-3" transform="translate(70.000000, 0.000000)">
+                            <polygon id="Path" points="12.5 19.288 20.2252782 24 18.1749299 15.12 25 9.14514286 16.012621 8.37485714 12.5 0 8.98737899 8.37485714 8.78897265e-16 9.14514286 6.82507012 15.12 4.77472179 24"></polygon>
+                        </g>
+                        <g id="icons8-star-copy-2" transform="translate(105.000000, 0.000000)">
+                            <polygon id="Path" points="12.5 19.288 20.2252782 24 18.1749299 15.12 25 9.14514286 16.012621 8.37485714 12.5 0 8.98737899 8.37485714 8.78897265e-16 9.14514286 6.82507012 15.12 4.77472179 24"></polygon>
+                        </g>
+                        <g id="icons8-star-copy-4" transform="translate(140.000000, 0.000000)">
+                            <polygon id="Path" points="12.5 19.288 20.2252782 24 18.1749299 15.12 25 9.14514286 16.012621 8.37485714 12.5 0 8.98737899 8.37485714 8.78897265e-16 9.14514286 6.82507012 15.12 4.77472179 24"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

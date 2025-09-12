@@ -1,0 +1,289 @@
+# Copyright (C) 2023 CreativeMindsSolutions
+# This file is distributed under the same license as the CM Tooltip Glossary Pro+ plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: CM Tooltip Glossary Pro+ 4.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/TooltipProPlus\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-02-07T18:03:06+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: cm-tooltip-glossary\n"
+
+#. Plugin Name of the plugin
+msgid "CM Tooltip Glossary Pro+"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.cminds.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "PRO+ Version! Parses posts for defined glossary terms and adds links to the static glossary page containing the definition and a tooltip with the definition."
+msgstr ""
+
+#. Author of the plugin
+msgid "CreativeMindsSolutions"
+msgstr ""
+
+#: abbreviations.php:230
+msgid "Abbreviation(s): \"%s\" is already used for one of other terms: %s"
+msgstr ""
+
+#: glosbe.php:87
+msgid "Glosbe Dictionary:"
+msgstr ""
+
+#: glossaryFree.php:1067
+#: glossaryFree.php:1075
+msgid "Glossary"
+msgstr ""
+
+#: glossaryFree.php:1069
+msgid "Add New Glossary Item"
+msgstr ""
+
+#: glossaryFree.php:1070
+msgid "Add Glossary Item"
+msgstr ""
+
+#: glossaryFree.php:1071
+msgid "Edit Glossary Item"
+msgstr ""
+
+#: glossaryFree.php:1072
+msgid "View Glossary Item"
+msgstr ""
+
+#: glossaryFree.php:1403
+msgid "%s requires WordPress version 3.3 or higher to work properly."
+msgstr ""
+
+#: glossaryFree.php:1417
+msgid "%s since version 2.6.0 requires \"mbstring\" PHP extension to work! "
+msgstr ""
+
+#: glossaryFree.php:1418
+msgid "Installation instructions."
+msgstr ""
+
+#: glossaryFree.php:1433
+msgid "%s has detected that your glossary has more than 2000 terms and the \"Client-side\" pagination has been selected."
+msgstr ""
+
+#: glossaryFree.php:1435
+msgid "Please switch to the \"Server-side\" pagination to avoid slowness and problems with the server memory on the Glossary Index Page. (Pro version only)"
+msgstr ""
+
+#: glossaryFree.php:3181
+msgid "No label"
+msgstr ""
+
+#: glossaryFree.php:3183
+msgid "-no options-"
+msgstr ""
+
+#: glossaryFree.php:3720
+msgid "Use the &quot;content&quot; attribute on the shortcode to change this text"
+msgstr ""
+
+#: glossaryPlus.php:1018
+msgid "New!"
+msgstr ""
+
+#: glossaryPlus.php:1567
+msgid "Insert Name-URL pairs that will be shown before auto-generated Related articles. Both Name and URL must be supplied."
+msgstr ""
+
+#: glossaryPlus.php:1568
+msgid "Once you finish, save the post/page to store changes"
+msgstr ""
+
+#: glossaryPlus.php:1583
+msgid "Insert the custom URL of the Glossary Term. This URL will replace the link to the Glossary Term Page on the Glossary Index and whenever the term is highlighted."
+msgstr ""
+
+#: glossaryPlus.php:1584
+msgid "Once you finish, \"Publish\" or \"Update\" to store changes"
+msgstr ""
+
+#: glossaryPlus.php:1854
+msgid "Don't parse this term"
+msgstr ""
+
+#: glossaryPlus.php:1855
+msgid "Hide tooltip for this term"
+msgstr ""
+
+#: glossaryPlus.php:1856
+msgid "Disable related articles for this term"
+msgstr ""
+
+#: glossaryPlus.php:1857
+msgid "Hide term from Glossary Index"
+msgstr ""
+
+#: glossaryPlus.php:1858
+msgid "Disable Google API for this term"
+msgstr ""
+
+#: glossaryPlus.php:1859
+msgid "Disable Merriam-Webster Dictionary API for this term"
+msgstr ""
+
+#: glossaryPlus.php:1860
+msgid "Disable Merriam-Webster Thesaurus API for this term"
+msgstr ""
+
+#: glossaryPlus.php:1861
+msgid "Disable Glosbe Dictionary API for this term"
+msgstr ""
+
+#: glossaryPlus.php:1863
+msgid "Featured Image position"
+msgstr ""
+
+#: glossaryPlus.php:1874
+msgid "Featured Image width"
+msgstr ""
+
+#: glossaryPlus.php:2523
+msgid "Clear the input"
+msgstr ""
+
+#: glossaryPlus.php:2803
+msgid "Glossary for:"
+msgstr ""
+
+#: glossaryPlus.php:3474
+#: settings/view.php:3179
+msgid "Preview:"
+msgstr ""
+
+#: glossaryPlus.php:3503
+msgid "Flush API Cache"
+msgstr ""
+
+#: glossaryPlus.php:3536
+msgid "Tooltip Categories"
+msgstr ""
+
+#: glossaryPlus.php:3555
+msgid "Tooltip Tags"
+msgstr ""
+
+#: glossaryPro.php:1770
+msgid "New Role assignment has been saved!"
+msgstr ""
+
+#: glossaryReplacement.php:117
+msgid "No replacements. Please add using the form below."
+msgstr ""
+
+#: related.php:105
+msgid "Once Weekly"
+msgstr ""
+
+#: related.php:109
+msgid "Once Monthly"
+msgstr ""
+
+#: related.php:217
+msgid "Remaining articles to crawl: %d/%d"
+msgstr ""
+
+#: settings/CMTT_Settings.php:74
+msgid "Related Articles Index rebuild has been started."
+msgstr ""
+
+#: settings/CMTT_Settings.php:79
+msgid "Related Articles Index has been updated."
+msgstr ""
+
+#: settings/view.php:433
+msgid "Excluded ACF Field IDs"
+msgstr ""
+
+#: settings/view.php:438
+msgid "field_id,field_2_id"
+msgstr ""
+
+#: settings/view.php:716
+msgid "Excluded HTML Classes"
+msgstr ""
+
+#: settings/view.php:720
+msgid "class_1,class_2"
+msgstr ""
+
+#: settings/view.php:727
+msgid "Excluded HTML tags"
+msgstr ""
+
+#: settings/view.php:731
+msgid "h1,h2,h3"
+msgstr ""
+
+#: settings/view.php:1141
+msgid "Tooltip Parsing Priority"
+msgstr ""
+
+#: settings/view.php:1156
+msgid "Tooltip Variants/Synonyms Separator"
+msgstr ""
+
+#: settings/view.php:1357
+#: settings/view.php:3320
+msgid "Never"
+msgstr ""
+
+#: settings/view.php:1430
+msgid "Synonym Suggestions API"
+msgstr ""
+
+#: settings/view.php:1435
+msgid "API key"
+msgstr ""
+
+#: settings/view.php:1468
+#: settings/view.php:1473
+msgid "Affiliate Code"
+msgstr ""
+
+#: settings/view.php:1476
+msgid "Please add your affiliate code in here."
+msgstr ""
+
+#: settings/view.php:4214
+msgid "Save Changes"
+msgstr ""
+
+#: synonyms.php:297
+msgid "Synonym(s): \"%s\" is already used for one of other terms: %s"
+msgstr ""
+
+#: thirdparty.php:398
+msgid "You have to choose both source and target languages and Save Settings!"
+msgstr ""
+
+#: thirdparty.php:401
+msgid "You have to enter the API Key and Save Settings!"
+msgstr ""
+
+#: thirdparty.php:620
+msgid "You have to enter the Dictionary API and Save Settings!"
+msgstr ""
+
+#: thirdparty.php:648
+msgid "You have to enter the Thesaurus API and Save Settings!"
+msgstr ""
+
+#: widgets.php:226
+#: widgets.php:227
+msgid "Search"
+msgstr ""

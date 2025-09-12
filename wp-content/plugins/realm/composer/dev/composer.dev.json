@@ -1,0 +1,48 @@
+{
+	"name": "e25/realm",
+	"type": "wordpress-plugin",
+	"autoload": {
+		"psr-4": {
+			"E25m\\Realm\\": "lib/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Ravisha Heshan",
+			"email": "ravisha.w@eight25media.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"php": "^7.3|^8.0",
+		"composer/installers": "^1.8",
+		"davidbarratt/custom-installer": "^1.1.0"
+	},
+	"extra": {
+		"realm": {
+			"common_folder_path": "src/common-components",
+			"theme_folder_path": "../../themes/berg-theme-child",
+			"exclude_theme_overrides": {}
+		}
+	},
+	"scripts": {
+		"setup": [
+			"E25m\\Realm\\Composer\\SetupRealm::linkFilesManual"
+		],
+		"post-install-cmd": [
+			"@setup"
+		],
+		"post-update-cmd": [
+			"@setup"
+		]
+	},
+	"scripts-descriptions": {
+		"archive-package": "Generate a ZIP file of installed Realm section package."
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"davidbarratt/custom-installer": true
+		}
+	}
+}

@@ -1,0 +1,44 @@
+services:
+  app:
+    image: ${PROJECT_NAME}:latest
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile.dev
+      args:
+        - ARCHITECTURE=${ARCHITECTURE}
+    environment:
+      COMPOSER_VERSION: 2
+      VIRTUAL_HOST: ${VIRTUAL_HOST}
+      VIRTUAL_PORT: 80
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
+      WORDPRESS_DB_HOST: ${DB_HOST}:3306
+      WORDPRESS_DB_USER: ${MYSQL_USER}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+      WP_ENVIRONMENT_TYPE: ${WP_ENVIRONMENT:-development}
+      PHP_POST_MAX_SIZE: ${MAX_UPLOAD_SIZE:-256M}
+      PHP_UPLOAD_MAX_FILESIZE: ${MAX_UPLOAD_SIZE:-256M}
+      S3_UPLOADS_BUCKET: ${S3_UPLOADS_BUCKET}
+      S3_UPLOADS_REGION: ${S3_UPLOADS_REGION}
+      S3_UPLOADS_KEY: ${S3_UPLOADS_KEY}
+      S3_UPLOADS_SECRET: ${S3_UPLOADS_SECRET}
+      XDEBUG_MODE: debug
+      XDEBUG_REMOTE_AUTOSTART: 0
+      XDEBUG_REMOTE_CONNECT_BACK: 0
+      XDEBUG_DISCOVER_CLIENT_HOST: 0
+      XDEBUG_CLIENT_PORT: 9003
+      # For Mac, Windows and Ubuntu >=20.10 "host.docker.internal"
+      # can be used instead of 172.17.0.1
+      XDEBUG_CLIENT_HOST: ${DOCKER_HOST_NAME:-172.17.0.1}
+      # Pass $_GET, $_POST or $_ENV variable to start XDebug
+      # Ex: ?XDEBUG_TRIGGER=<nonEmptyValue>
+      XDEBUG_START_WITH_REQUEST: trigger
+      XDEBUG_IDE_KEY: VSCODE
+    volumes:
+      - type: bind
+        source: ./../
+        target: /app
+
+networks:
+  default:
+    name: proxy
+    external: true

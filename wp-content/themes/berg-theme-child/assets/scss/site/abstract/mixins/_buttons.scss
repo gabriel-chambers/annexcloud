@@ -1,0 +1,265 @@
+@mixin button-common-pre-styles {
+	position: relative;
+	display: flex;
+	min-width: initial;
+	min-height: initial;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: $font-weight-bold;
+	letter-spacing: normal;
+	line-height: 22px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	transition: all 0.2s ease-in-out;
+}
+@mixin button-common {
+	display: inline-block;
+	border: 0;
+	background: transparent;
+	.bs-pro-button__container,
+	> a,
+	> a.btn,
+	> span.btn,
+	> span {
+		@include button-common-pre-styles;
+		&::after {
+			display: inline-block;
+			transition: transform 0.2s ease-in-out;
+		}
+	}
+}
+@mixin button-hover {
+	&:hover,
+	&:focus,
+	&:active,
+	&:not(:disabled):not(.disabled):active,
+	&:not(:disabled):not(.disabled):active:focus {
+		@content;
+	}
+}
+@mixin primary-button {
+	@include button-common;
+	.bs-pro-button__container,
+	> a,
+	> a.btn,
+	> span.btn {
+		@include button-hover {
+			background: $primary-btn-bg-color-hover;
+			color: $primary-btn-color-hover;
+			opacity: 1;
+		}
+		@include media-breakpoint-up(md) {
+			font-size: 16px;
+			line-height: 20px;
+		}
+		padding: 15px 30px;
+		background-color: $primary-btn-bg-color;
+		color: $primary-btn-color;
+		font-size: 14px;//14->16 //revert
+		line-height: 18px;
+	}
+}
+@mixin primary-button-small {
+	@include primary-button;
+	padding: 10px 20px;
+	.bs-pro-button__container,
+	> a,
+	> a.btn,
+	> span.btn {
+		@include media-breakpoint-up(md) {
+			font-size: 16px;
+			line-height: 26px;
+		}
+	}
+}
+@mixin primary-button-with-arrow {
+	@include primary-button;
+	.bs-pro-button__container,
+	> a,
+	> a.btn,
+	> span.btn {
+		&::after {
+			@include link-arrow-white;
+			margin-left: 20px;
+			content: "";
+		}
+	}
+}
+@mixin secondary-button {
+	@include primary-button;
+	.bs-pro-button__container,
+	> a,
+	> a.btn,
+	> span.btn {
+		@include button-hover {
+			border-color: $secondary-btn-bg-color-hover;
+			background: $secondary-btn-bg-color-hover;
+			color: $secondary-btn-color-hover;
+		}
+		padding: 15px 30px;
+		border: 1px solid $secondary-btn-color;
+		background-color: $secondary-btn-bg-color;
+		color: $secondary-btn-color;
+	}
+}
+@mixin secondary-button-with-arrow {
+	@include secondary-button;
+	.bs-pro-button__container,
+	> a,
+	> a.btn,
+	> span.btn {
+		@include button-hover {
+			&::after {
+				@include link-arrow-white;
+			}
+		}
+		&::after {
+			@include link-arrow-purple;
+			margin-left: 20px;
+			content: "";
+		}
+	}
+}
+@mixin tertiary-button {
+	@include primary-button;
+	.bs-pro-button__container,
+	> a,
+	> a.btn,
+	> span.btn {
+		@include button-hover {
+			border-color: $tertiary-btn-bg-color-hover;
+			background: $tertiary-btn-bg-color-hover;
+			color: $tertiary-btn-color-hover;
+		}
+		padding: 15px 30px;
+		border: 1px solid $tertiary-btn-color;
+		background-color: $tertiary-btn-bg-color;
+		color: $tertiary-btn-color;
+		font-size: 14px;//14->16 //revert
+		line-height: 18px;
+
+	}
+}
+@mixin tertiary-button-with-arrow {
+	@include tertiary-button;
+	.bs-pro-button__container,
+	> a,
+	> a.btn,
+	> span.btn {
+		@include button-hover {
+			&::after {
+				@include link-arrow-purple;
+			}
+		}
+		&::after {
+			@include link-arrow-white;
+			margin-left: 20px;
+			content: "";
+		}
+	}
+}
+@mixin primary-link {
+	@include button-common;
+	.bs-pro-button__container,
+	> a,
+	> a.btn,
+	> span.btn,
+	> span {
+		@include button-hover {
+			color: $primary-link-color-hover;
+			opacity: 1;
+			&::after {
+				@include link-arrow-dark-purple;
+				transform: translateX(5px);
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			font-size: 14px; //revert
+		}
+		padding: 0;
+		border-radius: 0;
+		background: transparent;
+		color: $primary-link-color;
+		font-size: 16px;
+		font-weight: $font-weight-bold;
+		line-height: 21px;
+		&::after {
+			@include link-arrow-purple;
+			margin-left: 20px;
+			content: "";
+		}
+	}
+}
+@mixin secondary-link {
+	@include button-common;
+	.bs-pro-button__container,
+	>a,
+	>a.btn,
+	>span.btn,
+	>span {
+		@include button-hover {
+			color: $secondary-link-color-hover;
+			opacity: 1;
+		}
+		padding: 0;
+		border-radius: 0;
+		background: transparent;
+		color: $secondary-link-color;
+		font-size: 16px;
+		font-weight: $font-weight-normal;
+		line-height: 21px;
+
+	}
+}
+@mixin tertiary-link-with-arrow {
+	@include button-common;
+	.bs-pro-button__container,
+	> a,
+	> a.btn,
+	> span.btn,
+	> span {
+		@include button-hover {
+			color: $tertiary-link-color-hover;
+			opacity: 1;
+			&::after {
+				@include link-arrow-white;
+				transform: translateX(5px);
+			}
+		}
+		padding: 0;
+		border-radius: 0;
+		background: transparent;
+		color: $tertiary-link-color;
+		font-size: 14px;//14->16 //revert
+		font-weight: $font-weight-bold;
+		line-height: 21px;
+		&::after {
+			@include link-arrow-white;
+			margin-left: 20px;
+			content: "";
+		}
+	}
+}
+@mixin arrow-link-2 {
+	position: relative;
+	color: color("purple");
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	line-height: 23px;
+	&::after {
+		@include after-before;
+		@include link-arrow-purple;
+		top: 6px;
+		right: 0;
+		transform: translateX(40px);
+	}
+	&:hover {
+		&::after {
+			@include link-arrow-dark-purple;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+@import "./../../realm/berg-blocks/bs-tab-slider/r-tabslr-l2.scss";
+.bs-tab-slider--r-tabslr-l2-anxcld1 {
+	.bs-slider-tabs {
+		.slick-slide {
+			opacity: 1;
+			.slick-slide-wrapper {
+				opacity: 0.5;
+				transition: opacity 0.3s ease-in-out;
+				&:hover {
+					opacity: 1;
+				}
+			}
+			&.slick-current {
+				.slick-slide-wrapper {
+					opacity: 1;
+				}
+			}
+
+		}
+	}
+}

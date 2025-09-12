@@ -1,0 +1,24 @@
+{
+    "title": "Blurb Stack Layout 3 ANXCLD 1",
+    "description": "Blurb Stack Layout 3 ANXCLD 1",
+    "category": "widgets",
+    "supports": {
+        "html": false,
+        "inserter": false
+    },
+    "attributes": {
+        "modulePrefix": {
+            "type": "string",
+            "default": "r-blbstk-l3"
+        },
+        "realmClassNames": {
+            "type": "array",
+            "default": [
+                {
+                    "value": "r-blbstk-l3--anxcld1",
+                    "label": "Anxcld1"
+                }
+            ]
+        }
+    }
+}

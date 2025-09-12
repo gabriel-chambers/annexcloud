@@ -1,0 +1,45 @@
+$r-tabslr-l2-anxcld1:(
+	section-padding: 57px 15px 160px,
+	section-padding-lg: 121px 0 95px,
+	title-wrapper-padding: 2px 0 31px,
+	title-wrapper-padding-lg: 0 0 72px,
+);
+
+@import "./../../realm/r-tabslr/r-tabslr-l2--anxcld1.scss";
+.r-tabslr-l2--anxcld1 {
+	.bs-div--r-title-wrapper {
+		h2 {
+			font-size: 25px;
+			font-weight: $font-weight-bold;
+			letter-spacing: 0;
+			line-height: 33px;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.r-tabslr-l2--anxcld1 {
+		.bs-div--r-title-wrapper {
+			h2 {
+				font-size: 48px;
+				line-height: 57px;
+			}
+		}
+		.bs-tab-slider--r-tabslr-l2-anxcld1 {
+			.bs-slider-tabs {
+				.slick-slide {
+					&.slick-cloned {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-down(lg) {
+	.r-tabslr-l2--anxcld1 {
+		.bs-div--r-title-wrapper {
+			margin-bottom: 30px;
+		}
+	}
+}

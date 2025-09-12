@@ -1,0 +1,32 @@
+{
+	"name": "e25/r-tesslr-l1-rlm1",
+	"type": "e25-realm-section",
+	"minimum-stability": "dev",
+	"require": {
+		"php": "^7.3|^8.0"
+	},
+	"extra": {
+		"theme_files": [
+			{
+				"src": "scss/bs-div--r-title-wrapper.scss",
+				"dest": "assets/scss/realm/berg-blocks/bs-div/r-title-wrapper.scss",
+				"overrideFilePath": "assets/scss/block/bs-div/bs-div--r-title-wrapper.scss"
+			},
+			{
+				"src": "scss/bs-div--r-slide-media-wrapper.scss",
+				"dest": "assets/scss/realm/berg-blocks/bs-div/r-slide-media-wrapper.scss",
+				"overrideFilePath": "assets/scss/block/bs-div/bs-div--r-slide-media-wrapper.scss"
+			},
+			{
+				"src": "scss/bs-div--r-slide-content-wrapper.scss",
+				"dest": "assets/scss/realm/berg-blocks/bs-div/r-slide-content-wrapper.scss",
+				"overrideFilePath": "assets/scss/block/bs-div/bs-div--r-slide-content-wrapper.scss"
+			},
+			{
+				"src": "scss/bs-slider--r-tesslr-l1.scss",
+				"dest": "assets/scss/realm/berg-blocks/bs-slider/r-tesslr-l1.scss",
+				"overrideFilePath": "assets/scss/block/bs-slider/bs-slider--r-tesslr-l1.scss"
+			}
+		]
+	}
+}

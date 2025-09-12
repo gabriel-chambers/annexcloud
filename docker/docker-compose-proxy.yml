@@ -1,0 +1,16 @@
+services:
+  nginx-proxy:
+    image: e25/nginx-proxy:latest
+    platform: ${ARCHITECTURE}
+    build:
+      context: .
+      dockerfile: Dockerfile.proxy
+    ports:
+      - 80:80
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+networks:
+  default:
+    name: proxy
+    external: true

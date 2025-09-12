@@ -1,0 +1,380 @@
+.bs-section--why-tab-slider {
+	$whyTab: "why-tab-slider";
+	$bsdiv: ".bs-div";
+	#{$bsdiv}--common-accordion-body {
+		padding-bottom: 20px;
+		.bs-card__title-wrapper {
+			display: block;
+		}
+	}
+	#{$bsdiv}--#{$whyTab}-header {
+		* {
+			color: color("white");
+		}
+		.bs-div__inner {
+			flex-direction: column-reverse;
+			gap: 15px;
+			.bs-card__title {
+				* {
+					font-size: $h4-mobile-font-size;
+					font-weight: $font-weight-bold;
+					line-height: 1.6;
+				}
+			}
+			p {
+				font-size: 16px;
+				font-weight: $font-weight-normal;
+				line-height: 26px;
+				&:not(:last-of-type) {
+					margin-bottom: 26px;
+				}
+			}
+			> .bs-div {
+				margin-bottom: 30px;
+			}
+		}
+		.media-elements {
+			margin-top: 3px;
+		}
+	}
+	.bs-row--#{$whyTab}-box-content {
+		gap: 39px;
+		* {
+			color: color("white");
+		}
+		.bs-column {
+			position: relative;
+			padding: 0 0 0 25px;
+			margin: 0 15px 0 20px;
+			&::before {
+				@include after-before;
+				top: 0;
+				left: -5px;
+				width: 2px;
+				height: 100%;
+				background: $gradient-one;
+			}
+			:is(h2, h3, h4, h5, h6) {
+				margin-bottom: 22px;
+				font-size: 18px;
+				font-weight: $font-weight-semi-bold;
+				letter-spacing: -0.01em;
+				line-height: 23px;
+			}
+			li,
+			p {
+				font-size: $font-size-base;
+				font-weight: $font-weight-normal;
+				line-height: 1.6;
+			}
+		}
+	}
+	.bs-row--#{$whyTab}-button-container {
+		.bs-pro-button--tertiary {
+			.bs-pro-button__container {
+				min-width: 290px;
+				margin-top: 38px;
+				margin-right: 0;
+				margin-bottom: 0;
+			}
+		}
+	}
+	#{$bsdiv}--common-accordion {
+		> div {
+			.slick-next,
+			.slick-prev {
+				border: 1px solid color("white");
+				margin-top: 3px;
+				&::before {
+					background-position: -136px -14px;
+					transform: rotate(180deg);
+				}
+				&:hover {
+					border: 1px solid color("white");
+					&::before {
+						background-position: -136px -14px;// This to override different section style which cause problem
+					}
+				}
+			}
+			.slick-next {
+				&::before {
+					transform: rotate(0);
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--why-tab-slider {
+		$whyTab: "why-tab-slider";
+		$bsdiv: ".bs-div";
+		#{$bsdiv}--common-accordion {
+			&::before {
+				display: none;
+			}
+			> .slick-slider {
+				> .slick-list {
+					overflow: visible;
+				}
+			}
+			&-item {
+				border: none;
+				#{$bsdiv}--common-accordion-body {
+					padding-top: 0;
+					padding-right: 0;
+					padding-left: 0;
+					background-color: transparent;
+				}
+				#{$bsdiv}--#{$whyTab}-header {
+					margin-bottom: 40px;
+					transform: translate(-250px, 0);
+					.bs-div__inner {
+						flex-direction: row-reverse;
+						flex-wrap: nowrap;
+						gap: 30px;
+						.bs-card__title {
+							* {
+								font-size: $h3-font-size;
+								line-height: 1.2;
+							}
+						}
+						p {
+							font-size: 18px;
+							line-height: 29px;
+						}
+						> .media-elements {
+							width: 50%;
+							/* stylelint-disable -- nested lines ignore*/
+							.bs-common-image {
+								&::after,
+								&::before {
+									display: none;
+								}
+								figure {
+									&::after {
+										display: none;
+									}
+								}
+							}
+							/* stylelint-enable */
+							video,
+							img {
+								@include polygonclippath(7% 0%, 118% 0, 93.1% 100%, 0 100%, 0% 30%);
+								width: 100%;
+								min-height: 359px;
+								aspect-ratio: 685/359;
+							}
+						}
+						> .bs-div {
+							width: 50%;
+							margin-bottom: 0;
+						}
+					}
+				}
+				.bs-row--#{$whyTab}-box-content {
+					padding: 0 15px;
+					gap: 20px;
+					transform: translate(250px, 0);
+					.bs-column {
+						position: relative;
+						height: 100%;
+						padding: 0 55px 0 30px;
+						margin: 0;
+						:is(h2, h3, h4, h5, h6) {
+							font-size: 26px;
+							line-height: 1.2;
+						}
+						li,
+						p {
+							letter-spacing: -0.01em;
+							line-height: 1.5;
+						}
+					}
+				}
+				.bs-row--#{$whyTab}-button-container {
+					transform: translate(250px, 0);
+					.bs-pro-button--tertiary {
+						.bs-pro-button__container {
+							min-width: auto;
+							margin-top: 40px;
+							margin-right: 0;
+						}
+					}
+				}
+				&::before {
+					@include after-before;
+					z-index: 0;
+					top: -44px;
+					right: auto;
+					left: -244px;
+					width: 450.63px;
+					height: 418.09px;
+					background: url($ultimate-guide-pattern-desktop) center/cover no-repeat;
+					transform: translate(150px, 0);
+				}
+			}
+			.slick-slide {
+				.bs-row--#{$whyTab}-box-content,
+				#{$bsdiv}--#{$whyTab}-header,
+				.bs-row--#{$whyTab}-button-container {
+					opacity: 0;
+					transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+				}
+				#{$bsdiv}--common-accordion-item {
+					&::before {
+						opacity: 0;
+						transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
+					}
+				}
+				&.slick-current {
+					.bs-row--#{$whyTab}-box-content,
+					#{$bsdiv}--#{$whyTab}-header,
+					.bs-row--#{$whyTab}-button-container {
+						opacity: 1;
+						transform: translate(0, 0);
+						transition-delay: 0.5s;
+					}
+					#{$bsdiv}--common-accordion-item {
+						&::before {
+							opacity: 1;
+							transform: translate(0, 0);
+							transition-delay: 0.7s;
+						}
+					}
+				}
+			}
+			> div {
+				.slick-next,
+				.slick-prev {
+					top: -155px;
+					margin-top: 0;
+				}
+			}
+		}
+		#{$bsdiv}--common-slider-accordion-tabs {
+			border: none;
+			margin-bottom: 93px;
+			background-color: transparent;
+			.bs-card--common-slider-accordion-tab-item {
+				padding: 15px 20px;
+			}
+			.slick-track {
+				margin-left: 0;
+			}
+			.slick-slide {
+				border-radius: 0;
+				// stylelint-disable-next-line declaration-no-important
+				background-color: color("darker-blue-3") !important;
+				&:hover,
+				&.slick-current {
+					> div {
+						border-radius: 5px;
+						background: color("purple");
+						box-shadow: 0 3px 49px rgba(color("darker-blue-2"), 0.09);
+						.bs-card__title > * {
+							color: color("white");
+						}
+					}
+					&::after {
+						border: none;
+					}
+				}
+				.bs-card__title > * {
+					color: color("dark-grey-2");
+					font-size: $font-size-base;
+					font-weight: $font-weight-normal;
+					line-height: 1.6;
+				}
+				&:last-child {
+					border-radius: 0 5px 5px 0;
+					&:hover {
+						border-radius: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--why-tab-slider {
+		$whyTab: "why-tab-slider";
+		$bsdiv: ".bs-div";
+		padding: 95px 15px 0;
+		#{$bsdiv}--common-accordion {
+			&-item {
+				#{$bsdiv}--#{$whyTab}-header {
+					.bs-div__inner {
+						flex-direction: row;
+						gap: 63px;
+						> .media-elements {
+							width: calc(7/12 * 100%);
+						}
+						> .bs-div {
+							width: calc(5/12 * 100%);
+							.bs-card__title-wrapper {
+								margin: -1px 0 20px;
+							}
+							/* stylelint-disable -- nested lines ignore*/
+							p {
+								&:not(:last-of-type) {
+									margin-bottom: 30px;
+								}
+							}
+							/* stylelint-enable*/
+						}
+					}
+				}
+				.bs-row--#{$whyTab}-box-content {
+					margin-bottom: 20px;
+					gap: 0;
+					.bs-column {
+						margin-bottom: 20px;
+						:is(h2, h3, h4, h5, h6) {
+							margin-bottom: 21px;
+						}
+						&:first-child {
+							&::before {
+								left: 0;
+							}
+						}
+						&:nth-child(2) {
+							padding-left: 43px;
+							&::before {
+								left: 13px;
+							}
+						}
+						&:last-child {
+							padding-left: 56px;
+							&::before {
+								left: 26px;
+							}
+						}
+					}
+				}
+				.bs-row--#{$whyTab}-button-container {
+					.bs-pro-button--tertiary {
+						.bs-pro-button__container {
+							padding: 14px 30px;
+							margin-top: 39px;
+							font-size: $font-size-base;
+							font-weight: $font-weight-bold;
+							line-height: 1.6;
+						}
+					}
+				}
+			}
+			> div {
+				.slick-next,
+				.slick-prev {
+					&:hover {
+						&:not(.slick-disabled) {
+							border-color: color("purple");
+							background-color: color("purple");
+						}
+					}
+				}
+			}
+		}
+	}
+}

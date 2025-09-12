@@ -1,0 +1,65 @@
+.bs-div--common-left-bordered-cards {
+	color: color("white");
+	> .bs-div__inner {
+		flex-wrap: wrap;
+		gap: 40px;
+		&::after {
+			display: none;
+		}
+		.bs-card {
+			position: relative;
+			padding: 0 30px;
+			&::before {
+				@include after-before;
+				width: 2px;
+				background: linear-gradient(81.8deg, color("red") 11.75%, color("dark-red") 55.51%, color("darker-red") 100.2%);
+				inset: 0 auto 0 0;
+			}
+			&__title {
+				margin: 0 0 20px;
+				> * {
+					margin: 0;
+					color: color("white");
+					font-size: 18px;
+					font-weight: $font-weight-semi-bold;
+					letter-spacing: -0.01em;
+					line-height: 23px;
+				}
+			}
+			&__description {
+				> * {
+					margin: 0;
+					color: color("white");
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-div--common-left-bordered-cards {
+		> .bs-div__inner {
+			gap: 44px;
+			.bs-card {
+				flex: 0 0 calc(33.33% - 30px);
+				&::before {
+					inset: -4px auto 0 0;
+				}
+				&__title {
+					margin: 0 0 25px;
+					> * {
+						font-size: 26px;
+						letter-spacing: normal;
+						text-align: left;
+					}
+				}
+				&__description {
+					> * {
+						font-size: 16px;
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+}

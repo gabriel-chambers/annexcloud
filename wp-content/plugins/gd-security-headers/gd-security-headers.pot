@@ -1,0 +1,1800 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural - Forms: nplurals = INTEGER; plural = EXPRESSION;\n"
+"Project-Id-Version: GD Security Headers\n"
+"POT-Creation-Date: 06/07/2024 09:52:03 AM\n"
+"Language-Team: Milan Petrovic <support@dev4press.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: GD i18n 2.8; www.dev4press.com\n"
+
+#: forms/dashboard/reports.php:15
+#: forms/dashboard/reports.php:20
+#: forms/dashboard/reports.php:54
+#: forms/dashboard/reports.php:88
+msgid "report"
+msgid_plural "reports"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/admin/getback.php:56
+msgid "Only administrators can use export features."
+msgstr ""
+
+#: core/admin/install.php:79
+msgid "Some columns are missing."
+msgstr ""
+
+#: core/admin/install.php:84
+msgid "Table missing."
+msgstr ""
+
+#: core/admin/options.php:40
+msgid "Adding Headers"
+msgstr ""
+
+#: core/admin/options.php:42
+msgid "To .HTACCESS"
+msgstr ""
+
+#: core/admin/options.php:42
+msgid "If enabled, plugin will add all security headers into .HTACCESS file. This is available only on Apache web servers."
+msgstr ""
+
+#: core/admin/options.php:48
+#: core/admin/options.php:315
+#: core/admin/options.php:333
+#: core/admin/options.php:344
+#: core/admin/options.php:358
+#: core/admin/options.php:370
+msgid "Add"
+msgstr ""
+
+#: core/admin/options.php:50
+#: core/admin/options.php:63
+#: core/admin/options.php:81
+#: core/admin/options.php:317
+#: core/admin/options.php:335
+#: core/admin/options.php:346
+#: core/admin/options.php:360
+#: core/admin/options.php:372
+msgid "Information"
+msgstr ""
+
+#: core/admin/options.php:51
+msgid "Establishes rules for various features to be exposed by browser, limiting potentially malicious requests."
+msgstr ""
+
+#: core/admin/options.php:52
+msgid "This header contains many elements, but not all of them are supported by every browser right now. What is supported, depends on the browser, browser version and platform, and it changes very often, so it is not easy to keep track of what will work where."
+msgstr ""
+
+#: core/admin/options.php:54
+#: core/admin/options.php:320
+#: core/admin/options.php:340
+#: core/admin/options.php:352
+#: core/admin/options.php:365
+#: core/admin/options.php:378
+msgid "Add Header"
+msgstr ""
+
+#: core/admin/options.php:55
+msgid "Header variant to generate"
+msgstr ""
+
+#: core/admin/options.php:55
+msgid "In early September 2020, 'Feature Policy' header has a new version called 'Permissions Policy'. With this option you can generate one or the other, or both."
+msgstr ""
+
+#: core/admin/options.php:61
+msgid "Mode"
+msgstr ""
+
+#: core/admin/options.php:63
+msgid "Before switching to live mode, make sure the CSP is working properly in report mode. Do not use this addon if you don't understand how it works!"
+msgstr ""
+
+#: core/admin/options.php:65
+msgid "Policy Mode"
+msgstr ""
+
+#: core/admin/options.php:69
+msgid "Basics"
+msgstr ""
+
+#: core/admin/options.php:71
+#: core/admin/options.php:326
+msgid "Log Reports"
+msgstr ""
+
+#: core/admin/options.php:71
+#: core/admin/options.php:326
+msgid "Plugin will store in events log every CSP report."
+msgstr ""
+
+#: core/admin/options.php:72
+msgid "Log Original Policy"
+msgstr ""
+
+#: core/admin/options.php:72
+msgid "Each report contains full original CSP policy that is not very useful to log, and it takes a lot of space. It is sent for reference purposes as a proof that CSP failed because of the element of that policy. You can log it to match it to your real policy as a method to discover eventual HTTP headers tampering."
+msgstr ""
+
+#: core/admin/options.php:73
+#: core/admin/options.php:327
+msgid "Force SSL for Report URL"
+msgstr ""
+
+#: core/admin/options.php:73
+#: core/admin/options.php:327
+msgid "In some cases, network home URL for the website might be generated with HTTP even if your website is set to use HTTPS. Enable this option, only if you use HTTPS URL and SSL."
+msgstr ""
+
+#: core/admin/options.php:74
+msgid "External log service"
+msgstr ""
+
+#: core/admin/options.php:75
+#: core/grids/csp.php:160
+msgid "URL"
+msgstr ""
+
+#: core/admin/options.php:75
+msgid "If you want to send reports to third party service, enter the URL to use for sending reports."
+msgstr ""
+
+#: core/admin/options.php:79
+msgid "Auto Source Rules"
+msgstr ""
+
+#: core/admin/options.php:81
+msgid "Due to the way WordPress works, it is highly reccommended to allow inline scripts and style and inline script eval. With these options, plugin will add these sources automatically. If you disable them here, you will need to create rules to cover them or add them manually where you need them."
+msgstr ""
+
+#: core/admin/options.php:83
+msgid "Unsafe Inline Rule"
+msgstr ""
+
+#: core/admin/options.php:84
+msgid "Unsafe Eval Rule"
+msgstr ""
+
+#: core/admin/options.php:86
+msgid "Data Rule"
+msgstr ""
+
+#: core/admin/options.php:86
+msgid "This might be needed for images or fonts. If you prefer, you can disable this option here, and manually add 'data:' as a custom rule where needed. If enabled, it will be added to: 'default', 'image', 'style', 'font'."
+msgstr ""
+
+#: core/admin/options.php:87
+msgid "Blob Rule"
+msgstr ""
+
+#: core/admin/options.php:87
+msgid "This might be needed for media, objects or fonts. If you prefer, you can disable this option here, and manually add 'blob:' as a custom rule where needed. If enabled, it will be added to: 'default', 'media', 'object', 'font'."
+msgstr ""
+
+#: core/admin/options.php:88
+msgid "Mediastream Rule"
+msgstr ""
+
+#: core/admin/options.php:88
+msgid "This might be needed for media, objects or fonts. If you prefer, you can disable this option here, and manually add 'mediastream:' as a custom rule where needed. If enabled, it will be added to: 'default', 'media', 'object', 'font'."
+msgstr ""
+
+#: core/admin/options.php:89
+msgid "FileSystem Rule"
+msgstr ""
+
+#: core/admin/options.php:89
+msgid "This might be needed for media, objects or fonts. If you prefer, you can disable this option here, and manually add 'filesystem:' as a custom rule where needed. If enabled, it will be added to: 'default', 'media', 'object', 'font'."
+msgstr ""
+
+#: core/admin/options.php:93
+msgid "Additional CSP Settings"
+msgstr ""
+
+#: core/admin/options.php:95
+msgid "Upgrade insecure requests"
+msgstr ""
+
+#: core/admin/options.php:95
+#: core/admin/options.php:96
+msgid "Use this only if your website is configured to use secure HTTPS."
+msgstr ""
+
+#: core/admin/options.php:95
+msgid "This option can be applied in LIVE mode only!"
+msgstr ""
+
+#: core/admin/options.php:96
+msgid "Block all mixed content"
+msgstr ""
+
+#: core/admin/options.php:97
+msgid "Disown Opener"
+msgstr ""
+
+#: core/admin/options.php:97
+msgid "This is not yet widely supported, it works only with some browsers."
+msgstr ""
+
+#: core/admin/options.php:97
+msgid "This option can be applied only if using HTACCESS integration!"
+msgstr ""
+
+#: core/admin/options.php:101
+msgid "Automatic generate rules for CDN"
+msgstr ""
+
+#: core/admin/options.php:103
+msgid "List of CDN domains"
+msgstr ""
+
+#: core/admin/options.php:104
+msgid "Add new CDN"
+msgstr ""
+
+#: core/admin/options.php:111
+msgid "Automatic rules for third party services"
+msgstr ""
+
+#: core/admin/options.php:113
+msgid "Core Services"
+msgstr ""
+
+#: core/admin/options.php:114
+msgid "WordPress.org"
+msgstr ""
+
+#: core/admin/options.php:114
+msgid "WordPress loads various images from official website (thumbnails for plugins or themes, other images), and it should be enabled."
+msgstr ""
+
+#: core/admin/options.php:115
+msgid "Gravatar"
+msgstr ""
+
+#: core/admin/options.php:115
+msgid "If you are using Gravatar service for user avatars, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:116
+msgid "Google Services"
+msgstr ""
+
+#: core/admin/options.php:117
+msgid "Google Adsense"
+msgstr ""
+
+#: core/admin/options.php:117
+msgid "If you are using Google Adsense, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:118
+msgid "Google Analytics"
+msgstr ""
+
+#: core/admin/options.php:118
+msgid "If you are using Google Analytics, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:119
+msgid "Google Fonts"
+msgstr ""
+
+#: core/admin/options.php:119
+msgid "If you are using Google Fonts, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:120
+msgid "Google Maps"
+msgstr ""
+
+#: core/admin/options.php:120
+msgid "If you are using Google Maps, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:121
+msgid "Google Translate"
+msgstr ""
+
+#: core/admin/options.php:121
+msgid "If you are using Google Translate or you want to allow your users to use it, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:122
+msgid "Google Youtube"
+msgstr ""
+
+#: core/admin/options.php:122
+msgid "If you are embedding YouTube videos, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:123
+msgid "Google Tag Manager"
+msgstr ""
+
+#: core/admin/options.php:123
+msgid "If you are using Google Tag Manager, this option will automatically append required rules. Also, make sure to enable support for other Google services you are including through Tag Manager."
+msgstr ""
+
+#: core/admin/options.php:124
+msgid "More Services"
+msgstr ""
+
+#: core/admin/options.php:125
+msgid "Instagram"
+msgstr ""
+
+#: core/admin/options.php:125
+msgid "If you are embedding Instagram posts, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:126
+msgid "PayPal"
+msgstr ""
+
+#: core/admin/options.php:126
+msgid "If you are embedding PayPal payments, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:127
+msgid "Gleam"
+msgstr ""
+
+#: core/admin/options.php:127
+msgid "If you are embedding Gleam based contest, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:128
+msgid "Vimeo"
+msgstr ""
+
+#: core/admin/options.php:128
+msgid "If you are embedding Vimeo videos, this option will automatically append required rules."
+msgstr ""
+
+#: core/admin/options.php:131
+msgid "CSP Level 1"
+msgstr ""
+
+#: core/admin/options.php:133
+msgid "Source Rules: Default"
+msgstr ""
+
+#: core/admin/options.php:135
+#: core/admin/options.php:146
+#: core/admin/options.php:157
+#: core/admin/options.php:168
+#: core/admin/options.php:179
+#: core/admin/options.php:190
+#: core/admin/options.php:201
+#: core/admin/options.php:212
+#: core/admin/options.php:223
+#: core/admin/options.php:235
+#: core/admin/options.php:246
+#: core/admin/options.php:256
+#: core/admin/options.php:266
+#: core/admin/options.php:277
+#: core/admin/options.php:287
+#: core/admin/options.php:297
+#: core/admin/options.php:397
+#: forms/settings.php:21
+msgid "Basic"
+msgstr ""
+
+#: core/admin/options.php:136
+#: core/admin/options.php:147
+#: core/admin/options.php:158
+#: core/admin/options.php:169
+#: core/admin/options.php:180
+#: core/admin/options.php:191
+#: core/admin/options.php:202
+#: core/admin/options.php:213
+#: core/admin/options.php:224
+#: core/admin/options.php:236
+#: core/admin/options.php:247
+#: core/admin/options.php:257
+#: core/admin/options.php:267
+#: core/admin/options.php:278
+#: core/admin/options.php:288
+#: core/admin/options.php:298
+msgid "Custom"
+msgstr ""
+
+#: core/admin/options.php:137
+#: core/admin/options.php:148
+#: core/admin/options.php:159
+#: core/admin/options.php:170
+#: core/admin/options.php:181
+#: core/admin/options.php:192
+#: core/admin/options.php:203
+#: core/admin/options.php:214
+#: core/admin/options.php:225
+#: core/admin/options.php:237
+#: core/admin/options.php:247
+#: core/admin/options.php:257
+#: core/admin/options.php:267
+#: core/admin/options.php:278
+#: core/admin/options.php:288
+#: core/admin/options.php:298
+msgid "Add new rule"
+msgstr ""
+
+#: core/admin/options.php:144
+msgid "Source Rules: Script"
+msgstr ""
+
+#: core/admin/options.php:155
+msgid "Source Rules: Style"
+msgstr ""
+
+#: core/admin/options.php:166
+msgid "Source Rules: Image"
+msgstr ""
+
+#: core/admin/options.php:177
+msgid "Source Rules: Font"
+msgstr ""
+
+#: core/admin/options.php:188
+msgid "Source Rules: Object"
+msgstr ""
+
+#: core/admin/options.php:199
+msgid "Source Rules: Connect"
+msgstr ""
+
+#: core/admin/options.php:210
+msgid "Source Rules: Media"
+msgstr ""
+
+#: core/admin/options.php:221
+msgid "Obsolete Source Rules: Frame"
+msgstr ""
+
+#: core/admin/options.php:231
+msgid "CSP Level 2"
+msgstr ""
+
+#: core/admin/options.php:233
+msgid "Source Rules: Child"
+msgstr ""
+
+#: core/admin/options.php:244
+msgid "Source Rules: Frame Ancestors"
+msgstr ""
+
+#: core/admin/options.php:254
+msgid "Source Rules: Form Action"
+msgstr ""
+
+#: core/admin/options.php:264
+msgid "Source Rules: Base URI"
+msgstr ""
+
+#: core/admin/options.php:273
+msgid "CSP Level 3"
+msgstr ""
+
+#: core/admin/options.php:275
+msgid "Source Rules: Manifest"
+msgstr ""
+
+#: core/admin/options.php:285
+msgid "Source Rules: Prefetch"
+msgstr ""
+
+#: core/admin/options.php:295
+msgid "Source Rules: Worker"
+msgstr ""
+
+#: core/admin/options.php:307
+msgid "Notice"
+msgstr ""
+
+#: core/admin/options.php:309
+#: forms/tools/export.php:4
+#: forms/tools/import.php:2
+#: forms/tools/remove.php:2
+#: forms/tools/reportslog.php:18
+msgid "Important"
+msgstr ""
+
+#: core/admin/options.php:310
+msgid "This header is not supported by modern browsers, and in some cases it has been reported to cause issues if used in the same time with CSP header. It is highly recommended to use CSP, and disable `X-XSS-Protection` header."
+msgstr ""
+
+#: core/admin/options.php:318
+msgid "Prevents various types of cross site scripting. It also can log the XXS reports some browsers can send."
+msgstr ""
+
+#: core/admin/options.php:324
+msgid "Log reports"
+msgstr ""
+
+#: core/admin/options.php:337
+msgid "Prevents some browsers from MIME sniffing a response away from declared content type. Reduces exposure to some types of attacks."
+msgstr ""
+
+#: core/admin/options.php:348
+msgid "This header should strengthen secure connection implementation by forcing user agent to use HTTPS."
+msgstr ""
+
+#: core/admin/options.php:349
+msgid "Use only if you use HTTPS on your website!"
+msgstr ""
+
+#: core/admin/options.php:353
+msgid "Max Age"
+msgstr ""
+
+#: core/admin/options.php:354
+msgid "Extras"
+msgstr ""
+
+#: core/admin/options.php:362
+msgid "This header allows website to control how much information browser includes when it navigates away from your website."
+msgstr ""
+
+#: core/admin/options.php:366
+msgid "Policy"
+msgstr ""
+
+#: core/admin/options.php:374
+msgid "This header controls loading of the website inside the IFRAME. By default, SAMEORIGIN will allow loading of your website in IFRAME that originated from your website. You can disable IFRAME support, or limit it to listed domains."
+msgstr ""
+
+#: core/admin/options.php:375
+msgid "This header can be replaced with CSP policy 'frame-src' or 'child-src' directives. If you use that, you don't need X-Frame-Options header."
+msgstr ""
+
+#: core/admin/options.php:379
+#: core/grids/csp.php:233
+#: core/grids/xxp.php:178
+msgid "Value"
+msgstr ""
+
+#: core/admin/options.php:380
+msgid "Domains"
+msgstr ""
+
+#: core/admin/options.php:388
+msgid "This policy is related to the Google's new tracking method called 'Federated Learning of Cohorts' or 'FLoC'. If you do not want for your website to be part of Cohorts tracking system, set this option to 'Not Allowed'."
+msgstr ""
+
+#: core/admin/options.php:395
+msgid "Rules: %s"
+msgstr ""
+
+#: core/admin/options.php:398
+msgid "Custom URL's"
+msgstr ""
+
+#: core/admin/options.php:398
+msgid "Fully qualified URL's with the protocol specified."
+msgstr ""
+
+#: core/admin/options.php:398
+msgid "Add new URL"
+msgstr ""
+
+#: core/admin/options.php:409
+msgid "Do not include this policy"
+msgstr ""
+
+#: core/admin/options.php:410
+#: core/objects/core.statistics.php:38
+msgid "Not Allowed"
+msgstr ""
+
+#: core/admin/options.php:411
+#: core/objects/core.statistics.php:45
+msgid "Allowed for All"
+msgstr ""
+
+#: core/admin/options.php:412
+#: core/objects/core.statistics.php:52
+msgid "Allowed for Self"
+msgstr ""
+
+#: core/admin/options.php:413
+#: core/objects/core.statistics.php:59
+msgid "Allowed for Self and Custom URL's"
+msgstr ""
+
+#: core/admin/options.php:414
+#: core/objects/core.statistics.php:66
+msgid "Allowed for Custom URL's Only"
+msgstr ""
+
+#: core/admin/options.php:420
+msgid "Only 'Feature Policy'"
+msgstr ""
+
+#: core/admin/options.php:421
+msgid "Only 'Permissions Policy'"
+msgstr ""
+
+#: core/admin/options.php:422
+msgid "Both policies"
+msgstr ""
+
+#: core/admin/options.php:428
+#: core/admin/options.php:436
+#: forms/dashboard/headers.php:41
+msgid "Disabled"
+msgstr ""
+
+#: core/admin/options.php:429
+msgid "Report"
+msgstr ""
+
+#: core/admin/options.php:430
+msgid "Live"
+msgstr ""
+
+#: core/admin/options.php:437
+msgid "None"
+msgstr ""
+
+#: core/admin/options.php:438
+msgid "All"
+msgstr ""
+
+#: core/admin/options.php:439
+msgid "Self"
+msgstr ""
+
+#: core/admin/plugin.php:54
+#: core/admin/plugin.php:70
+msgid "Rows"
+msgstr ""
+
+#: core/admin/plugin.php:85
+msgid "GD Security Headers is activated and it needs to finish installation."
+msgstr ""
+
+#: core/admin/plugin.php:86
+#: core/admin/plugin.php:95
+msgid "Click Here"
+msgstr ""
+
+#: core/admin/plugin.php:94
+msgid "GD Security Headers is updated and it needs to finish the update process."
+msgstr ""
+
+#: core/admin/plugin.php:102
+msgid "Overview"
+msgstr ""
+
+#: core/admin/plugin.php:103
+#: forms/front.php:43
+msgid "About"
+msgstr ""
+
+#: core/admin/plugin.php:104
+#: forms/tools/reportslog.php:33
+msgid "CSP Reports"
+msgstr ""
+
+#: core/admin/plugin.php:105
+#: forms/tools/reportslog.php:36
+msgid "XXP Reports"
+msgstr ""
+
+#: core/admin/plugin.php:106
+#: forms/headers.php:17
+#: forms/settings.php:28
+msgid "Headers"
+msgstr ""
+
+#: core/admin/plugin.php:107
+#: forms/front.php:36
+#: forms/settings.php:66
+msgid "Settings"
+msgstr ""
+
+#: core/admin/plugin.php:108
+#: forms/front.php:38
+#: forms/tools.php:68
+msgid "Tools"
+msgstr ""
+
+#: core/admin/plugin.php:181
+#: forms/setup/database.php:24
+msgid "OK"
+msgstr ""
+
+#: core/admin/plugin.php:182
+msgid "Cancel"
+msgstr ""
+
+#: core/admin/plugin.php:183
+#: core/grids/csp.php:204
+#: core/grids/xxp.php:153
+msgid "Delete"
+msgstr ""
+
+#: core/admin/plugin.php:184
+#: forms/tools.php:50
+msgid "Remove"
+msgstr ""
+
+#: core/admin/plugin.php:185
+msgid "Clear"
+msgstr ""
+
+#: core/admin/plugin.php:186
+#: core/admin/plugin.php:199
+msgid "Are you sure you want to do this?"
+msgstr ""
+
+#: core/admin/plugin.php:187
+#: forms/shared/bottom.php:5
+msgid "Please Wait..."
+msgstr ""
+
+#: core/admin/plugin.php:197
+msgid "Select Image"
+msgstr ""
+
+#: core/admin/plugin.php:198
+msgid "Use Selected Image"
+msgstr ""
+
+#: core/admin/plugin.php:200
+msgid "Image not selected."
+msgstr ""
+
+#: core/admin/plugin.php:253
+msgid "CSP Header"
+msgstr ""
+
+#: core/admin/plugin.php:261
+msgid "CSP Resources"
+msgstr ""
+
+#: core/admin/plugin.php:270
+msgid "Getting Help"
+msgstr ""
+
+#: core/admin/plugin.php:271
+msgid "To get help with this plugin, you can start with Knowledge Base list of frequently asked questions and articles. If you have any questions, or you want to report a bug, or you have a suggestion, you can use support forum. All important links for this are on the right side of this help dialog."
+msgstr ""
+
+#: core/admin/plugin.php:277
+msgid "There are few more things you need to think about when setting up this rating addon."
+msgstr ""
+
+#: core/admin/plugin.php:279
+msgid "Do not switch to the Live policy mode before you make all the tests with the Report policy mode."
+msgstr ""
+
+#: core/admin/plugin.php:280
+msgid "During the testing phase, it is best to disable Log option, or you will end up with a lot of reports logged. Use Log feature when you switch to Live policy mode."
+msgstr ""
+
+#: core/admin/plugin.php:281
+msgid "To test CSP, use Google Chrome or Mozilla Firefox with Firebug. But will display detailed information in the Console about each CSP issue."
+msgstr ""
+
+#: core/admin/plugin.php:283
+msgid "To make sure you add valid sources to all source rules, here are few examples on what is accepted by the browsers. You can use '*' character as wildcard."
+msgstr ""
+
+#: core/admin/plugin.php:285
+msgid "Matches any url over HTTPS scheme."
+msgstr ""
+
+#: core/admin/plugin.php:286
+msgid "Matches both HTTP and HTTPS version of the URL."
+msgstr ""
+
+#: core/admin/plugin.php:287
+msgid "Matches HTTPS subdomains for the URL, but now the main domain."
+msgstr ""
+
+#: core/admin/plugin.php:288
+msgid "Matches exact domain URL, with the specified port."
+msgstr ""
+
+#: core/admin/plugin.php:289
+msgid "Matches any scheme for subdomain and any port, but not the main domain."
+msgstr ""
+
+#: core/admin/plugin.php:290
+msgid "Matches exact domain URL, no other subdomains."
+msgstr ""
+
+#: core/admin/plugin.php:297
+msgid "To get more information about the Content Security Policy, check out these online resources."
+msgstr ""
+
+#: core/grids/csp.php:75
+#: core/grids/xxp.php:52
+msgid "All Time"
+msgstr ""
+
+#: core/grids/csp.php:76
+#: core/grids/xxp.php:53
+msgid "Last hour"
+msgstr ""
+
+#: core/grids/csp.php:77
+#: core/grids/xxp.php:54
+msgid "Last 4 hours"
+msgstr ""
+
+#: core/grids/csp.php:78
+#: core/grids/xxp.php:55
+msgid "Last 8 hours"
+msgstr ""
+
+#: core/grids/csp.php:79
+#: core/grids/xxp.php:56
+msgid "Last 12 hours"
+msgstr ""
+
+#: core/grids/csp.php:80
+#: core/grids/xxp.php:57
+msgid "Last day"
+msgstr ""
+
+#: core/grids/csp.php:81
+#: core/grids/xxp.php:58
+msgid "Last 2 days"
+msgstr ""
+
+#: core/grids/csp.php:82
+#: core/grids/xxp.php:59
+msgid "Last 3 day"
+msgstr ""
+
+#: core/grids/csp.php:83
+#: core/grids/xxp.php:60
+msgid "Last 5 day"
+msgstr ""
+
+#: core/grids/csp.php:84
+#: core/grids/xxp.php:61
+msgid "Last 7 day"
+msgstr ""
+
+#: core/grids/csp.php:85
+#: core/grids/xxp.php:62
+msgid "Last 30 days"
+msgstr ""
+
+#: core/grids/csp.php:89
+msgid "All Violated Directives"
+msgstr ""
+
+#: core/grids/csp.php:93
+msgid "All Effective Directive"
+msgstr ""
+
+#: core/grids/csp.php:100
+#: core/grids/xxp.php:69
+msgid "Filter"
+msgstr ""
+
+#: core/grids/csp.php:133
+#: core/grids/xxp.php:87
+msgid "%s %s"
+msgstr ""
+
+#: core/grids/csp.php:156
+#: core/grids/xxp.php:110
+msgid "ID"
+msgstr ""
+
+#: core/grids/csp.php:157
+#: core/grids/xxp.php:111
+msgid "IP"
+msgstr ""
+
+#: core/grids/csp.php:158
+msgid "Violated"
+msgstr ""
+
+#: core/grids/csp.php:159
+msgid "Effective"
+msgstr ""
+
+#: core/grids/csp.php:161
+msgid "Blocked"
+msgstr ""
+
+#: core/grids/csp.php:162
+#: core/grids/csp.php:232
+#: core/grids/xxp.php:113
+#: core/grids/xxp.php:177
+msgid "Data"
+msgstr ""
+
+#: core/grids/csp.php:163
+#: core/grids/xxp.php:114
+msgid "Reported"
+msgstr ""
+
+#: core/grids/csp.php:219
+msgid "Referer"
+msgstr ""
+
+#: core/grids/csp.php:223
+#: core/grids/xxp.php:168
+msgid "User Agent"
+msgstr ""
+
+#: core/grids/csp.php:229
+#: core/grids/xxp.php:174
+msgid "View All Data"
+msgstr ""
+
+#: core/grids/csp.php:255
+#: core/grids/xxp.php:200
+msgid "No IP logged"
+msgstr ""
+
+#: core/grids/csp.php:259
+#: core/grids/xxp.php:204
+msgid "Reports"
+msgstr ""
+
+#: core/grids/csp.php:267
+#: core/grids/xxp.php:212
+msgid "Your current IP."
+msgstr ""
+
+#: core/grids/csp.php:270
+#: core/grids/xxp.php:215
+msgid "Your server IP."
+msgstr ""
+
+#: core/grids/xxp.php:112
+msgid "Requested URL"
+msgstr ""
+
+#: core/objects/core.statistics.php:25
+msgid "Total Number of Rules"
+msgstr ""
+
+#: core/objects/core.statistics.php:31
+msgid "Used Rules"
+msgstr ""
+
+#: core/objects/core.statistics.php:91
+#: forms/settings.php:25
+msgid "Content Security Policy"
+msgstr ""
+
+#: core/objects/core.statistics.php:101
+msgid "XSS Protection"
+msgstr ""
+
+#: core/objects/core.statistics.php:108
+#: forms/settings.php:38
+msgid "Feature/Permissions Policy"
+msgstr ""
+
+#: core/objects/core.statistics.php:115
+msgid "Referrer Policy"
+msgstr ""
+
+#: core/objects/core.statistics.php:122
+msgid "Content Type"
+msgstr ""
+
+#: core/objects/core.statistics.php:129
+msgid "Strict Transport Security"
+msgstr ""
+
+#: core/objects/core.statistics.php:137
+msgid "Frame Options"
+msgstr ""
+
+#: core/functions.php:9
+msgid "Do not send referrer"
+msgstr ""
+
+#: core/functions.php:10
+msgid "No referrer when downgrade"
+msgstr ""
+
+#: core/functions.php:11
+#: core/functions.php:31
+msgid "Same origin"
+msgstr ""
+
+#: core/functions.php:12
+msgid "Origin"
+msgstr ""
+
+#: core/functions.php:13
+msgid "Strict origin"
+msgstr ""
+
+#: core/functions.php:14
+msgid "Origin when cross origin"
+msgstr ""
+
+#: core/functions.php:15
+msgid "Strict origin when cross origin"
+msgstr ""
+
+#: core/functions.php:16
+msgid "Unsafe URL"
+msgstr ""
+
+#: core/functions.php:22
+msgid "Nothing"
+msgstr ""
+
+#: core/functions.php:23
+msgid "Include Subdomains"
+msgstr ""
+
+#: core/functions.php:24
+msgid "Include Subdomains with Preload"
+msgstr ""
+
+#: core/functions.php:30
+msgid "Deny"
+msgstr ""
+
+#: core/functions.php:32
+msgid "Allowed from listed domains"
+msgstr ""
+
+#: core/settings.php:128
+msgctxt "Permissions Policy Directive"
+msgid "Accelerometer"
+msgstr ""
+
+#: core/settings.php:129
+msgctxt "Permissions Policy Directive"
+msgid "Ambient Light Sensor"
+msgstr ""
+
+#: core/settings.php:130
+msgctxt "Permissions Policy Directive"
+msgid "Autoplay"
+msgstr ""
+
+#: core/settings.php:131
+msgctxt "Permissions Policy Directive"
+msgid "Browsing Topics"
+msgstr ""
+
+#: core/settings.php:132
+msgctxt "Permissions Policy Directive"
+msgid "Camera"
+msgstr ""
+
+#: core/settings.php:133
+msgctxt "Permissions Policy Directive"
+msgid "Display Capture"
+msgstr ""
+
+#: core/settings.php:134
+msgctxt "Permissions Policy Directive"
+msgid "Encrypted Media"
+msgstr ""
+
+#: core/settings.php:135
+msgctxt "Permissions Policy Directive"
+msgid "Full Screen"
+msgstr ""
+
+#: core/settings.php:136
+msgctxt "Permissions Policy Directive"
+msgid "GEO Location"
+msgstr ""
+
+#: core/settings.php:137
+msgctxt "Permissions Policy Directive"
+msgid "Gyroscope"
+msgstr ""
+
+#: core/settings.php:138
+msgctxt "Permissions Policy Directive"
+msgid "Human Interface Devices"
+msgstr ""
+
+#: core/settings.php:139
+msgctxt "Permissions Policy Directive"
+msgid "Identity Credentials"
+msgstr ""
+
+#: core/settings.php:140
+msgctxt "Permissions Policy Directive"
+msgid "Idle Detection"
+msgstr ""
+
+#: core/settings.php:141
+msgctxt "Permissions Policy Directive"
+msgid "Local Fonts"
+msgstr ""
+
+#: core/settings.php:142
+msgctxt "Permissions Policy Directive"
+msgid "Magnetometer"
+msgstr ""
+
+#: core/settings.php:143
+msgctxt "Permissions Policy Directive"
+msgid "Microphone"
+msgstr ""
+
+#: core/settings.php:144
+msgctxt "Permissions Policy Directive"
+msgid "MIDI"
+msgstr ""
+
+#: core/settings.php:145
+msgctxt "Permissions Policy Directive"
+msgid "OTP Credentials"
+msgstr ""
+
+#: core/settings.php:146
+msgctxt "Permissions Policy Directive"
+msgid "Payment"
+msgstr ""
+
+#: core/settings.php:147
+msgctxt "Permissions Policy Directive"
+msgid "Picture In Picture"
+msgstr ""
+
+#: core/settings.php:148
+msgctxt "Permissions Policy Directive"
+msgid "Public Key Credentials Create"
+msgstr ""
+
+#: core/settings.php:149
+msgctxt "Permissions Policy Directive"
+msgid "Public Key Credentials Get"
+msgstr ""
+
+#: core/settings.php:150
+msgctxt "Permissions Policy Directive"
+msgid "Screen Wake Lock"
+msgstr ""
+
+#: core/settings.php:151
+msgctxt "Permissions Policy Directive"
+msgid "Serial"
+msgstr ""
+
+#: core/settings.php:152
+msgctxt "Permissions Policy Directive"
+msgid "Storage Access"
+msgstr ""
+
+#: core/settings.php:153
+msgctxt "Permissions Policy Directive"
+msgid "USB"
+msgstr ""
+
+#: core/settings.php:154
+msgctxt "Permissions Policy Directive"
+msgid "Web Share"
+msgstr ""
+
+#: core/settings.php:155
+msgctxt "Permissions Policy Directive"
+msgid "XR Spatial Tracking"
+msgstr ""
+
+#: forms/about/changelog.php:5
+#: forms/about/info.php:5
+#: forms/about/minor.php:4
+#: forms/about/minor.php:8
+#: forms/about/minor.php:12
+#: forms/about/minor.php:16
+#: forms/about/minor.php:20
+#: forms/about/minor.php:24
+#: forms/about/minor.php:28
+#: forms/front.php:23
+msgid "Version"
+msgstr ""
+
+#: forms/about/header.php:27
+msgid "Configure various security related HTTP headers, including Content Security Policy, Referrer Policy and more. All headers can be added to .HTACCESS file."
+msgstr ""
+
+#: forms/about/header.php:16
+msgid "What&#8217;s New"
+msgstr ""
+
+#: forms/about/header.php:17
+msgid "Info"
+msgstr ""
+
+#: forms/about/header.php:18
+msgid "Changelog"
+msgstr ""
+
+#: forms/about/header.php:19
+msgid "Dev4Press"
+msgstr ""
+
+#: forms/about/header.php:25
+msgid "Welcome to GD Security Headers&nbsp;%s"
+msgstr ""
+
+#: forms/about/header.php:31
+msgid "Version %s"
+msgstr ""
+
+#: forms/about/info.php:6
+msgid "Status"
+msgstr ""
+
+#: forms/about/info.php:7
+msgid "Edition"
+msgstr ""
+
+#: forms/about/info.php:8
+msgid "Build"
+msgstr ""
+
+#: forms/about/info.php:9
+msgid "Date"
+msgstr ""
+
+#: forms/about/info.php:13
+msgid "First released"
+msgstr ""
+
+#: forms/about/info.php:19
+msgid "System Requirements"
+msgstr ""
+
+#: forms/about/info.php:22
+msgid "WordPress"
+msgstr ""
+
+#: forms/about/info.php:23
+msgid "PHP"
+msgstr ""
+
+#: forms/about/info.php:24
+msgid "MySQL"
+msgstr ""
+
+#: forms/about/info.php:30
+msgid "Knowledge Base and Support Forums"
+msgstr ""
+
+#: forms/about/info.php:41
+msgid "Important Links"
+msgstr ""
+
+#: forms/about/info.php:44
+msgid "On WordPress.org"
+msgstr ""
+
+#: forms/about/info.php:46
+msgid "On Dev4Press"
+msgstr ""
+
+#: forms/about/info.php:33
+msgid "To learn more about the plugin, check out plugin %s articles and FAQ. To get additional help, you can use %s."
+msgstr ""
+
+#: forms/about/info.php:34
+msgid "knowledge base"
+msgstr ""
+
+#: forms/about/info.php:35
+msgid "support forum"
+msgstr ""
+
+#: forms/about/minor.php:2
+msgid "Maintenance and Security Releases"
+msgstr ""
+
+#: forms/about/minor.php:32
+msgid "For more information, see <a href='%s'>the changelog</a>."
+msgstr ""
+
+#: forms/dashboard/headers.php:2
+msgid "Security Headers"
+msgstr ""
+
+#: forms/dashboard/headers.php:6
+msgid ".HTACCESS"
+msgstr ""
+
+#: forms/dashboard/headers.php:9
+msgid "Added"
+msgstr ""
+
+#: forms/dashboard/headers.php:11
+msgid "Not Used"
+msgstr ""
+
+#: forms/dashboard/headers.php:14
+msgid "Available"
+msgstr ""
+
+#: forms/dashboard/headers.php:16
+msgid "Not Available"
+msgstr ""
+
+#: forms/dashboard/headers.php:31
+msgid "Active"
+msgstr ""
+
+#: forms/dashboard/headers.php:34
+msgid "Report Mode"
+msgstr ""
+
+#: forms/dashboard/headers.php:37
+msgid "Live Mode"
+msgstr ""
+
+#: forms/dashboard/headers.php:44
+msgid "Recommended"
+msgstr ""
+
+#: forms/dashboard/headers.php:46
+msgid "SSL Recommended"
+msgstr ""
+
+#: forms/dashboard/headers.php:58
+msgid "HTTP Headers Security Recommendation"
+msgstr ""
+
+#: forms/dashboard/headers.php:61
+msgid "Here are few recommendations to improve your website and your website users security."
+msgstr ""
+
+#: forms/dashboard/headers.php:65
+msgid "Check out the list of available HTTP headers and enable and configure all the headers that are recommended."
+msgstr ""
+
+#: forms/dashboard/headers.php:67
+msgid "Content Security Policy is currently configured as 'Report Only'. Make sure to switch it to 'Live Mode' once you set it up."
+msgstr ""
+
+#: forms/dashboard/headers.php:70
+msgid "You should use HTTPS everywhere on your website. For that, you need to configure valid and trusted SSL certificate on your server."
+msgstr ""
+
+#: forms/dashboard/headers.php:72
+msgid "Make sure to keep your website updated so that all core security updates are applied."
+msgstr ""
+
+#: forms/dashboard/headers.php:74
+msgid "Apache HTACCESS"
+msgstr ""
+
+#: forms/dashboard/headers.php:77
+msgid "To use headers via HTACCESS on Apache servers (or in Apache config), make sure that Apache module MOD_HEADERS is enabled."
+msgstr ""
+
+#: forms/dashboard/headers.php:81
+msgid "Plugin Settings"
+msgstr ""
+
+#: forms/dashboard/headers.php:82
+msgid "Generated Headers"
+msgstr ""
+
+#: forms/dashboard/permissions.php:2
+msgid "Features/Permissions Policy"
+msgstr ""
+
+#: forms/dashboard/permissions.php:22
+msgid "Features/Permissions Policy Recommendation"
+msgstr ""
+
+#: forms/dashboard/permissions.php:25
+msgid "Here are few recommendations related to the policy rules you should you."
+msgstr ""
+
+#: forms/dashboard/permissions.php:29
+msgid "It is highly recommended to set to 'Not Allowed' rule for the 'Interest Cohort', and with that disable Google tracking for 'FLoC' or 'Federated Learning of Cohorts'."
+msgstr ""
+
+#: forms/dashboard/permissions.php:33
+msgid "Policy Settings"
+msgstr ""
+
+#: forms/dashboard/reports.php:2
+msgid "CSS and XXP reports logged in the past 7 days"
+msgstr ""
+
+#: forms/dashboard/reports.php:32
+msgid "Content Security Policy - Reports for URL's"
+msgstr ""
+
+#: forms/dashboard/reports.php:35
+msgid "It is highly recommended to configure CSP security header with reporting enabled."
+msgstr ""
+
+#: forms/dashboard/reports.php:42
+#: forms/dashboard/reports.php:76
+msgid "No reports logged in the past 7 days."
+msgstr ""
+
+#: forms/dashboard/reports.php:66
+msgid "X XSS Protection - Reports for URL's"
+msgstr ""
+
+#: forms/dashboard/reports.php:69
+msgid "It is highly recommended to configure X XSS Protection security header with reporting enabled."
+msgstr ""
+
+#: forms/dashboard/reports.php:100
+msgid "All CSP reports"
+msgstr ""
+
+#: forms/dashboard/reports.php:103
+msgid "All XXP reports"
+msgstr ""
+
+#: forms/setup/database.php:1
+msgid "Database Tables"
+msgstr ""
+
+#: forms/setup/database.php:9
+msgid "Upgrade Notices"
+msgstr ""
+
+#: forms/setup/database.php:13
+msgid "Tables Check"
+msgstr ""
+
+#: forms/setup/database.php:22
+msgid "ERROR"
+msgstr ""
+
+#: forms/shared/bottom.php:7
+msgid "Working. Please wait..."
+msgstr ""
+
+#: forms/shared/dialogs.php:2
+msgid "Event Data"
+msgstr ""
+
+#: forms/shared/top.php:39
+msgid "Settings are saved."
+msgstr ""
+
+#: forms/shared/top.php:42
+msgid "Import operation completed."
+msgstr ""
+
+#: forms/shared/top.php:45
+msgid "Nothing done."
+msgstr ""
+
+#: forms/tools/export.php:6
+msgid "With this tool you export all plugin settings into plain text file using JSON format. Do not modify export file, change can make it unusable."
+msgstr ""
+
+#: forms/tools/import.php:4
+msgid "With this tool you import all plugin settings from plain text file made using the Export tool. If you made changes to this file, it is very likely that import will fail."
+msgstr ""
+
+#: forms/tools/import.php:9
+msgid "Import File"
+msgstr ""
+
+#: forms/tools/import.php:11
+msgid "Select file you want to import"
+msgstr ""
+
+#: forms/tools/remove.php:4
+msgid "This tool can remove plugin settings saved in the WordPress options table and all database tables added by the plugin."
+msgstr ""
+
+#: forms/tools/remove.php:5
+msgid "Deletion operations are not reversible, and it is highly recommended to create database backup before proceeding with this tool."
+msgstr ""
+
+#: forms/tools/remove.php:6
+msgid "If you choose to remove plugin settings, once that is done, all settings will be reinitialized to default values if you choose to leave plugin active."
+msgstr ""
+
+#: forms/tools/remove.php:11
+msgid "Remove plugin settings"
+msgstr ""
+
+#: forms/tools/remove.php:14
+msgid "All Plugin Settings"
+msgstr ""
+
+#: forms/tools/remove.php:20
+msgid "Remove .HTACCESS rules"
+msgstr ""
+
+#: forms/tools/remove.php:23
+msgid "All rules added to .HTACCESS"
+msgstr ""
+
+#: forms/tools/remove.php:29
+msgid "Remove database data and tables"
+msgstr ""
+
+#: forms/tools/remove.php:32
+msgid "Remove plugins database tables and all data in them"
+msgstr ""
+
+#: forms/tools/remove.php:35
+msgid "Remove all data from database tables"
+msgstr ""
+
+#: forms/tools/remove.php:38
+msgid "Database tables that will be affected"
+msgstr ""
+
+#: forms/tools/remove.php:47
+msgid "Disable Plugin"
+msgstr ""
+
+#: forms/tools/remove.php:50
+msgid "Disable plugin"
+msgstr ""
+
+#: forms/tools/reportslog.php:20
+msgid "This will remove old entries from CSP and XXP reports log. This operation is not reversible."
+msgstr ""
+
+#: forms/tools/reportslog.php:25
+msgid "Reports fo Cleanup"
+msgstr ""
+
+#: forms/tools/reportslog.php:30
+msgid "Select Tables"
+msgstr ""
+
+#: forms/tools/reportslog.php:46
+msgid "Report Cleanup Period"
+msgstr ""
+
+#: forms/tools/reportslog.php:51
+msgid "Select Period"
+msgstr ""
+
+#: forms/tools/reportslog.php:4
+msgid "Remove all logged data"
+msgstr ""
+
+#: forms/tools/reportslog.php:5
+msgid "Remove logged data older than 1 day"
+msgstr ""
+
+#: forms/tools/reportslog.php:6
+msgid "Remove logged data older than 3 days"
+msgstr ""
+
+#: forms/tools/reportslog.php:7
+msgid "Remove logged data older than 7 days"
+msgstr ""
+
+#: forms/tools/reportslog.php:8
+msgid "Remove logged data older than 14 days"
+msgstr ""
+
+#: forms/tools/reportslog.php:9
+msgid "Remove logged data older than 30 days"
+msgstr ""
+
+#: forms/tools/reportslog.php:10
+msgid "Remove logged data older than 60 days"
+msgstr ""
+
+#: forms/tools/reportslog.php:11
+msgid "Remove logged data older than 90 days"
+msgstr ""
+
+#: forms/tools/reportslog.php:12
+msgid "Remove logged data older than 180 days"
+msgstr ""
+
+#: forms/tools/reportslog.php:13
+msgid "Remove logged data older than 1 year"
+msgstr ""
+
+#: forms/csp-reports.php:23
+#: forms/xxp-reports.php:23
+msgid "Search"
+msgstr ""
+
+#: forms/headers.php:20
+msgid "All HTTP headers generated so they can be copied into server side config. Headers are generated based on the plugin settings."
+msgstr ""
+
+#: forms/headers.php:21
+msgid "If you are not sure how to do that, please consult with your website hosting company support."
+msgstr ""
+
+#: forms/headers.php:24
+#: forms/settings.php:80
+#: forms/tools.php:82
+msgid "Return to top"
+msgstr ""
+
+#: forms/headers.php:30
+msgid "Apache Server"
+msgstr ""
+
+#: forms/headers.php:32
+msgid "If you use Apache server, this plugin can add headers automatically into HTACCESS file. But, if you have disabled HTACCESS or you prefer using global server config, you can copy rules from here."
+msgstr ""
+
+#: forms/headers.php:54
+msgid "Nginx Server"
+msgstr ""
+
+#: forms/headers.php:56
+msgid "If you use NGINX server, you can copy rules from here to add to the server 'conf' file."
+msgstr ""
+
+#: forms/headers.php:78
+msgid "IIS Server"
+msgstr ""
+
+#: forms/headers.php:80
+msgid "If you use IIS server, you can copy rules from here to add to the server 'Web.config' file."
+msgstr ""
+
+#: forms/install.php:20
+msgid "Installation"
+msgstr ""
+
+#: forms/install.php:23
+msgid "Before you continue, make sure plugin installation was successful."
+msgstr ""
+
+#: forms/install.php:37
+#: forms/update.php:37
+msgid "All Done"
+msgstr ""
+
+#: forms/install.php:38
+msgid "Installation completed."
+msgstr ""
+
+#: forms/install.php:39
+#: forms/update.php:40
+msgid "Click here to continue."
+msgstr ""
+
+#: forms/settings.php:76
+msgid "Save Settings"
+msgstr ""
+
+#: forms/settings.php:112
+msgid "Settings Panel"
+msgstr ""
+
+#: forms/settings.php:9
+msgid "Settings Index"
+msgstr ""
+
+#: forms/settings.php:12
+msgid "All plugin settings are split into panels, and you access each starting from the right."
+msgstr ""
+
+#: forms/settings.php:18
+msgid "Global"
+msgstr ""
+
+#: forms/settings.php:22
+msgid "From this panel you control global, common plugin settings."
+msgstr ""
+
+#: forms/settings.php:29
+msgid "From this panel you control CSP settings."
+msgstr ""
+
+#: forms/settings.php:32
+msgid "X XSS Protection"
+msgstr ""
+
+#: forms/settings.php:35
+msgid "From this panel you control XXP settings."
+msgstr ""
+
+#: forms/settings.php:41
+msgid "From this panel you control Feature Policy header settings."
+msgstr ""
+
+#: forms/settings.php:44
+msgid "More Headers"
+msgstr ""
+
+#: forms/settings.php:47
+msgid "From this panel you control other security headers settings."
+msgstr ""
+
+#: forms/tools.php:111
+msgid "Tools Panel"
+msgstr ""
+
+#: forms/tools.php:9
+msgid "Tools Index"
+msgstr ""
+
+#: forms/tools.php:11
+msgid "All plugin tools are split into several panels, and you can access each starting from the right."
+msgstr ""
+
+#: forms/tools.php:17
+msgid "Reports Logs Cleanup"
+msgstr ""
+
+#: forms/tools.php:19
+msgid "Cleanup"
+msgstr ""
+
+#: forms/tools.php:22
+msgid "Remove old reports from CSP and XXP reports logs."
+msgstr ""
+
+#: forms/tools.php:25
+msgid "Recheck and Update"
+msgstr ""
+
+#: forms/tools.php:27
+msgid "Maintenance"
+msgstr ""
+
+#: forms/tools.php:30
+msgid "Recheck plugin database tables, check for new templates and clean cache."
+msgstr ""
+
+#: forms/tools.php:33
+msgid "Export Settings"
+msgstr ""
+
+#: forms/tools.php:36
+msgid "Export"
+msgstr ""
+
+#: forms/tools.php:37
+msgid "Export all plugin settings into file."
+msgstr ""
+
+#: forms/tools.php:40
+msgid "Import Settings"
+msgstr ""
+
+#: forms/tools.php:43
+msgid "Import"
+msgstr ""
+
+#: forms/tools.php:44
+msgid "Import all plugin settings from export file."
+msgstr ""
+
+#: forms/tools.php:47
+msgid "Reset / Remove"
+msgstr ""
+
+#: forms/tools.php:51
+msgid "Remove selected plugin settings, database tables and optionally disable plugin."
+msgstr ""
+
+#: forms/update.php:20
+msgid "Update"
+msgstr ""
+
+#: forms/update.php:23
+msgid "Before you continue, make sure plugin was successfully updated."
+msgstr ""
+
+#: forms/update.php:38
+msgid "Update completed."
+msgstr ""
+

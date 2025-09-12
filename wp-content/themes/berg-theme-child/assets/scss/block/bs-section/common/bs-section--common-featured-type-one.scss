@@ -1,0 +1,44 @@
+.bs-section--common-featured-type-one {
+	position: relative;
+	overflow: hidden;
+	padding: 50px 15px 10px;
+	&::before {
+		@include after-before;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 615px;
+		background: $common-featured-type-one-gradient;
+	}
+	h1 {
+		margin-bottom: 15px;
+		font-size: 35px;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+		line-height: 42px;
+	}
+	.bs-row {
+		&:last-child {
+			margin-top: 30px;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--common-featured-type-one {
+		h1 {
+			font-size: 48px;
+			line-height: 58px;
+		}
+		.bs-row {
+			&:last-child {
+				margin-top: 64px;
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--common-featured-type-one {
+		padding: 100px 15px 121px;
+	}
+}

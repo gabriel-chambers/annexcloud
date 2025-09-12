@@ -1,0 +1,57 @@
+[submodule "src/block/advanced-blurb"]
+	path = src/block/advanced-blurb
+	url = git@gitlab.com:e25berg/advanced-blurb.git
+[submodule "src/block/blurb"]
+	path = src/block/blurb
+	url = git@gitlab.com:e25berg/blurb.git
+[submodule "src/block/section"]
+	path = src/block/section
+	url = git@gitlab.com:e25berg/section.git
+[submodule "src/block/row"]
+	path = src/block/row
+	url = git@gitlab.com:e25berg/row.git
+[submodule "src/block/column"]
+	path = src/block/column
+	url = git@gitlab.com:e25berg/column.git
+[submodule "src/block/div"]
+	path = src/block/div
+	url = git@gitlab.com:e25berg/div.git
+[submodule "src/block/counter"]
+	path = src/block/counter
+	url = git@gitlab.com:e25berg/counter.git
+[submodule "src/block/media-elements"]
+	path = src/block/media-elements
+	url = git@gitlab.com:e25berg/media-elements.git
+[submodule "src/block/single-post"]
+	path = src/block/single-post
+	url = git@gitlab.com:e25berg/single-post.git
+[submodule "src/block/slider"]
+	path = src/block/slider
+	url = git@gitlab.com:e25berg/slider.git
+[submodule "src/block/pro-button"]
+	path = src/block/pro-button
+	url = git@gitlab.com:e25berg/pro-button.git
+[submodule "src/block/inner-menu"]
+	path = src/block/inner-menu
+	url = git@gitlab.com:e25berg/inner-menu.git
+[submodule "src/block/post-block"]
+	path = src/block/post-block
+	url = git@gitlab.com:e25berg/post-block.git
+[submodule "tab-slider-v2"]
+	path = tab-slider-v2
+	url = git@gitlab.com:e25berg/tab-slider-v2.git
+[submodule "src/block/tab-slider-v2"]
+	path = src/block/tab-slider-v2
+	url = git@gitlab.com:e25berg/tab-slider-v2.git
+[submodule "src/block/single-slide"]
+	path = src/block/single-slide
+	url = git@gitlab.com:e25berg/single-slide.git
+[submodule "src/block/slider-v2"]
+	path = src/block/slider-v2
+	url = git@gitlab.com:e25berg/slider-v2.git
+[submodule "src/block/tab-slider"]
+	path = src/block/tab-slider
+	url = git@gitlab.com:e25berg/tab-slider.git
+[submodule "src/block/card"]
+	path = src/block/card
+	url = git@gitlab.com:e25berg/card.git

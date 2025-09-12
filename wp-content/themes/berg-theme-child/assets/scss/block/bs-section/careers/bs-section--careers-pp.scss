@@ -1,0 +1,112 @@
+.bs-section--careers-pp {
+	$bs-section: ".bs-section";
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--careers-pp {
+		$bs-section: ".bs-section";
+		&#{$bs-section}--careers-banner {
+			padding-bottom: 70px;
+		}
+		&#{$bs-section}--careers-why-join-annexcloud {
+			padding-bottom: 96px;
+		}
+		&#{$bs-section}--careers-core-values {
+			padding-bottom: 90px;
+		}
+
+		&#{$bs-section}--careers-benefits {
+			&:not(#{$bs-section}--careers-banner ) {
+				padding: 137px 0 88px;
+			}
+		}
+		&#{$bs-section}--careers-current-job-opennings {
+			padding-bottom: 95px;
+			h2 {
+				margin-bottom: 80px;
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--careers-pp {
+		$bs-section: ".bs-section";
+
+		&#{$bs-section}--careers-banner {
+			&#{$bs-section}--careers-benefits {
+				.bs-pro-button {
+					> a {
+						padding: 16px 30px 14px;
+						letter-spacing: 0.01em;
+						line-height: 26px;
+					}
+				}
+			}
+		}
+
+		&#{$bs-section}--hear-from-our-team {
+
+			&#{$bs-section}--hear-from-our-team {
+				.bs-div--r-tesslr-l1-anxcld1-slide-wrapper {
+					.bs-div--r-slide-content-wrapper {
+						:is(h1, h2, h3, h4, h5, h6) {
+							margin-bottom: 22px;
+						}
+					}
+					.wp-block-quote {
+						p {
+							&:first-child {
+								/* stylelint-disable max-nesting-depth */
+								&::before {
+									margin: -1px 0 0 1px;
+								}
+								/* stylelint-enable max-nesting-depth */
+							}
+						}
+					}
+				}
+			}
+		}
+		&.r-tesslr-l1--anxcld1.bs-section--hear-from-our-team {
+			padding: 120px 0 116px;
+		}
+
+		&#{$bs-section}--careers-benefits {
+			&:not(#{$bs-section}--careers-banner ) {
+				padding: 137px 0 86px;
+			}
+			h2 {
+				margin-bottom: 18px;
+			}
+			.bs-card {
+				$bs-card: ".bs-card";
+				/* stylelint-disable selector-class-pattern */
+				&#{$bs-card}---default {
+					#{$bs-card}__container-right {
+						padding-left: 14px;
+					}
+				}
+				/* stylelint-enable selector-class-pattern */
+			}
+		}
+
+		&#{$bs-section}--careers-current-job-opennings {
+			.bs-posts__normal {
+				margin-bottom: 66px;
+				.bs-post {
+					&__details {
+						padding: 19px 30px 6px;
+					}
+				}
+			}
+			.bs-posts__load-more {
+				.bs-posts__load-more-btn {
+					padding: 12px 31px;
+					letter-spacing: 0.01em;
+					line-height: 26px;
+				}
+			}
+		}
+	}
+}
+

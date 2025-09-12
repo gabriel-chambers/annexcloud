@@ -1,0 +1,51 @@
+.bs-div.bs-div--blog-inner-counter {
+	margin-bottom: 30px;
+	.bs-div__inner {
+		.bs-counter {
+			padding: 27px 0 30px;
+			border-top: 3px solid color("darker-red");
+			&__wrapper {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 10px;
+				float: none;
+				* {
+					margin: 0;
+					color: color("space-blue");
+					font-size: 50px;
+					font-weight: $font-weight-bold;
+					letter-spacing: -0.01em;
+					line-height: 63px;
+				}
+				p {
+					color: color("red");
+				}
+			}
+			&__summary {
+				p {
+					margin-bottom: 0;
+					color: rgba(color("dark-grey"), 0.65);
+					font-size: 16px;
+					font-weight: $font-weight-bold;
+					letter-spacing: 0;
+					line-height: 19px;
+					text-align: center;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-div.bs-div--blog-inner-counter {
+		.bs-div__inner {
+			display: grid;
+			column-gap: 30px;
+			grid-template-columns: repeat(3, 1fr);
+			.bs-counter {
+				padding-bottom: 0;
+			}
+		}
+	}
+}

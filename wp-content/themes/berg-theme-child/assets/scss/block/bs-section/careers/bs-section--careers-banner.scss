@@ -1,0 +1,121 @@
+.bs-section--careers-banner {
+	&.bs-section--careers-benefits {
+		padding: 0 15px 60px;
+		h1 {
+			margin-bottom: 20px;
+		}
+		> .container-fluid {
+			> .bs-row {
+				> .bs-column {
+					> .bs-div {
+						/* stylelint-disable max-nesting-depth */
+						&:last-child {
+							&::before {
+								// stylelint-disable-next-line declaration-no-important
+								display: none !important;
+							}
+							figure {
+								clip-path: polygon(9.5% 0, 120.5% 0%, 90% 100%, 0% 100%, 0 31.5%);
+							}
+						}
+						/* stylelint-enable */
+					}
+				}
+			}
+		}
+		.bs-pro-button {
+			> a {
+				padding: 18px 30px;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--careers-banner {
+		&.bs-section--careers-benefits {
+			padding: 0 0 120px;
+			h1 {
+				max-width: 320px;
+				margin-bottom: 20px;
+			}
+			> .container-fluid {
+				> .bs-row {
+					> .bs-column {
+						> .bs-div {
+							display: flex;
+							align-items: center;
+							&:last-child {
+								height: 580px;
+								/* stylelint-disable max-nesting-depth*/
+								&::after {
+									@include after-before;
+									height: 580px;
+								}
+								figure {
+									clip-path: polygon(11.5% 0, 93% 0, 64.5% 100%, 0 101%, 0 39.5%);
+								}
+								/* stylelint-enable */
+							}
+						}
+					}
+				}
+			}
+			&.bs-section--common-banner-variable-height {
+				> .container-fluid {
+					> .bs-row {
+						> .bs-column {
+							> .bs-div:last-child {
+								height: 501px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--careers-banner {
+		&.bs-section--careers-benefits {
+			> .container-fluid {
+				> .bs-row {
+					> .bs-column {
+						> .bs-div {
+							/* stylelint-disable */
+							&:last-child {
+								max-width: 932px;
+								margin: 0 -46% 0 100px;
+								&::after {
+									top: 0;
+									left: 570px;
+								}
+								img {
+									object-position: left; // use margin-left
+								}
+							}
+							/* stylelint-enable */
+							&:first-child {
+								max-width: 500px;
+								/* stylelint-disable */
+								> .bs-div__inner { // check this code
+									display: flex;
+									flex-wrap: wrap;
+									> .bs-div {
+										&:last-child {
+											.bs-div__inner {
+												padding-top: 39px;
+											}
+										}
+									}
+								}
+								/* stylelint-enable */
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

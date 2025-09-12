@@ -1,0 +1,24 @@
+.bs-section--resources-pp {
+	&.bs-section--common-ready-to-get-started {
+		> .container {
+			.bs-pro-button {
+				> a {
+					padding-top: 14px;
+				}
+			}
+		}
+	}
+	&.bs-section--resources {
+		.bs-row--filter-widget {
+			>  .bs-column {
+				&:last-of-type {
+					.facetwp-type-fselect {
+						.fs-arrow {
+							right: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

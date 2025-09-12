@@ -1,0 +1,195 @@
+.bs-section--careers-current-job-opennings {
+	$bs-post:".bs-post";
+	overflow: hidden;
+	padding: 60px 15px;
+	h2 {
+		@include title-two;
+		margin-bottom: 40px;
+		color: color("space-blue");
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+	}
+	#{$bs-post}s__normal {
+		margin-bottom: 62px;
+		#{$bs-post} {
+			margin: 0 0 17px 0;
+		}
+		#{$bs-post}__inner {
+			border-radius: 5px;
+			background-color: color("cultured");
+		}
+		#{$bs-post}__details {
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 23px 35px 6px;
+		}
+		#{$bs-post}__title {
+			min-height: unset;
+			flex: 0 0 54%;
+			/* stylelint-disable max-nesting-depth */
+			h3 {
+				color: color("space-blue");
+				font-size: 18px;
+				font-weight: $font-weight-normal;
+			}
+			/* stylelint-enable max-nesting-depth */
+		}
+		#{$bs-post}__category {
+			flex: 0 0 24%;
+			/* stylelint-disable max-nesting-depth */
+			span {
+				position: relative;
+				color: color("dark-grey");
+				font-size: 16px;//14->16
+				font-weight: $font-weight-normal;
+				text-transform: capitalize;
+			}
+			&::after {
+				display: none;
+			}
+			/* stylelint-enable max-nesting-depth */
+		}
+		#{$bs-post}-taxonomy_contract-type {
+			position: relative;
+			margin: -1px 5px 12px 1px;
+			&::before {
+				@include toolbox;
+				top: 2px;
+				left: -25px;
+			}
+			/* stylelint-disable max-nesting-depth */
+			span {
+				&::before {
+					display: none;
+				}
+				&::after {
+					@include after-before;
+					top: 0;
+					right: -23px;
+					width: 28px;
+					height: 28px;
+					content: ",";
+				}
+				&:last-child {
+					&::after {
+						display: none;
+					}
+				}
+			}
+			/* stylelint-enable max-nesting-depth */
+		}
+		#{$bs-post}-taxonomy_job-location {
+			margin: -1px 5px 12px 0;
+			/* stylelint-disable max-nesting-depth */
+			span {
+				position: relative;
+				&::before {
+					@include location;
+					top: 0;
+					left: -25px;
+				}
+			}
+			/* stylelint-enable max-nesting-depth */
+		}
+		#{$bs-post}__trigger {
+			&:hover {
+				#{$bs-post}__inner {
+					background-color: color("purple");
+					box-shadow: 0 4px 26px rgba(color("dark-grey-1"), 0.6);
+					* {
+						color: color("white");
+						&::before {
+							filter: brightness(0) invert(1);
+						}
+					}
+				}
+			}
+		}
+	}
+	#{$bs-post}s__load-more {
+		#{$bs-post}s__load-more-btn {
+			padding: 19px 32px;
+			border-radius: 5px;
+			background-color: color("purple");
+			color: color("white");
+			font-size: 16px;
+			font-weight: $font-weight-bold;
+			&:hover {
+				background-color: color("dark-purple");
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--careers-current-job-opennings {
+		$bs-post:".bs-post";
+		padding: 120px 0;
+		h2 {
+			margin-bottom: 78px;
+		}
+		#{$bs-post}s__normal {
+			margin-bottom: 64px;
+			#{$bs-post} {
+				margin: 0 0 15.5px 0;
+				#{$bs-post}__details {
+					padding: 19px 60px 6px;
+				}
+				#{$bs-post}__title {
+					flex: 0 0 54%;
+					/* stylelint-disable max-nesting-depth */
+					h3 {
+						font-size: 18px;
+					}
+					/* stylelint-enable max-nesting-depth */
+				}
+				#{$bs-post}__category {
+					flex: 0 0 23.9%;
+					/* stylelint-disable max-nesting-depth */
+					span {
+						font-size: 14px;//add 14
+					}
+					/* stylelint-enable max-nesting-depth */
+				}
+				#{$bs-post}-taxonomy_contract-type {
+					margin: 4px 5px 12px 1px;
+					&::before {
+						top: 4px;
+						left: -30px;
+					}
+				}
+				#{$bs-post}-taxonomy_job-location {
+					margin: 4px 5px 12px 1px;
+					/* stylelint-disable max-nesting-depth */
+					span {
+						&::before {
+							left: -31px;
+						}
+					}
+					/* stylelint-enable max-nesting-depth */
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--careers-current-job-opennings {
+		$bs-post:".bs-post";
+		#{$bs-post}s__normal {
+			#{$bs-post} {
+				#{$bs-post}__details {
+					flex-direction: row;
+					padding: 19px 30px 6px;
+				}
+				#{$bs-post}__title {
+					padding-right: 70px;
+				}
+				#{$bs-post}__category {
+					padding-right: 35px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+$bs-blurb-r-crlcol-l1f-asn2:(
+	blurb-border: 1px solid #fff,
+	background-color: #fff,
+);
+
+@import "./../../realm/berg-blocks/bs-blurb/r-crlcol-l1f-asn2.scss";
+.bs-blurb--r-crlcol-l1f-asn2 {
+	$blurb: ".bs-blurb";
+	#{$blurb}__container {
+		height: 100%;
+		padding: 23px;
+	}
+	#{$blurb}__image {
+		width: 100%;
+		max-width: 100px;
+		height: auto;
+		padding: 8px;
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+	&:hover {
+		#{$blurb}__image {
+			figure {
+				.hover-image {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

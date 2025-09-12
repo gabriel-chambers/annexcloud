@@ -1,0 +1,39 @@
+$r-blbslr-l4-anxcld1: () !default;
+$r-blbslr-l4-anxcld1: map-merge((
+	section-padding: 50px 0,
+	section-padding-lg: 100px 0,
+	title-padding: 0 0 15px,
+	title-padding-lg: 0 0 15px,
+	description-padding: 0 0 30px,
+	description-padding-lg: 0 0 40px,
+), $r-blbslr-l4-anxcld1);
+.r-blbslr-l4--anxcld1 {
+	overflow: hidden;
+	padding: map-get($r-blbslr-l4-anxcld1, section-padding);
+	.bs-row {
+		&:nth-child(1) {
+			h2 {
+				padding: map-get($r-blbslr-l4-anxcld1, title-padding);
+			}
+			p {
+				padding: map-get($r-blbslr-l4-anxcld1, description-padding);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.r-blbslr-l4--anxcld1 {
+		padding: map-get($r-blbslr-l4-anxcld1, section-padding-lg);
+		.bs-row {
+			&:nth-child(1) {
+				h2 {
+					padding: map-get($r-blbslr-l4-anxcld1, title-padding-lg);
+				}
+				p {
+					padding: map-get($r-blbslr-l4-anxcld1, description-padding-lg);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+$r-blbstk-l3-anxcld1-blurb-wrapper: (
+	padding: 0,
+	padding-lg: 0,
+);
+$r-blbstk-l3-anxcld1-blurb: (
+	title-margin: 0 0 5px,
+	title-margin-lg: 0 0 5px,
+	description-margin: 0 0 25px ,
+	description-margin-lg: 0 0 25px ,
+	no-image-height: 100%,
+);
+
+@import "./../../realm/berg-blocks/bs-div/r-blbstk-l3-anxcld1-blurb-wrapper.scss";
+.bs-div--r-blbstk-l3-anxcld1-blurb-wrapper {
+	.bs-blurb--r-blbstk-l3-anxcld1 {
+		$blurb: ".bs-blurb";
+		&.bs-blurb {
+			#{$blurb}__container {
+				padding: 20px;
+			}
+			#{$blurb}__image {
+				picture,
+				img {
+					width: auto;
+				}
+			}
+			#{$blurb}__title {
+				> * {
+					font-size: 20px;
+					font-weight: $font-weight-bold;
+					letter-spacing: 0;
+					line-height: 26px;
+				}
+			}
+			#{$blurb}__description {
+				> * {
+					font-size: 16px;
+					font-weight: $font-weight-normal;
+					letter-spacing: 0;
+					line-height: 29px;
+				}
+			}
+			#{$blurb}__read-more {
+				@include primary-link;
+				a,
+				span {
+					&::after {
+						margin-left: 21px;
+					}
+				}
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-div--r-blbstk-l3-anxcld1-blurb-wrapper {
+		.bs-blurb--r-blbstk-l3-anxcld1 {
+			$blurb: ".bs-blurb";
+			&.bs-blurb {
+				#{$blurb}__container {
+					padding: 29px 29px 25px 29px;
+				}
+				#{$blurb}__title {
+					> * {
+						font-size: 22px;
+					}
+				}
+				#{$blurb}__description {
+					> * {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}

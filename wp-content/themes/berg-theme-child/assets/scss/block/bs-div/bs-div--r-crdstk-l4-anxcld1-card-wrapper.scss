@@ -1,0 +1,29 @@
+$r-crdstk-l4-anxcld1-card-wrapper: (
+	padding: 30px,
+	padding-lg: 29px 30px 15px,
+	border-radius: 5px,
+	box-shadow: none,
+	border: none,
+	text-align: center,
+);
+$r-crdstk-l4-anxcld1-card: (
+	figure-margin: 0 0 40px,
+	figure-margin-lg: 0 0 40px,
+	figure-height: 50px,
+	figure-height-lg: 50px,
+	figure-width: auto,
+	figure-width-lg: auto,
+	img-object-fit: contain,
+	title-margin: 0,
+	title-margin-lg: 0,
+	title-color: #fff,
+	description-margin: 0 ,
+	description-margin-lg: 0,
+	description-color: #fff,
+	container-align: center,
+);
+
+@import "./../../realm/berg-blocks/bs-div/r-crdstk-l4-anxcld1-card-wrapper.scss";
+.bs-div--r-crdstk-l4-anxcld1-card-wrapper {
+	padding: 29px 30px 15px;
+}

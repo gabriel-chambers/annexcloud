@@ -1,0 +1,25 @@
+$r-spstbk-l1-anxcld1: (
+	padding: 100px 15px,
+	title-padding-right: 30px,
+	title-margin-bottom: 30px,
+	button-margin-bottom: 20px,
+	title-padding-right-md: 262px,
+	title-margin-bottom-md: 50px,
+);
+
+@import "./../../realm/r-spstbk/r-spstbk-l1--anxcld1.scss";
+
+@include media-breakpoint-down(md) {
+	.r-spstbk-l1--anxcld1 {
+		h2 {
+			margin-bottom: 10px;
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.r-spstbk-l1--anxcld1 {
+		.bs-column {
+			padding: 0 15px;
+		}
+	}
+}

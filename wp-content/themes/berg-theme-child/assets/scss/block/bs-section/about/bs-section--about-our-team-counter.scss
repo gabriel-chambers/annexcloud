@@ -1,0 +1,58 @@
+.bs-section--about-our-team-counter {
+	&.bs-section {
+		.row {
+			&:nth-child(1) {
+				margin-bottom: 30px;
+				.bs-column {
+					> h2 {
+						margin-bottom: 20px;
+					}
+					> p {
+						font-size: 16px;//14->16
+						font-weight: $font-weight-normal;
+						letter-spacing: 0;
+						line-height: 22px;
+					}
+				}
+
+			}
+		}
+	}
+	.bs-div--r-cntcol-l1-anxcld1-counter-wrapper {
+		.bs-counter--r-cntcol-l1-anxcld1 {
+			&.bs-counter {
+				$bs-counter: ".bs-counter";
+				#{$bs-counter}__wrapper {
+					#{$bs-counter}__postfix {
+						img {
+							width: 26px;
+							height: auto;
+							margin: 0 3px 11px;
+							object-fit: contain;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--about-our-team-counter {
+		&.bs-section {
+			padding: 120px 0 90px;
+			.row {
+				&:nth-child(1) {
+					margin-bottom: 64px;
+					.bs-column {
+						> p {
+							margin-left: -2px;
+							font-size: 22px;
+							line-height: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

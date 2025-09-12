@@ -1,0 +1,49 @@
+@import "./../../realm/berg-blocks/bs-card/r-imgcnt-l1-anxcld1.scss";
+.bs-card--r-imgcnt-l1-anxcld1 {
+	$bs-card: ".bs-card";
+	&#{$bs-card} {
+		#{$bs-card}__title {
+			margin-bottom: 20px;
+			* {
+				margin-bottom: 0;
+				font-size: 18px;
+				font-weight: $font-weight-semi-bold;
+				letter-spacing: -0.01em;
+				line-height: 23px;
+			}
+		}
+		#{$bs-card}__description {
+			* {
+				margin-bottom: 0;
+				font-size: $font-size-base;
+				font-weight: $font-weight-normal;
+				line-height: 26px;
+			}
+		}
+		&#{$bs-card}--white-text {
+			#{$bs-card}__title,
+			#{$bs-card}__description {
+				* {
+					color: color("white");
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-card--r-imgcnt-l1-anxcld1 {
+		$bs-card: ".bs-card";
+		&#{$bs-card} {
+			padding: 0 30px;
+			#{$bs-card}__title {
+				* {
+					font-size: $h4-font-size;
+					font-weight: $font-weight-bold;
+					letter-spacing: 0;
+					line-height: 31px;
+				}
+			}
+		}
+	}
+}

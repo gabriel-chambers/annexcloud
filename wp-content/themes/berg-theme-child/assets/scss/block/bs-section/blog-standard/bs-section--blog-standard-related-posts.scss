@@ -1,0 +1,121 @@
+
+.bs-section--blog-standard-related-posts {
+	.bs-column {
+		margin-bottom: 30px;
+	}
+	.bs-row {
+		&:nth-child(1) {
+			.bs-column {
+				&:nth-child(2) {
+					top: auto;
+					bottom: 42px;
+					left: 0;
+				}
+			}
+		}
+	}
+	.bs-related-posts {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	// stylelint-disable-next-line selector-class-pattern
+	.bs-single-post---default {
+		&:not(.bs-post__container--no-image) {
+			.bs-post {
+				&__image {
+					margin-bottom: 0;
+					figure {
+						margin-bottom: 0;
+					}
+				}
+				&__read-more,
+				&__learn-more {
+					@include primary-link;
+					> span {
+						&,
+						.btn {
+							font-size: 14px;
+							// stylelint-disable-next-line max-nesting-depth
+							&::after {
+								margin-left: 30px;
+							}
+						}
+					}
+				}
+				&__title {
+					> * {
+						font-size: 22px;
+						letter-spacing: 0;
+					}
+				}
+				&__category {
+					&::after {
+						display: none;
+					}
+					span {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		&.bs-post__container--no-image {
+			.bs-post {
+				&__read-more,
+				&__learn-more {
+					@include tertiary-link-with-arrow;
+					> span {
+						font-size: 14px;
+						&::after {
+							margin-left: 31px;
+							background-position: -135px -14px;
+
+						}
+					}
+				}
+				&__category {
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--blog-standard-related-posts {
+		// stylelint-disable-next-line selector-class-pattern
+		.bs-single-post---default {
+			&:not(.bs-post__container--no-image) {
+				.bs-post {
+					&__title {
+						> * {
+							@include title-four;
+							@include line-clamp(3);
+							line-height: 31px;
+							text-overflow: ellipsis;
+						}
+					}
+					&__details {
+						padding: 24px 30px 62px;
+					}
+					&__read-more,
+					&__learn-more {
+						> span {
+							&,
+							.btn {
+								font-size: 16px;
+								// stylelint-disable-next-line max-nesting-depth
+								&::after {
+									margin-left: 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

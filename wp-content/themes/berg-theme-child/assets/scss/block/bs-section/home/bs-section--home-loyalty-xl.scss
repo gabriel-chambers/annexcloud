@@ -1,0 +1,68 @@
+
+
+.bs-section--home-loyalty-xl {
+	.bs-column--col-one {
+		padding-top: 0;
+		padding-bottom: 70px;
+		h2 {
+			margin-bottom: 20px;
+			font-size: 25px;
+			font-weight: $font-weight-bold;
+			letter-spacing: 0;
+			line-height: 1.3;
+		}
+		p {
+			font-size: 16px;//14->16
+			font-weight: $font-weight-normal;
+			line-height: 22px;
+		}
+		.bs-pro-button {
+			display: flex;
+			margin-top: 40px;
+			a {
+				margin: 0;
+				letter-spacing: 0.01em;
+			}
+		}
+	}
+	.bs-div--loyalty-is-all-main-bg-wrapper {
+		> .bs-div__inner {
+			> .media-elements {
+				display: none;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--home-loyalty-xl {
+		.bs-column--col-one {
+			padding-top: 70px;
+			h2 {
+				font-size: 48px;
+				line-height: 58px;
+			}
+			p {
+				font-size: 18px;
+				line-height: 29px;
+			}
+		}
+		.bs-div--loyalty-is-all-main-bg-wrapper {
+			position: relative;
+			max-width: 670px;
+			> .bs-div__inner {
+				> .media-elements {
+					display: block;
+					figure {
+						/* stylelint-disable declaration-no-important */
+						justify-content: center !important; // to override bootstrap .justify-content-start class styles
+						/* stylelint-enable */
+					}
+					picture {
+						padding: 35px 12px 15px 0;
+					}
+				}
+			}
+		}
+	}
+}

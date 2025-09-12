@@ -1,0 +1,12 @@
+@include media-breakpoint-up(xl) {
+	.bs-section--platform-integrations-pp {
+		&.bs-section--common-banner {
+			padding: 0;
+		}
+		&.bs-section--blog-related-posts {
+			&.bs-section--request-demo-you-might {
+				padding: 121px 15px 91px;
+			}
+		}
+	}
+}

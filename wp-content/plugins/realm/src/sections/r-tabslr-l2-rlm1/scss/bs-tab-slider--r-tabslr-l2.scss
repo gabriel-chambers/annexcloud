@@ -1,0 +1,78 @@
+.bs-tab-slider--r-tabslr-l2 {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	&:is(.bs-slider-tabs, .bs-slider-content) {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	// make same height slides and tabs
+	.bs-slider-content,
+	.bs-slider-tabs {
+		.slick-track {
+			display: flex;
+			flex-direction: row;
+		}
+		.slick-slide {
+			height: auto;
+			> div,
+			:is([class$="-slide-wrapper"]) {
+				height: 100%;
+			}
+		}
+		.slick-slide-wrapper {
+			display: block !important; // slick inline style override for remove unwanted gap
+			height: 100%;
+		}
+	}
+	//slick uninitialized styles
+	div[data-slick]:not(.slick-initialized) {
+		display: flex;
+		overflow: hidden;
+		.slick-slide-wrapper {
+			flex: 1 0 100%;
+		}
+	}
+
+}
+
+@include media-breakpoint-down(md) {
+	.bs-tab-slider--r-tabslr-l2 {
+		&:is(.bs-tab-slider--r-tabslr-l2-tabs-bottom-mobile) {
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-tab-slider--r-tabslr-l2 {
+		flex-direction: row;
+		flex-wrap: wrap;
+		.bs-slider-tabs {
+			.slick-track {
+				display: flex;
+				flex-direction: column;
+			}
+			.slick-slide-wrapper {
+				display: block !important; // slick inline style override for remove gap unwanted gap
+				cursor: pointer;
+				text-align: left !important; // override text-center class style
+			}
+		}
+		&:is(.bs-tab-slider--r-tabslr-l2-tabs-right) {
+			flex-direction: row-reverse;
+		}
+		&:is(.bs-tab-slider--r-tabslr-l2-tabs-columns) {
+			.bs-slider-tabs {
+				.slick-track {
+					display: flex;
+					flex-direction: row;
+				}
+				.slick-list,
+				.slick-track {
+					height: 100%;
+				}
+			}
+		}
+	}
+}

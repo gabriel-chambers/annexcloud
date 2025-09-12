@@ -1,0 +1,5 @@
+.bs-pro-button {
+	&.bs-pro-button--tertiary-with-arrow {
+		@include tertiary-button-with-arrow;
+	}
+}

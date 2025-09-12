@@ -1,0 +1,30 @@
+<?php
+$shareBoxLabel = \CM\CMTT_Settings::get( 'cmtt_glossaryShowShareBoxLabel', 'Share This' );
+?>
+<div class="cmtt-social-box">
+	<div class="sharetitle"><?php _e( $shareBoxLabel, 'cm-tooltip-glossary' ); ?></div>
+	<div class="sharetwitter">
+		<a href="http://twitter.com/share"
+		   class="twitter-share-button"
+		   data-url="<?php the_permalink(); ?>"
+		   data-counturl="<?php the_permalink(); ?>"
+		   data-text="<?php echo strip_tags( get_the_title() ); ?>"
+		   data-via="username"
+		   data-related="username">Tweet</a>
+	</div>
+	<div class="sharefb">
+		<script async defer crossorigin="anonymous"
+		        src="https://connect.facebook.net/en_En/sdk.js#xfbml=1&version=v15.0"
+		        nonce="l1BLQpGM"></script>
+		<div class="fb-share-button" data-href="<?php rawurlencode( the_permalink() ); ?>" data-layout="button"
+		     data-size="small">
+			<a target="_blank"
+			   href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+			   class="fb-xfbml-parse-ignore">Share</a>
+		</div>
+	</div>
+	<div class="sharelinkedin">
+		<script type="in/share" data-counter="right"></script>
+	</div>
+	<div id="fb-root"></div>
+</div>

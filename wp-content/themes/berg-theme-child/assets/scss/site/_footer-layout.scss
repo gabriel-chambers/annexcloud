@@ -1,0 +1,129 @@
+.footer {
+	&__social {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	&__bottom-menu {
+		.navbar-nav {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	&__form-code {
+		.hs-form-private {
+			.hs-fieldtype-text {
+				margin-bottom: -5px;
+				input {
+					min-height: 54px;
+					background-color: transparent;
+					color: color("white");
+				}
+				label {
+					top: 19px;
+					left: 20px;
+					color: color("white");
+					font-size: 16px;//14->16
+					letter-spacing: 0.02em;
+				}
+				&.active {
+					input ~ label {
+						color: color("white");
+						font-size: 14px; //revert
+						letter-spacing: 0.28px;
+					}
+				}
+			}
+			.hs-recaptcha {
+				/* stylelint-disable */
+				margin: 1px 0 10px !important; // Overwrite
+				/* stylelint-enable */
+			}
+			.hs-submit {
+				margin-top: 11px;
+				input {
+					padding: 12px 30px;
+				}
+			}
+			.hs-error-msgs {
+				li {
+					/* stylelint-disable no-descending-specificity */
+					label {
+						display: block;
+						color: color("red");
+						font-size: 14px;//12->14
+						font-weight: $font-weight-normal;
+						line-height: 19px;
+					}
+					/* stylelint-enable no-descending-specificity */
+				}
+			}
+			.legal-consent-container {
+				.hs-richtext {
+					p {
+						color: color("white");
+						font-size: 14px; //revert
+						letter-spacing: 0.28px; //revert
+						line-height: 1.6; //revert
+						a {
+							color: color("red");
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.footer {
+		&__row {
+			&:first-child {
+				display: grid;
+				grid-gap: 20px;
+				grid-template-columns: 370px repeat(3, 1fr);
+			}
+			&:last-child {
+				display: flex;
+				align-items: flex-start;
+			}
+		}
+		&__social {
+			justify-content: flex-start;
+		}
+		&__bottom-menu {
+			.footer__column {
+				display: flex;
+				justify-content: flex-start;
+			}
+		}
+		&__form-code {
+			.hs-form-private {
+				.hs-fieldtype-text {
+					label {
+						font-size: 14px;//add 14
+					}
+				}
+				.hs-error-msgs {
+					li {
+						/* stylelint-disable no-descending-specificity */
+						label {
+							font-size: 12px;//add 12
+						}
+						/* stylelint-enable no-descending-specificity */
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.footer {
+		&__row {
+			&:first-child {
+				grid-gap: 30px;
+			}
+		}
+	}
+}

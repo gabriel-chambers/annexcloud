@@ -1,0 +1,10 @@
+.bs-section--events-featured-event {
+	overflow: hidden;
+	padding: 0 15px;
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--events-featured-event {
+		padding: 0 15px 30px;
+	}
+}

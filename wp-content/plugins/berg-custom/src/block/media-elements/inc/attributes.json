@@ -1,0 +1,246 @@
+{
+  "media_type_choice": {
+    "type": "string",
+    "default": "image"
+  },
+  "mediaVisibility": {
+    "type": "boolean",
+    "default": true
+  },
+  "image": {
+    "type": "number",
+    "default": 0
+  },
+  "image_desktop": {
+    "type": "number",
+    "default": 0
+  },
+  "image_mobile": {
+    "type": "number",
+    "default": 0
+  },
+  "image_2x_desktop": {
+    "type": "number",
+    "default": 0
+  },
+  "image_2x_mobile": {
+    "type": "number",
+    "default": 0
+  },
+  "mask_image": {
+    "type": "number",
+    "default": 0
+  },
+  "image_alt": {
+    "type": "string",
+    "default": ""
+  },
+  "image_title": {
+    "type": "string",
+    "default": ""
+  },
+  "image_show_caption": {
+    "type": "boolean",
+    "default": false
+  },
+  "image_caption": {
+    "type": "string",
+    "default": ""
+  },
+  "image_behaviour": {
+    "type": "string",
+    "default": "img-fluid"
+  },
+  "choice_link": {
+    "type": "boolean",
+    "default": false
+  },
+  "image_url": {
+    "type": "string",
+    "default": ""
+  },
+  "image_url_desktop": {
+    "type": "string",
+    "default": ""
+  },
+  "image_url_mobile": {
+    "type": "string",
+    "default": ""
+  },
+  "image_2x_url_desktop": {
+    "type": "string",
+    "default": ""
+  },
+  "image_2x_url_mobile": {
+    "type": "string",
+    "default": ""
+  },
+  "image_link": {
+    "type": "string",
+    "default": ""
+  },
+  "new_tab": {
+    "type": "boolean",
+    "default": false
+  },
+  "open_new_tab": {
+    "type": "string",
+    "default": "_self"
+  },
+  "video_file_name": {
+    "type": "string",
+    "default": ""
+  },
+  "video_source": {
+    "type": "string",
+    "default": "upload"
+  },
+  "video": {
+    "type": "number",
+    "default": 0
+  },
+  "video_mobile_img": {
+    "type": "number",
+    "default": 0
+  },
+  "video_settings": {
+    "type": "array",
+    "default": []
+  },
+  "aspect_ratios": {
+    "type": "string",
+    "default": "embed-responsive-21by9"
+  },
+  "video_url": {
+    "type": "string",
+    "default": ""
+  },
+  "play_icon": {
+    "type": "number",
+    "default": 0
+  },
+  "mask_image_url": {
+    "type": "string",
+    "default": ""
+  },
+  "play_icon_url": {
+    "type": "string",
+    "default": ""
+  },
+  "video_behaviour": {
+    "type": "string",
+    "default": "full"
+  },
+  "media_alignment": {
+    "type": "string",
+    "default": "justify-content-start"
+  },
+  "video_poster": {
+    "type": "object",
+    "default": {
+      "id": 0,
+      "url": null
+    }
+  },
+  "custom_play_button": {
+    "type": "object",
+    "default": {
+      "image": {
+        "id": 0,
+        "url": null
+      },
+      "size": {
+        "width": 150,
+        "height": 150,
+        "unit": "px"
+      }
+    }
+  },
+  "custom_pause_button": {
+    "type": "object",
+    "default": {
+      "image": {
+        "id": 0,
+        "url": null
+      },
+      "size": {
+        "width": 150,
+        "height": 150,
+        "unit": "px"
+      }
+    }
+  },
+  "blockClassNames": {
+    "type": "array",
+    "default": [
+      {
+        "value": "bs-media-element---default",
+        "label": "Default"
+      }
+    ]
+  },
+  "last_updated": {
+    "type": "number",
+    "default": 0
+  },
+  "vpopupHtml": {
+    "type": "string",
+    "default": ""
+  },
+  "vpopupFancyBoxOptions": {
+    "type": "object",
+    "default": {
+      "classNames": "",
+      "dismissOnClickOutside": "close"
+    }
+  },
+  "enableFallbackVideo": {
+    "type": "boolean",
+    "default": false
+  },
+  "fallbackVideoOptions": {
+    "type": "object",
+    "default": {
+      "videoId": 0,
+      "videoUrl": "",
+      "videoFileName": ""
+    }
+  },
+  "isVideoTransparent": {
+    "type": "boolean",
+    "default": false
+  },
+  "isImgLazyLoad": {
+    "type": "boolean",
+    "default": false
+  },
+  "regularVideoType": {
+    "type": "string",
+    "default": ""
+  },
+  "fallBackVideoType": {
+    "type": "string",
+    "default": ""
+  },
+  "vpopupRowHtml": {
+    "type": "string",
+    "default": ""
+  },
+  "previewVideoOptions": {
+    "type": "object",
+    "default": {
+      "videoId": 0,
+      "videoUrl": "",
+      "videoFileName": "",
+      "videoType": ""
+    }
+  },
+  "previewStartTime": {
+    "type": "number",
+    "default": 0
+  },
+  "previewEndTime": {
+    "type": "number",
+    "default": 0
+  }
+}

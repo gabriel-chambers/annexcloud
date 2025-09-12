@@ -1,0 +1,49 @@
+$bs-slider-r-blbslr-l4-anxcld:(
+	slide-padding: 0 15px 0 0,
+	slide-padding-lg: 0 15px 0 0,
+	next-slide-visible: 95px,
+	grid-gap: 30px,
+	slider-padding: 23px 0 0,
+	slider-padding-lg: 62px 0 0,
+);
+
+@import "./../../realm/berg-blocks/bs-slider/r-blbslr-l4-anxcld1.scss";
+.bs-slider--r-blbslr-l4-anxcld1 {
+	position: relative;
+	.slick-slider {
+		padding-bottom: 86px;
+		.slick-arrow {
+			top: auto;
+			bottom: -31px;
+			left: 1px;
+			border-color: color("space-blue");
+			background: transparent;
+			box-shadow: none;
+			&::before {
+				@include standard-blog-slider-arrow;
+			}
+			&.slick-disabled {
+				opacity: 0.5;
+			}
+			&.slick-next {
+				left: 95px;
+			}
+		}
+	}
+	.slider-widgets {
+		bottom: 25px;
+		&__slide-counter {
+			right: -3px;
+			letter-spacing: 0.2rem;
+			.current-slide {
+				margin-right: 2px;
+			}
+			.total-slides {
+				&::before {
+					top: 0;
+					left: -5px;
+				}
+			}
+		}
+	}
+}

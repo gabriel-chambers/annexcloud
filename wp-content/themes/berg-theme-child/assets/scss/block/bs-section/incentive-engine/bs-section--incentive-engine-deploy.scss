@@ -1,0 +1,58 @@
+.bs-section--incentive-engine-deploy {
+	position: relative;
+	padding: 60px 15px 125px;
+	h2 {
+		margin-bottom: 90px;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+		line-height: 32px;
+		text-align: center;
+	}
+	.media-elements {
+		.bs-common-image {
+			figure {
+				// stylelint-disable-next-line declaration-no-important
+				justify-content: center !important; // to override default important
+			}
+		}
+	}
+}
+
+
+@include media-breakpoint-up(md) {
+	.bs-section--incentive-engine-deploy {
+		h2 {
+			font-size: 25px;
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--incentive-engine-deploy {
+		overflow: hidden;
+		padding: 120px 15px 98px;
+		> .container {
+			position: relative;
+			&::before,
+			&::after {
+				@include after-before;
+				top: -253px;
+				width: 305px;
+				height: 450px;
+				mix-blend-mode: overlay;
+			}
+			&::before {
+				left: -290px;
+				background: url($incentive-engine-deploy-left-bg) center / contain no-repeat;
+			}
+			&::after {
+				right: -290px;
+				background: url($incentive-engine-deploy-right-bg) center / contain no-repeat;
+			}
+		}
+		h2 {
+			margin-bottom: 100px;
+			font-size: 48px;
+			line-height: 58px;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.bs-section--home-is-purpose-built {
+	padding: 60px 15px;
+	h2 {
+		width: 100%;
+		max-width: 330px;
+		margin: 0 auto 15px;
+		font-size: 25px;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+		line-height: 1.3;
+		text-align: center;
+	}
+	p {
+		width: 100%;
+		max-width: 330px;
+		margin: 0 auto;
+		font-size: 16px;//14->16
+		font-weight: $font-weight-normal;
+		letter-spacing: 0.16px; //reset
+		line-height: 25.6px; //reset
+		text-align: center;
+	}
+	.media-elements {
+		margin-top: 40px;
+		.bs-common-image {
+			figure {
+				/* stylelint-disable declaration-no-important */
+				justify-content: center !important; // to override bootstrap .justify-content-start class styles
+				/* stylelint-enable */
+			}
+		}
+	}
+	.bs-pro-button {
+		$button : ".bs-pro-button";
+		margin-top: 40px;
+		&#{$button}--primary {
+			display: flex;
+			justify-content: center;
+			#{$button}__container {
+				margin: 0;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--home-is-purpose-built {
+		h2 {
+			max-width: 550px;
+		}
+		p {
+			max-width: 550px;
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--home-is-purpose-built {
+		h2 {
+			max-width: 875px;
+			margin: 0 auto 21px; //revert
+			font-size: 48px;
+			line-height: 1.2;//revert
+		}
+		p {
+			max-width: 1170px;
+			font-size: 22px;
+			letter-spacing: 0;
+			line-height: 35px;
+		}
+		.media-elements {
+			margin-top: 80px;
+		}
+		.bs-pro-button {
+			$button : ".bs-pro-button";
+			margin-top: 81px;
+			&#{$button}--primary {
+				#{$button}__container {
+					// padding: 18px 30px;
+					letter-spacing: 0.01em;
+				}
+			}
+		}
+	}
+}

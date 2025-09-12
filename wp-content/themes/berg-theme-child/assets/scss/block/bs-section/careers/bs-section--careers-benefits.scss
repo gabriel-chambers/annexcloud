@@ -1,0 +1,263 @@
+.bs-section--careers-benefits {
+	overflow: hidden;
+	padding-right: 15px;
+	padding-left: 15px;
+	h1,
+	h2 {
+		margin-bottom: 15px;
+		font-size: 25px;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+		line-height: 32px;
+	}
+	p {
+		margin-bottom: 40px;
+		font-size: 16px;//14->16
+		font-weight: $font-weight-normal;
+		letter-spacing: 0.01em;
+		line-height: 22px;
+	}
+	> .container-fluid {
+		> .bs-row {
+			> .bs-column {
+				> .bs-div {
+					&:last-child {
+						margin: 0 0 40px;
+						&::before {
+							@include after-before;
+							z-index: 1;
+							right: -2px;
+							bottom: -1px;
+							width: 133px;
+							height: 175px;
+							background: url($careers-benefit-pattern-mobile) center/contain no-repeat;
+						}
+						figure {
+							clip-path: polygon(9.5% 0, 127.5% 0%, 93% 100%, 0% 100%, 0 31.5%);
+						}
+						picture,
+						img {
+							width: 100%;
+							height: 100%;
+							aspect-ratio: 16/9;
+						}
+						img {
+							object-fit: cover;
+						}
+					}
+					&:first-child {
+						.bs-div__inner {
+							/* stylelint-disable */
+							> .bs-div {
+								&:last-child {
+									.bs-div__inner {
+										display: grid;
+										row-gap: 40px;
+									}
+								}
+							}
+							/* stylelint-enable */
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.bs-section--careers-benefits {
+		> .container-fluid {
+			> .bs-row {
+				> .bs-column {
+					> .bs-div {
+						&:last-child {
+							.bs-div__inner {
+								/* stylelint-disable */
+								&,
+								* {
+									&:not(figcaption) {
+										width: 100%;
+										height: 100%;
+									}
+								}
+								/* stylelint-enable */
+							}
+						}
+						&:first-child {
+							/* stylelint-disable */
+							.bs-div__inner {
+								> .bs-div {
+									&:last-child {
+										.bs-div__inner {
+											grid-template-columns: repeat(2, 1fr);
+										}
+									}
+								}
+							}
+							/* stylelint-enable */
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--careers-benefits {
+		padding: 120px 15px;
+		h1,
+		h2 {
+			@include title-two;
+			margin-bottom: 20px;
+			font-weight: $font-weight-bold;
+			letter-spacing: 0;
+		}
+		p {
+			@include title-five;
+			letter-spacing: 0;
+			line-height: 35px;
+		}
+		> .container-fluid {
+			> .bs-row {
+				max-width: 1200px;
+				margin: 0 auto;
+				> .bs-column {
+					> .bs-div {
+						&:last-child {
+							overflow: hidden;
+							width: 100%;
+							max-width: 932px;
+							height: 600px;
+							margin: -17px -46% 0 32px;
+							figure {
+								clip-path: polygon(9% 0%, 77% 0, 46.7% 100%, 0 100%, 0% 30%);
+							}
+							&::before {
+								z-index: 1;
+								right: auto;
+								bottom: 32px;
+								left: 308px;
+								width: 265px;
+								height: 89px;
+								background: url($benefits-img-pattern) center/contain no-repeat;
+							}
+							.bs-div__inner {
+								/* stylelint-disable */
+								&,
+								* {
+									&:not(figcaption) {
+										width: 100%;
+										height: 100%;
+									}
+								}
+								.media-elements {
+									.common-video-popup .play-icon {
+										transform: translate(-21%, 0);
+									}
+								}
+								/* stylelint-enable */
+							}
+							img {
+								position: absolute;
+								width: 100%;
+								height: 100%;
+							}
+						}
+						&:first-child {
+							max-width: 630px;
+							/* stylelint-disable */
+							> .bs-div__inner {
+								display: flex;
+								flex-wrap: wrap;
+								> .bs-div {
+									&:last-child {
+										.bs-div__inner {
+											display: grid;
+											gap: 50px 60px;
+											grid-template-columns: repeat(2, 1fr);
+										}
+									}
+								}
+							}
+							/* stylelint-enable */
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(xl) {
+	.bs-section--careers-benefits {
+		> .container-fluid {
+			> .bs-row {
+				> .bs-column {
+					> .bs-div {
+						&:last-child {
+							max-width: 932px;
+							margin: -17px -46% 0 105px;
+							&::after {
+								top: 0;
+								left: 422px;
+							}
+							img {
+								object-fit: contain;
+								object-position: left;
+							}
+						}
+						&:first-child {
+							width: 100%;
+							max-width: 700px;
+							/* stylelint-disable */
+							> .bs-div__inner {
+								display: flex;
+								flex-wrap: wrap;
+								> .bs-div {
+									&:last-child {
+										.bs-div__inner {
+											padding-top: 39px;
+										}
+									}
+								}
+							}
+							/* stylelint-enable */
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.bs-section--careers-benefits {
+		> .container-fluid {
+			> .bs-row {
+				> .bs-column {
+					/* stylelint-disable */
+					> .bs-div {
+						&:last-child {
+							img {
+								object-fit: cover;
+								object-position: left;
+							}
+						}
+						.bs-div__inner {
+							.media-elements {
+								.common-video-popup .play-icon {
+									transform: translate(-12%, 0) !important; // override
+								}
+								.play-button,
+								.pause-button {
+									transform: translate(-100%, -50%) !important; // override
+								}
+							}
+						}
+					}
+				}
+				/* stylelint-enable */
+			}
+		}
+	}
+}

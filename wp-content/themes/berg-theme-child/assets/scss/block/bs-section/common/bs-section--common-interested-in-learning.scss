@@ -1,0 +1,92 @@
+.bs-section--common-interested-in-learning {
+	&.bs-section--common-ready-to-get-started {
+		padding-right: 15px;
+		padding-left: 15px;
+		> .container {
+			&::after {
+				z-index: 0;
+			}
+		}
+		.bs-column {
+			&:first-child {
+				margin-bottom: 20px;
+				h2 {
+					margin-bottom: 39px;
+				}
+				p {
+					@include title-four;
+					letter-spacing: 0;
+				}
+			}
+			.bs-embedded-forms {
+				position: relative;
+				z-index: 1;
+				padding: 0;
+				margin-left: auto;
+				background: none;
+				box-shadow: none;
+				.legal-consent-container .hs-richtext {
+					p {
+						&,
+						> a {
+							color: color("white");
+							transition: color 0.3s ease;
+						}
+						> a {// stylelint-disable-next-line max-nesting-depth
+							&:hover {
+								color: color("purple");
+							}
+						}
+					}
+				}
+				.hs-error-msg {
+					color: color("white");
+				}
+				.hs-form-field {
+					margin-bottom: 20px;
+				}
+				.hs-recaptcha { // stylelint-disable-next-line declaration-no-important
+					margin-bottom: 15px !important; // override the default
+				}
+				.hs-submit {
+					max-width: 222px;
+					margin-top: 15px;
+				}
+				.hs-button {
+					padding-top: 12px;
+					padding-bottom: 12px;
+					font-weight: $font-weight-bold;
+				}
+				.submitted-message {
+					color: color("white");
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--common-interested-in-learning {
+		&.bs-section--common-ready-to-get-started {
+			padding-bottom: 283px;
+			> .container {
+				&::before {
+					top: -123px;
+					left: -416px;
+					width: 552px;
+					height: 449px;
+					background: url($interested-in-learning-pattern) center/contain no-repeat;
+				}
+				&::after {
+					top: -115px;
+					right: -526px;
+				}
+			}
+			.bs-column {
+				.bs-embedded-forms {
+					max-width: 512px;
+				}
+			}
+		}
+	}
+}

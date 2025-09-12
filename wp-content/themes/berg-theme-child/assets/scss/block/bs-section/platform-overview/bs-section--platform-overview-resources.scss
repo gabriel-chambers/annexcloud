@@ -1,0 +1,18 @@
+@include media-breakpoint-up(lg) {
+	.bs-section--platform-overview-resources {
+		&.bs-section--common-post-blocks {
+			.bs-row {
+				&:first-child {
+					.bs-column {
+						.bs-pro-button {
+							margin-top: -54px;
+							> a {
+								padding: 15px 31px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

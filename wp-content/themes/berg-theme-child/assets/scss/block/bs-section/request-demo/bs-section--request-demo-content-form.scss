@@ -1,0 +1,138 @@
+.bs-section--request-demo-content-form {
+	overflow-x: clip;
+	> .container {
+		position: relative;
+		&::before {
+			@include after-before;
+			top: -95px;
+			right: -389px;
+			width: 647px;
+			height: 285px;
+			background: url($request-demo-logo-2) center/contain no-repeat;
+		}
+		h1 {
+			@include title-two;
+			max-width: 165px;
+			margin-bottom: 30px;
+			font-size: 40px;
+			font-weight: $font-weight-bold;
+			letter-spacing: 0;
+		}
+		h2 {
+			@include title-three;
+			margin-bottom: 20px;
+			letter-spacing: 0;
+		}
+		p {
+			font-weight: $font-weight-normal;
+			line-height: 29px;
+		}
+		.media-elements {
+			margin-bottom: 40px;
+			figure {
+				overflow: hidden;
+				max-height: 350px;
+				border-radius: 5px;
+				img,
+				picture {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.bs-column--request-demo {
+			&-content {
+				margin-bottom: 30px;
+				ul,
+				ol {
+					@include list-items-common;
+					padding-left: 11px;
+					margin-top: 30px;
+				}
+				ul {
+					@include list-items-ul;
+					li {
+						&::before {
+							background-color: color("dark-grey");
+						}
+					}
+				}
+				ol li,
+				ul li,
+				p {
+					font-weight: $font-weight-normal;
+					line-height: 29px;
+				}
+			}
+			&-form {
+				position: sticky;
+				top: 100px;
+				height: fit-content;
+				padding: 20px;
+				border-radius: 5px;
+				background-color: color("white");
+				box-shadow: $boxshadow-two;
+				.bs-embedded-forms {
+					padding: 0;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.bs-section--request-demo-content-form {
+		> .container {
+			h1 {
+				max-width: none;
+			}
+		}
+	}
+}
+@include media-breakpoint-up(md) {
+	.bs-section--request-demo-content-form {
+		padding: 102px 0 60px;
+		> .container {
+			&::before {
+				top: -116px;
+				right: -516px;
+				width: 685px;
+				height: 682px;
+			}
+			h1 {
+				margin-bottom: 78px;
+			}
+			.bs-column--request-demo {
+				&-form {
+					padding: 40px;
+					margin-top: -2px;
+					p {
+						margin-bottom: 40px;
+					}
+				}
+				&-content {
+					padding-right: 50px;
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.bs-section--request-demo-content-form {
+		padding: 102px 0 60px;
+		> .container {
+			.bs-column--request-demo {
+				&-form {
+					max-width: 39.2%;
+					flex: 0 0 39.2%;
+				}
+				&-content {
+					max-width: 59.6%;
+					flex: 0 0 59.6%;
+					padding-right: 100px;
+				}
+			}
+		}
+	}
+}

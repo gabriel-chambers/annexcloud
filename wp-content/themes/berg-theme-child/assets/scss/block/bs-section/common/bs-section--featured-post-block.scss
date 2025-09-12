@@ -1,0 +1,66 @@
+
+.bs-section {
+	&.bs-section--featured-post-block {
+		h2 {
+			margin-bottom: 60px;
+			font-size: $h3-font-size;
+			line-height: 38px;
+		}
+		.bs-post__description {
+			p {
+				display: -webkit-box;
+				overflow: hidden;
+				-webkit-box-orient: vertical;
+				color: color("dark-blue");
+				font-size: $eighteen-font-size;
+				-webkit-line-clamp: 3;
+				line-height: 1.6;
+			}
+		}
+		.bs-post__image {
+			height: auto;
+			padding: 30px 30px 15px;
+			figure {
+				width: 150px;
+				height: 60px;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+			img {
+				width: 100%;
+				object-fit: contain;
+				object-position: left;
+			}
+		}
+		.bs-post {
+			.bs-post__trigger {
+				&:hover {
+					.bs-post__image {
+						img {
+							transform: scale(1);
+						}
+					}
+				}
+			}
+			.bs-post__details {
+				margin-top: 0;
+			}
+			.bs-post__title * {
+				font-size: $h5-font-size;
+				font-weight: $font-weight-bold;
+				line-height: 26px;
+			}
+		}
+		&.bs-section--about-additional-resources {
+			&.bs-section--common-post-blocks {
+				&.r-spstbk-l1--anxcld1 {
+					.bs-single-post--r-spstbk-l1-anxcld1:not(.bs-post__container--no-image) {
+						.bs-post__details {
+							padding: 5px 30px 64px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

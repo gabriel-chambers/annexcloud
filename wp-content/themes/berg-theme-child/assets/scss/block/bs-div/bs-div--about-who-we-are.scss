@@ -1,0 +1,53 @@
+.bs-div--about-who-we-are {
+	height: 100%;
+	padding: 30px;
+	border-radius: 5px;
+	.bs-card {
+		&__image {
+			margin-bottom: 40px;
+			figure {
+				width: 50px;
+				height: 50px;
+				picture,
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		&__title {
+			* {
+				margin-bottom: 20px;
+				color: color("space-blue");
+				font-size: $h5-font-size;
+				font-weight: $font-weight-medium;
+				letter-spacing: 0;
+				line-height: 26px;
+			}
+		}
+		&__description {
+			* {
+				color: color("dark-grey");
+				font-size: $h6-font-size;//14->16
+				font-weight: $font-weight-normal;
+				line-height: 22px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-div--about-who-we-are {
+		min-height: 284px;
+		.bs-card {
+			&__description {
+				* {
+					font-size: 14px;//add 14
+				}
+			}
+		}
+	}
+}

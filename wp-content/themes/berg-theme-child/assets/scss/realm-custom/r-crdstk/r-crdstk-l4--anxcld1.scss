@@ -1,0 +1,31 @@
+$r-crdstk-l4-anxcld1: (
+	section-padding: 62px 15px 30px,
+	section-padding-lg: 80px 15px 48px,
+	column-margin: 0 0 31px,
+	title-wrapper-margin: 0 -15px 32px,
+	title-wrapper-margin-lg: 0 -15px 72px,
+);
+
+@import "./../../realm/r-crdstk/r-crdstk-l4--anxcld1.scss";
+.r-crdstk-l4--anxcld1 {
+	h2 {
+		font-weight: $font-weight-bold;
+		letter-spacing: 0;
+		line-height: 32px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.r-crdstk-l4--anxcld1 {
+		h2 {
+			line-height: 58px;
+		}
+	}
+}
+@include media-breakpoint-up(lg) {
+	.r-crdstk-l4--anxcld1 {
+		h2 {
+			text-align: center;
+		}
+	}
+}

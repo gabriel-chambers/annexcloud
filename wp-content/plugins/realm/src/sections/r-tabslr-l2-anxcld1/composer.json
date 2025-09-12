@@ -1,0 +1,28 @@
+{
+    "name": "e25/r-tabslr-l2-anxcld1",
+    "type": "e25-realm-section",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0",
+        "e25/r-tabslr-l2-rlm1": "1.8059.001-rc1"
+    },
+    "extra": {
+        "theme_files": [
+            {
+                "src": "scss/r-tabslr-l2--anxcld1.scss",
+                "dest": "assets/scss/realm/r-tabslr/r-tabslr-l2--anxcld1.scss",
+                "overrideFilePath": "assets/scss/realm-custom/r-tabslr/r-tabslr-l2--anxcld1.scss"
+            },
+            {
+                "src": "scss/bs-div--r-tabslr-l2-anxcld1-slide-wrapper.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-div/r-tabslr-l2-anxcld1-slide-wrapper.scss",
+                "overrideFilePath": "assets/scss/block/bs-div/bs-div--r-tabslr-l2-anxcld1-slide-wrapper.scss"
+            },
+            {
+                "src": "scss/bs-tab-slider--r-tabslr-l2-anxcld1.scss",
+                "dest": "assets/scss/realm/berg-blocks/bs-tab-slider/r-tabslr-l2-anxcld1.scss",
+                "overrideFilePath": "assets/scss/block/bs-tab-slider/bs-tab-slider--r-tabslr-l2-anxcld1.scss"
+            }
+        ]
+    }
+}

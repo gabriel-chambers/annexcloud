@@ -1,0 +1,34 @@
+.bs-section--upcoming-events {
+	padding-top: 60px;
+	padding-bottom: 0;
+}
+
+@include media-breakpoint-up(lg) {
+	.bs-section--upcoming-events {
+		padding: 91px 0 0;
+		.bs-row--filter-widget {
+			> .bs-column {
+				&:first-child {
+					column-gap: 29px;
+				}
+			}
+			.facetwp-type-search,
+			.facetwp-type-fselect {
+				max-width: 320px;
+			}
+		}
+		.bs-row {
+			&:first-child {
+				margin-bottom: 41px;
+				.facetwp-facet {
+					margin-bottom: 0;
+				}
+				.bs-column {
+					&:last-child {
+						padding-top: 40px;
+					}
+				}
+			}
+		}
+	}
+}

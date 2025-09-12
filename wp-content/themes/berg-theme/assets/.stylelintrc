@@ -1,0 +1,41 @@
+{
+	"plugins": ["stylelint-scss"],
+	"extends": [
+		"stylelint-config-idiomatic-order",
+		"@wordpress/stylelint-config"
+	],
+	"rules": {
+		"order/order": [
+			{
+				"type": "at-rule"
+			},
+			"custom-properties",
+			"declarations"
+		],
+		"selector-class-pattern": [
+			"^([a-z][a-z0-9]*)(-{0,2}_{0,2}[a-z0-9]+)*$",
+			{
+				"message": "Selector should use lowercase and separate words with hyphens (selector-class-pattern)"
+			}
+		],
+		"at-rule-no-unknown": null,
+		"scss/at-rule-no-unknown": true,
+		"rule-empty-line-before": "never-multi-line",
+		"at-rule-empty-line-before": [
+			"always",
+			{
+				"except": ["inside-block", "after-same-name"],
+				"ignore": ["after-comment"]
+			}
+		],
+		"declaration-empty-line-before": "never",
+		"declaration-no-important": true,
+		"max-nesting-depth": 6,
+		"selector-no-qualifying-type": [
+			true,
+			{
+				"ignore": ["attribute", "class"]
+			}
+		]
+	}
+}

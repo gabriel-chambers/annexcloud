@@ -1,0 +1,95 @@
+.facetwp-pager {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	.page-numbers,
+	.facetwp-page {
+		@include body-normal;
+		display: flex;
+		width: 50px;
+		height: 50px;
+		align-items: center;
+		justify-content: center;
+		padding: 5px;
+		border: 1px solid color("dark-grey");
+		border-radius: 50px;
+		margin-right: 10px;
+		color: color("dark-grey");
+		font-weight: $font-weight-normal;
+		letter-spacing: normal;
+		text-decoration: none;
+		&.dots {
+			border: none;
+			background-color: none;
+			&:hover {
+				background-color: transparent;
+				// color: color("grey-8");
+			}
+		}
+		&:hover,
+		&.current,
+		&.active {
+			background-color: color("space-blue");
+			color: color("white");
+			font-weight: $font-weight-normal;
+		}
+		&.next,
+		&.prev {
+			position: relative;
+			box-shadow: none;
+			text-indent: -99999px;
+			&::after {
+				@include after-before;
+				@include pagination-arrow;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 18px;
+				height: 10px;
+				margin: auto;
+			}
+		}
+		&.next {
+			&::after {
+				background-position: -208px -137px;
+				transform: rotate(180deg);
+			}
+			&:hover {
+				&::after {
+					@include link-arrow-white;
+					background-position: -134px -14px;
+					transform: rotate(0);
+				}
+			}
+		}
+		&.prev {
+			margin-right: 10px;
+			&::after {
+				background-position: -208px -137px;
+			}
+			&:hover {
+				&::after {
+					@include link-arrow-white;
+					background-position: -134px -14px;
+					transform: rotate(180deg);
+				}
+			}
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.facetwp-pager {
+		margin-top: -22px;
+		.page-numbers,
+		.facetwp-page {
+			width: 65px;
+			height: 65px;
+		}
+	}
+}

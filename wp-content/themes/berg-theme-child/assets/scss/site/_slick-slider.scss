@@ -1,0 +1,122 @@
+/* stylelint-disable no-descending-specificity */
+$slick-dots-bg-color: var(--purple-crystal);
+$slick-dots-bg-color-active: var(--gonzo-violet);
+$slick-arrow-bg-color: var(--gonzo-violet);
+$slick-dot-button-color: var(--purple-crystal);
+$slick-dot-button-color-active: var(--gonzo-violet);
+.bs-tab-slider,
+.bs-slider {
+	.slick-slider {
+		&.slick-dotted {
+			ul.slick-dots {
+				> li {
+					width: auto;
+					height: 15px;
+					margin: 0 7px;
+					> button {
+						width: 15px;
+						height: 15px;
+						border-radius: 15px;
+						background-color: $slick-dots-bg-color;
+						transition:
+							width 0.4s ease-in-out,
+							background-color 0.4s ease-in-out;
+						&::before {
+							content: none;
+						}
+					}
+					&.slick-active {
+						> button {
+							width: 30px;
+							background-color: $slick-dots-bg-color-active;
+						}
+					}
+					&:hover {
+						background-image: none;
+					}
+				}
+			}
+		}
+		.slick-track,
+		.slick-list {
+			transform: translate3d(0, 0, 0);
+			transition-delay: 10ms; /* To fix blinking the first/last slide when the Infinite mode is enabled*/
+		}
+	}
+}
+.slick-prev,
+.slick-next {
+	z-index: 2;
+	width: 64px;
+	height: 64px;
+	padding: 0;
+	border: 1px solid color("white");
+	border-radius: 64px;
+	background: color("space-blue");
+	box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.1);
+	&:hover,
+	&:focus {
+		@include media-breakpoint-up(xl) {
+			border: 1px solid color("purple");
+		}
+		&::before {
+			opacity: 1;
+		}
+	}
+	&::before {
+		top: 22px;
+		right: 0;
+		left: 0;
+		display: block;
+		margin: 0 auto;
+		font-size: 0;
+	}
+	&.slick-disabled {
+		border: 1px solid color("white");
+		background: rgba($color: color("space-blue"), $alpha: 0.5);
+		box-shadow: none;
+		pointer-events: none;
+	}
+	&:focus {
+		@include media-breakpoint-up(xl) {
+			border-color: color("white");
+		}
+	}
+	&:hover {
+		@include media-breakpoint-up(xl) {
+			border-color: color("purple");
+		}
+	}
+}
+.slick-slider {
+	.slick-prev {
+		&::before {
+			@include slider-arrow-one-left;
+		}
+		&:hover {
+			&::before {
+				opacity: 1;
+			}
+			@include media-breakpoint-up(xl) {
+				background-color: $tertiary-btn-color-hover;
+			}
+			// background-color: transparent;
+		}
+		left: 15px;
+	}
+	.slick-next {
+		&::before {
+			@include slider-arrow-one-right;
+		}
+		&:hover {
+			&::before {
+				opacity: 1;
+			}
+			@include media-breakpoint-up(xl) {
+				background-color: $tertiary-btn-color-hover;
+			}
+			// background-color: transparent;
+		}
+		right: 15px;
+	}
+}
