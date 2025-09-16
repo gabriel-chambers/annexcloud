@@ -1,0 +1,68 @@
+{
+  "visibility": {
+    "type": "boolean",
+    "default": true
+  },
+  "numberOfPosts": {
+    "type": "number",
+    "default": 3
+  },
+  "excerptLength": {
+    "type": "number",
+    "default": 3
+  },
+  "orderBy": {
+    "type": "string",
+    "default": "relevance"
+  },
+  "selection": {
+    "type": "string",
+    "default": "auto"
+  },
+  "order": {
+    "type": "string",
+    "default": "DESC"
+  },
+  "displayOrder": {
+    "type": "array",
+    "default": [{ "value": "title", "label": "Title" }]
+  },
+  "popupDisplayOrder": {
+    "type": "array",
+    "default": [{ "value": "title", "label": "Title" }]
+  },
+  "postTaxonomies": {
+    "type": "array",
+    "default": []
+  },
+  "dateFormat": {
+    "type": "string",
+    "default": "d-m-Y"
+  },
+  "imageAppearance": {
+    "type": "string",
+    "default": "image"
+  },
+  "anchorAppearance": {
+    "type": "text",
+    "default": "full"
+  },
+  "enableTaxonomiesLink": {
+    "type": "boolean",
+    "default": false
+  },
+  "titleTag": {
+    "type": "string",
+    "default": "h5"
+  },
+  "titleCharLimit": {
+    "type": "number",
+    "default": 0
+  },
+  "relatedPostBlockClassNames": {
+    "type": "array",
+    "default": [
+      { "value": "bs-related-posts-block---default", "label": "Default" }
+    ]
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "dateFormat": {
+    "type": "string",
+    "default": "d F Y"
+  },
+  "orderBy": {
+    "type": "string",
+    "default": "date"
+  },
+  "order": {
+    "type": "string",
+    "default": "desc"
+  },
+  "showPlaceholderImage": {
+    "type": "boolean",
+    "default": false
+  },
+  "placeholderImage": {
+    "type": "number",
+    "default": 0
+  },
+  "titleTag": {
+    "type": "string",
+    "default": "h5"
+  },
+  "titleCharLimit": {
+    "type": "string",
+    "default": ""
+  },
+  "postText": {
+    "type": "string",
+    "default": ""
+  },
+  "postTextTag": {
+    "type": "string",
+    "default": "h2"
+  },
+  "postFrom": {
+    "type": "string",
+    "default": "custom_posts"
+  },
+  "postType": {
+    "type": "string",
+    "default": "post"
+  },
+  "selectedPosts": {
+    "type": "string",
+    "default": ""
+  },
+  "filterByType": {
+    "type": "array",
+    "default": []
+  },
+  "showFilters": {
+    "type": "boolean",
+    "default": false
+  },
+  "filterLabel": {
+    "type": "string",
+    "default": ""
+  },
+  "filters": {
+    "type": "array",
+    "default": []
+  },
+  "displayOrders": {
+    "type": "array",
+    "default": [
+      {
+        "label": "Image",
+        "value": "image"
+      },
+      {
+        "label": "Title",
+        "value": "title"
+      },
+      {
+        "label": "Date",
+        "value": "date"
+      },
+      {
+        "label": "Excerpt",
+        "value": "excerpt"
+      },
+      {
+        "label": "Read More",
+        "value": "more"
+      }
+    ]
+  },
+  "imageAppearance": {
+    "type": "string",
+    "default": "image"
+  },
+  "backgroundImageField": {
+    "type": "string",
+    "default": "image"
+  },
+  "popupDisplayOrders": {
+    "type": "array",
+    "default": [
+      {
+        "label": "Image",
+        "value": "image"
+      },
+      {
+        "label": "Title",
+        "value": "title"
+      },
+      {
+        "label": "Date",
+        "value": "date"
+      },
+      {
+        "label": "Excerpt",
+        "value": "excerpt"
+      }
+    ]
+  },
+  "popupImageAppearance": {
+    "type": "string",
+    "default": "image"
+  },
+  "popupBackgroundImageField": {
+    "type": "string",
+    "default": "image"
+  },
+  "featuredDisplayOrders": {
+    "type": "array",
+    "default": [
+      {
+        "label": "Image",
+        "value": "image"
+      },
+      {
+        "label": "Title",
+        "value": "title"
+      },
+      {
+        "label": "Date",
+        "value": "date"
+      },
+      {
+        "label": "Excerpt",
+        "value": "excerpt"
+      },
+      {
+        "label": "Read More",
+        "value": "more"
+      }
+    ]
+  },
+  "featuredImageAppearance": {
+    "type": "string",
+    "default": "image"
+  },
+  "featuredBackgroundImageField": {
+    "type": "string",
+    "default": "image"
+  },
+  "anchorElementAppearance": {
+    "type": "string",
+    "default": "inner"
+  },
+  "noEntriesFoundText": {
+    "type": "string",
+    "default": "Sorry no articles found!"
+  },
+  "blockType": {
+    "type": "string",
+    "default": "all"
+  },
+  "postLayout": {
+    "type": "string",
+    "default": "content-grid"
+  },
+  "showFeatured": {
+    "type": "boolean",
+    "default": false
+  },
+  "featuredText": {
+    "type": "string",
+    "default": ""
+  },
+  "showDefaultFeatured": {
+    "type": "boolean",
+    "default": true
+  },
+  "showFeaturedFirst": {
+    "type": "boolean",
+    "default": false
+  },
+  "featuredNum": {
+    "type": "number",
+    "default": 1
+  },
+  "postsInXs": {
+    "type": "number",
+    "default": 1
+  },
+  "postsInSm": {
+    "type": "number",
+    "default": 1
+  },
+  "postsInMd": {
+    "type": "number",
+    "default": 3
+  },
+  "postsInLg": {
+    "type": "number",
+    "default": 3
+  },
+  "postsInXl": {
+    "type": "number",
+    "default": 3
+  },
+  "loadType": {
+    "type": "string",
+    "default": "pagination"
+  },
+  "postsNumberFirstLoad": {
+    "type": "number",
+    "default": 0
+  },
+  "postsPerPage": {
+    "type": "number",
+    "default": 6
+  },
+  "prevLabel": {
+    "type": "string",
+    "default": "← Previous"
+  },
+  "nextLabel": {
+    "type": "string",
+    "default": "Next →"
+  },
+  "loadMoreLabel": {
+    "type": "string",
+    "default": "Load more"
+  },
+  "showAllOption": {
+    "type": "boolean",
+    "default": false
+  },
+  "paged": {
+    "type": "number",
+    "default": 1
+  },
+  "postBlockClass": {
+    "type": "string",
+    "default": ""
+  },
+  "postBlockClassNames": {
+    "type": "array",
+    "default": [
+      {
+        "value": "bs-post-block---default",
+        "label": "Default"
+      }
+    ]
+  },
+  "multiselect": {
+    "type": "boolean",
+    "default": false
+  },
+  "layoutDisplayOrders": {
+    "type": "array",
+    "default": [
+      {
+        "label": "Featured Posts",
+        "value": "featured-posts"
+      },
+      {
+        "label": "Filters",
+        "value": "filters"
+      },
+      {
+        "label": "Post Grid",
+        "value": "post-grid"
+      }
+    ]
+  },
+  "featuredPostSlider": {
+    "type": "boolean",
+    "default": false
+  },
+  "displayFeaturedPostOnPostGrid": {
+    "type": "boolean",
+    "default": false
+  },
+  "featuredSliderSettings": {
+    "type": "object",
+    "default": {
+      "slidesToShow": 1,
+      "slidesToScroll": 1,
+      "arrows": true,
+      "dots": true,
+      "infinite": true,
+      "fade": false,
+      "variableWidth": false,
+      "adaptiveHeight": false,
+      "autoplay": false,
+      "autoplaySpeed": 3000,
+      "focusOnSelect": true,
+      "centerMode": false,
+      "centerPadding": "40px"
+    }
+  },
+  "postVisibility": {
+    "type": "boolean",
+    "default": true
+  },
+  "fancyboxStyleClassName": {
+    "type": "string",
+    "default": ""
+  },
+  "custom_load_more_button": {
+    "type": "object",
+    "default": {
+      "image": {
+        "id": 0,
+        "url": null
+      },
+      "size": {
+        "width": 60,
+        "height": 60,
+        "unit": "px"
+      }
+    }
+  },
+  "lastUpdated": {
+    "type": "number",
+    "default": 0
+  },
+  "enablTaxonomiesLink": {
+    "type": "boolean",
+    "default": false
+  }
+}

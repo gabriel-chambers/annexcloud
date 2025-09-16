@@ -1,0 +1,26 @@
+{  
+	"accordionIndex" : {
+		"type": "number",
+		"default" : 1
+	},
+	"acSideChange" : {
+		"type" : "string",
+		"default" : "left-float"
+	} ,
+	"floatClassName" : {
+		"type" : "string",
+		"default" : "left-panel-floating"
+	},
+	"defaultOpenIndex" : {
+		"type": "number",
+		"default" : 0
+	},
+	"colBreakpoint" : {
+		"type": "number",
+		"default" : 576
+	},
+	"accordionClassNames": {
+		"type": "array",
+		"default": [{ "value": "bs-advance-accordion---default", "label": "Default" }]
+	}
+}

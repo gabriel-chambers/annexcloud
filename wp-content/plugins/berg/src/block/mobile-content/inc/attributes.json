@@ -1,0 +1,18 @@
+{
+	"activeTab": {
+		"type": "string",
+		"default": "desktop"
+	},
+	"enableMobileTab": {
+		"type": "boolean",
+		"default": false
+	},
+	"nonIdenticalBlockStructure": {
+		"type": "boolean",
+		"default": false
+	},
+	"friendlyName": {
+		"type": "string",
+		"default": ""
+	}
+}

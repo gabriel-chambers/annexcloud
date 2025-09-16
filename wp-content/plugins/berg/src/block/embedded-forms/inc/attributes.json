@@ -1,0 +1,114 @@
+{
+  "embeddedFormId": {
+    "type": "string",
+    "default": "0"
+  },
+  "formType": {
+    "type": "string",
+    "default": "hubspot"
+  },
+  "portalId": {
+    "type": "string",
+    "default": ""
+  },
+  "hubspotFormId": {
+    "type": "string",
+    "default": ""
+  },
+  "sfdcCampaignId": {
+    "type": "string",
+    "default": ""
+  },
+  "regionId": {
+    "type": "string",
+    "default": ""
+  },
+  "enableCss": {
+    "type": "boolean",
+    "default": false
+  },
+  "marketoBaseUrl": {
+    "type": "string",
+    "default": ""
+  },
+  "munchkinId": {
+    "type": "string",
+    "default": ""
+  },
+  "marketoFormId": {
+    "type": "string",
+    "default": ""
+  },
+  "contactFormId": {
+    "type": "string",
+    "default": ""
+  },
+  "mailchimpScript": {
+    "type": "string",
+    "default": ""
+  },
+  "salesforceScript": {
+    "type": "string",
+    "default": ""
+  },
+  "pardotScript": {
+    "type": "string",
+    "default": ""
+  },
+  "responseType": {
+    "type": "string",
+    "default": "redirect"
+  },
+  "responseMessage": {
+    "type": "string",
+    "default": "Thank you!"
+  },
+  "redirectURL": {
+    "type": "string",
+    "default": ""
+  },
+  "linkOpenType": {
+    "type": "boolean",
+    "default": false
+  },
+  "downloadFileURL": {
+    "type": "string",
+    "default": ""
+  },
+  "downloadFileID": {
+    "type": "number",
+    "default": 0
+  },
+  "popupVideo": {
+    "type": "string",
+    "default": "url"
+  },
+  "customVideoScript": {
+    "type": "string",
+    "default": ""
+  },
+  "popupVideoURL": {
+    "type": "string",
+    "default": ""
+  },
+  "popupVideoUploadURL": {
+    "type": "string",
+    "default": ""
+  },
+  "embeddedFormClass": {
+    "type": "string",
+    "default": ""
+  },
+  "embeddedFormClassNames": {
+    "type": "array",
+    "default": [{ "value": "bs-embedded-forms---default", "label": "Default" }]
+  },
+  "lastUpdated": {
+    "type": "number",
+    "default": 0
+  },
+	"disableMarketoDefaultFollowUp": {
+    "type": "boolean",
+    "default": false
+  }
+}

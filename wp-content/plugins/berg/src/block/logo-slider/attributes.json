@@ -1,0 +1,66 @@
+{
+	"images": {
+		"type": "array",
+		"default": []
+	},
+	"colCount": {
+		"type": "number",
+		"default" : 3
+	},
+	"mobileItems" : {
+		"type": "number",
+		"default" : 3
+	},
+	"slideArrows" : {
+		"type" : "boolean",
+		"default": false
+	},
+	"autoPlay" : {
+		"type" : "boolean",
+		"default": false
+	},
+	"tplClass": {
+		"type": "string",
+		"default": "grid-items-3"
+	},
+	"className": {
+		"type": "string",
+		"default": "logo-slider"
+	},
+	"showCaption" : {
+		"type" : "boolean",
+		"default": false
+	},
+	"sliderEnabled" : {
+		"type" : "boolean",
+		"default": true
+	},
+	"allowLayoutControl" : {
+		"type" : "boolean",
+		"default": true
+	},
+	"variableWidth" : {
+		"type" : "boolean",
+		"default": false
+	},
+	"slideDots" : {
+		"type" : "boolean",
+		"default": false
+	},
+	"logoSliderClass": {
+		"type": "string",
+		"default": ""
+	},
+	"slidesToScroll": {
+		"type": "number",
+		"default" : 1
+	},
+	"mobileSlidesToScroll": {
+		"type": "number",
+		"default" : 1
+	},
+	"logoSliderClassNames": {
+		"type": "array",
+		"default": [{ "value": "bs-logo-slider---default", "label": "Default" }]
+	}
+}

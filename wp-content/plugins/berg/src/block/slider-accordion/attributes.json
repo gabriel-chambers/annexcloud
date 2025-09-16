@@ -1,0 +1,72 @@
+{
+  "accordionIndex": {
+    "type": "number",
+    "default": 1
+  },
+  "defaultOpenIndex": {
+    "type": "number",
+    "default": 0
+  },
+  "accordionClassNames": {
+    "type": "array",
+    "default": [
+      { "value": "bs-slider-accordion---default", "label": "Default" }
+    ]
+  },
+  "sliderEnabled": {
+    "type": "boolean",
+    "default": false
+  },
+  "slideArrows": {
+    "type": "boolean",
+    "default": false
+  },
+  "slideDots": {
+    "type": "boolean",
+    "default": false
+  },
+  "slidesToShow": {
+    "type": "number",
+    "default": 1
+  },
+  "slidesToScroll": {
+    "type": "number",
+    "default": 1
+  },
+  "autoplay": {
+    "type": "boolean",
+    "default": false
+  },
+  "autoplaySpeed": {
+    "type": "number",
+    "default": 1000
+  },
+  "visibility": {
+    "type": "boolean",
+    "default": true
+  },
+  "breakpoint": {
+    "type": "number",
+    "default": 576
+  },
+  "variableWidth": {
+    "type": "boolean",
+    "default": false
+  },
+  "infinite": {
+    "type": "boolean",
+    "default": true
+  },
+  "focusOnSelect": {
+    "type": "boolean",
+    "default": true
+  },
+  "enableProgressBar": {
+    "type": "boolean",
+    "default": false
+  },
+  "fadeIn": {
+    "type": "boolean",
+    "default": false
+  }
+}
